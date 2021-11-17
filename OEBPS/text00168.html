@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head><title></title>
+<link href="flow0004.css" rel="stylesheet" type="text/css" />
+</head>
+<body><div></div>
+<h1 class="kindle-cn-heading-1">第14章　在各种不同情况下的磁场</h1>
+<h2 class="kindle-cn-heading2" id="sigil_toc_id_14">§14-1　矢势</h2>
+<p>在本章中，我们将继续讨论与恒定电流有关的磁场——静磁学课题。磁场与电流之间由如下的基本方程相联系：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="192-1" class="kindle-cn-bodycontent-image-alone80" src="Image02085.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">现在我们希望以一种普遍的方式，即不需要任何特殊对称性或直观猜测，就能在数学上解出这些方程。在静电学中，我们曾发现当所有电荷的位置均为已知时存在求场的一种直接方法。人们通过对电荷取积分——比如式（4.25）中的积分——就能简单地算出标势ϕ来。然后，如果还想知道电场，则可对ϕ求微商而得到。现在我们要证明：如果已知所有运动电荷的电流密度j，则会有一种求得磁场B的相应方法。</p>
+<p>在静电学中，我们就知道（由于E的旋度始终是零），有可能把E表达成一个标量场ϕ的梯度。现在B的旋度却<span class="kindle-cn-specialtext-qx">不</span>
+ 常等于零，因而一般说来不可能把它表达成一梯度。然而，B的<span class="kindle-cn-specialtext-qx">散度</span>
+ 却永远为零，这就意味着我们总能把B表达成另一个矢量场的<span class="kindle-cn-specialtext-qx">旋度</span>
+ 。因为正如我们以前曾在§2-7中见到的，旋度的散度总等于零。于是，就总能够把B与将被称作A的场互相联系起来，</p>
+<p class="kindle-cn-para-center">B=▽×A.　（14.3）</p>
+<p class="kindle-cn-para-no-indent">或者通过写成分量，则有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="192-2" class="kindle-cn-bodycontent-image-alone80" src="Image02086.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">既然写出了B=▽×A，就能保证式（14.1）被满足，因为必然有</p>
+<p class="kindle-cn-para-center">▽·B=▽·（▽×A）=0.</p>
+<p class="kindle-cn-para-no-indent">A这个场被称为<span class="kindle-cn-specialtext-qx">矢势</span>
+ 。</p>
+<p>你会记得，标势ϕ并未由其定义完全规定。如果你对某一问题已求得了ϕ，你还总能通过加上一常数而找到另一个同样好的势ϕ′：</p>
+<p class="kindle-cn-para-center">ϕ′=ϕ+C.</p>
+<p class="kindle-cn-para-no-indent">因为梯度▽C为零，所以这个新的势ϕ′会给出相同的电场。因而ϕ′与ϕ代表相同的物理性质。</p>
+<p>同样，我们也有可能给出同一磁场的不同矢势A。而且，由于B是由A的微商得到的，因而，若在A上加一常数并不改变任何物理的实质。可是对于A来说，还有更加广阔的活动余地。我们可以对A加进任何场，只要它等于某一标量场的梯度，就不致改变其物理情况。这可证明如下。假设对某个实际问题我们已有了一个A，它正确地给出了磁场B，并试问在什么情况下某一个新的矢势A′才能在代入式（14.3）中时，会给出<span class="kindle-cn-specialtext-qx">同一个场</span>
+ B。于是，A和A′必定具有相同的旋度：</p>
+<p class="kindle-cn-para-center">B=▽×A′=▽×A.</p>
+<p class="kindle-cn-para-no-indent">因此，　▽×A′-▽×A=▽×（A′-A）=0.</p>
+<p class="kindle-cn-para-no-indent">但若一矢量的旋度为零，则它必然是某一标量场——比如说ψ——的梯度，因而A′-A=▽ψ。这就意味着，若A为适合于某一问题的矢势，则不论对于任何ψ，</p>
+<p class="kindle-cn-para-center">A′=A+▽ψ　（14.5）</p>
+<p class="kindle-cn-para-no-indent">仍将是一个同样令人满意的矢势，因为它导致相同的场B。</p>
+<p>这样做往往很方便，即任意使A受另一条件限制，因而将其某些“活动范围”扣除出去（正如我们经常选取在无限远处的标势ϕ等于零也很方便一样）。例如，可以任意规定A的散度必须是什么而对A加以限制。我们总能够这样做，而不致影响B。这是因为：虽然A′和A都具有同一旋度，从而给出了相同的B，但它们却不需要具有相同的散度。事实上，▽·A′=▽·A+▽<span class="math-super">2</span>
+ ψ，因而通过选取某一适当的ψ，就可以使▽·A′成为我们所希望要的任何东西。</p>
+<p>对于▽·A到底应该如何选取呢？这一选择应为获得最大的数学方便而做出，并将取决于我们所要解决的问题。对于<span class="kindle-cn-specialtext-qx">静磁学</span>
+ 来说，我们将做这种简单选择：</p>
+<p class="kindle-cn-para-center">▽·A=0　（14.6）</p>
+<p class="kindle-cn-para-no-indent">（往后，当考虑电动力学时。将改变这种选择）。于是，目前我们对A的完整定义<span class="math-super">
+<a id="noteBack_1" href="text00174.html#note_1">[1]</a>
+</span>
+ 为：</p>
+<p class="kindle-cn-para-center">▽×A=B　和　▽·A=0.</p>
+<p>为了对矢势得到一些经验，让我们首先看看对于匀强磁场B<span class="math-sub">0</span>
+ 来说，它的矢势是什么。选取z轴作为B<span class="math-sub">0</span>
+ 的方向，我们就应有：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="193-1" class="kindle-cn-bodycontent-image-alone80" src="Image02087.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">经检查可知这些方程的一个可能解为：</p>
+<p class="kindle-cn-para-center">A<span class="math-sub">y</span>
+ =xB<span class="math-sub">0</span>
+ ；　A<span class="math-sub">x</span>
+ =0；　A<span class="math-sub">z</span>
+ =0.</p>
+<p class="kindle-cn-para-no-indent">或者，我们也同样可以取：</p>
+<p class="kindle-cn-para-center">A<span class="math-sub">x</span>
+ =-yB<span class="math-sub">0</span>
+ ；　A<span class="math-sub">y</span>
+ =0；　A<span class="math-sub">z</span>
+ =0.</p>
+<p class="kindle-cn-para-no-indent">还有另一个解则是上述两个解的线性组合：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="194-1" class="kindle-cn-bodycontent-image-alone80" src="Image02088.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">很明显，对于任一特定场B来说，矢势A有许多可能性，因而不是唯一的。</p>
+<p>上面第三个解，即式（14.8），具有某些有趣的特性。由于其x分量正比于-y，而其y分量正比于+x，所以A必定垂直于与z轴同方向的矢量。我们把这个矢量叫作r′（之所以加上一撇是为了要提醒我们，并<span class="kindle-cn-specialtext-qx">不是</span>
+ 从原点出发的一个位移矢量）。并且，A的大小仍正比于<img alt="194-2" class="kindle-cn-inline-image0" src="Image02089.jpg" />
+ ，因而也就正比于r′。所以（对于我们的匀强磁场来说）A可以简单写成</p>
+<p class="kindle-cn-para-center"><img alt="194-3" class="kindle-cn-inline-image" src="Image02090.jpg" />
+ 　（14.9）</p>
+<p class="kindle-cn-para-no-indent">这矢势A具有B<span class="math-sub">0</span>
+ r′/2的量值并绕着z轴旋转，如图14-1所示。例如，若B场为螺线管内的轴向磁场，则这个矢势便和螺线管上的电流一样沿着同一指向环行。</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="194-4" class="kindle-cn-bodycontent-image-alone60-withnote" src="Image02091.jpg" />
+</div>
+<p class="kindle-cn-picture-txt-withmanycharactors">图14-1　一个沿z方向的匀强磁场B对应于绕着z轴旋转而又具有大小为A=Br′/2的矢势A（r′是从z轴出发的位移）</p>
+<p>关于一匀强场的矢势也可由另一种方式获得。A绕任一闭合回路Γ的环流与▽×A的面积分可以由斯托克斯定理、即式（3.38）相联系：</p>
+<p class="kindle-cn-para-center">∮<span class="math-sub">Γ</span>
+ A·ds=∫<span class="math-sub">在Γ内</span>
+ （▽×A）·nda.　（14.10）</p>
+<p class="kindle-cn-para-no-indent">但右边的积分等于B穿过回路的通量，因而</p>
+<p class="kindle-cn-para-center">∮<span class="math-sub">Γ</span>
+ A·ds=∫<span class="math-sub">在Γ内</span>
+ B·nda.　（14.11）</p>
+<p class="kindle-cn-para-no-indent">因此，A绕<span class="kindle-cn-specialtext-qx">任一</span>
+ 回路的环流等于B穿过该回路的通量。如果在与匀强场B垂直的平面上取一半径为r′的圆形回路，则通量恰恰为</p>
+<p class="kindle-cn-para-center">πr<span class="math-super">′2</span>
+ B.</p>
+<p class="kindle-cn-para-no-indent">如果把原点选取在对称轴上，则可以认为A沿着圆周并且仅仅是r′的函数，所以A的环流将为</p>
+<p class="kindle-cn-para-center">∮A·ds=2πr′A=πr<span class="math-super">′2</span>
+ B.</p>
+<p class="kindle-cn-para-no-indent">同上面一样，我们得到</p>
+<p class="kindle-cn-para-center"><img alt="194-9" class="kindle-cn-inline-image1" src="Image02092.jpg" />
+</p>
+<p>在刚才所述的例子中，我们已从磁场算出了矢势，这与正常做法恰好相反。在复杂问题中，往往先解得矢势，然后才由它来确定磁场，那就比较容易。接下来，我们将说明如何才能做到这一点。</p>
+</body>
+</html>

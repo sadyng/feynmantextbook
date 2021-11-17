@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head><title></title>
+<link href="flow0004.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h2 class="kindle-cn-heading2">§22-8　其他电路元件</h2>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="328-1" class="kindle-cn-bodycontent-image-alone80-withnote" src="Image02548.jpg" />
+<p class="kindle-cn-picture-txt-withfewcharactors">图22-26　互感的等效电路</p>
+</div>
+<p>迄今我们仅仅定义了那些理想电路的阻抗——电感、电容和电阻——还有理想电压发生器。现在我们要来证明，诸如互感、晶体管或真空管等其他元件都可以仅利用同样的基本元件来加以描述。假设有两个线圈，而有意或无意地使其中一个线圈的某些磁通量耦合到另一个线圈中去，如图22-26（a）所示。此时这两个线圈会有互感M，使得当其中一个线圈的电流变化时，在另一个线圈中将有一电压产生。我们是否能够将这种效应算进等效电路中？按下述方法来做是能够的。我们已经知道，在两个相互作用线圈的每一个中感生电动势均可以写成两部分之和：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="328-2" class="kindle-cn-bodycontent-image-alone80" src="Image02549.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">第一项来自线圈的自感，而第二项则来自它与另一线圈间的互感。第二项的符号可正可负，取决于来自一个线圈的磁通量耦合到另一个线圈上去的方式。做了我们以前在描述理想电感时用过的同样的近似，我们便可以说，跨越每个线圈两端的电势差等于该线圈中的电动势。于是式（22.34）的两个方程将和我们从图22-26（b）的电路中获得的方程相同，只是图示的每一电路中的电动势是按照下列关系式取决于对方电路中的电流：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="328-3" class="kindle-cn-bodycontent-image-alone80" src="Image02550.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">因此我们所能做的是，以正常方式表示自感效应，但对于互感效应则由一个辅助的理想电压发生器来代替。当然，此外我们还应有关于这个电动势与电路某一部分中的电流的关系的方程式，但只要这一方程式是线性的，我们不过是在电路方程中加进了更多的线性方程，因而我们以前关于等效电路的所有结论仍然是正确的。</p>
+<p>除了互感之外，也可能还有互容。迄今，当我们谈及电容器时总是想象只有两个电极，但在许多情况下，比如在一个真空管中，就有许多个彼此靠近的电极。如果把一电荷放在其中任何一个电极上，它的电场将会在其他每个电极上感生一些电荷并影响其电势。作为一例，试考虑如图22-27（a）所示的那四块板。假定这四块板分别由A，B，C和D四根导线连接至外电路。只要我们所关心的仅限于静电效应，则像这样一种电极布置的等效电路就如同图22-27（b）所示。任一电极对于其他每一电极的静电互作用相当于在这两电极之间的一个电容。</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="329-1" class="kindle-cn-bodycontent-image-alone60-withnote" src="Image02551.jpg" />
+<p class="kindle-cn-picture-txt-withfewcharactors">图22-27　互容的等效电路</p>
+</div>
+<p>最后，让我们来考虑交流电路中像晶体管和真空管那么复杂的器件应该怎样来表示。本该一开始就指出，这种器件通常是这样运行的，其中电流与电压的关系是完全非线性的。在这种情况下，我们曾做出的有赖于方程线性的那些说法当然不再正确。另一方面，在许多种应用中，晶体管和真空管的运行特性曲线还是足够线性的，以致可把它们视作线性器件。这意味着例如在真空管中，板极内的交变电流与出现在其他各电极上的电压，诸如栅极电压和板极电压形成了线性正比关系。当我们具备这样的线性关系时，就能够将该器件纳入等效电路的表示之中。</p>
+<p>正如在互感的情况那样，我们的表达方式将不得不包含一些辅助的电压发生器，用以描述在该器件一部分中的电压或电流对于其他部分中的电流或电压所产生的影响。例如，一个三极管的板极电路经常可表示为一个电阻串联于一个其源强正比于栅极电压的理想电压发生器。我们便得到如图22-28所示的那个等效电路<span class="math-super">
+<a id="noteBack_2" href="text00219.html#note_2">[2]</a>
+</span>
+ 。同理，一个晶体管的集电极电路可以方便地表达成一个电阻串联于一理想电压发生器，这个源的强度正比于从该晶体管的发射极流向基极的电流。这时等效电路就像图22-29所示的那样。只要用来描写其运行的方程是线性的，便可以对电子管或晶体管引用这些表达方式。然后，当它们被归并入一个复杂网络中时，关于元件的任意一种连接方式的等效表示的一般结论都仍然有效。</p>
+<table cellspacing="10" class="kindle-cn-tourism-double_image_with_notes-1">
+<tr>
+<td class="kindle-cn-tourism-double_image_with_notes-2" style="width:40%"><img alt="329-2" class="kindle-cn-tourism-double_image_with_notes-4" src="Image02552.jpg" />
+</td>
+<td class="kindle-cn-tourism-double_image_with_notes-2" style="width:60%"><img alt="329-3" class="kindle-cn-tourism-double_image_with_notes-4" src="Image02553.jpg" />
+</td>
+</tr>
+<tr>
+<td class="kindle-cn-tourism-double_image_with_notes-3">图22-28　真空管的低频等效电路</td>
+<td class="kindle-cn-tourism-double_image_with_notes-3">图22-29　晶体管的低频等效电路</td>
+</tr>
+</table>
+<p>与仅含有阻抗的那种电路不同，关于晶体管和真空管电路有一件令人注目的事情：其有效阻抗z<span class="math-sub">有效</span>
+ 的实部可以变成负值。我们已明白z的实部代表能量损耗，可是晶体管和真空管的重要特性却是它们对电路<span class="kindle-cn-specialtext-qx">供应</span>
+ 能量（当然，它们并非在“创造”能量，不过从动力供应的直流电路中取得能量并将其转变成交变能量）。因此，就可能有一种具备负电阻的电路。这样的一个电路具有如下性质，即如果你把它接至一个具有正实部的阻抗，也就是具有正的电阻，并将材料布置成使该两实部之和恰恰等于零，则在该联合电路中将不会有能量耗散。如果没有能量损耗，则任何一个一经启动了的交变电压便将永远维持下去。这就是能够在任何想要的频率上用作交变电压源的振荡器或信号发生器的运行过程背后的基本概念。</p>
+<hr/>
+<p class="kindle-cn-kai">
+<a id="note_1" href="text00212.html#noteBack_1">[1]</a>
+ 有些人说，我们应该用“电感器”和“电容器”这种名称来称呼那些<span class="kindle-cn-specialtext-qx">东西</span>
+ ，而用“电感”和“电容”称呼它们的<span class="kindle-cn-specialtext-qx">性质</span>
+ （与“电阻器”和“电阻”相类似）。但我们宁愿采用你将会在实验室里听到的那些名称。大多数人对于一个具体线圈及其自感L两者都仍说成是“电感”。至于“电容器”（capacitor）一词似乎已很吃香——尽管仍相当经常地听到另外一个“电容器”名称（condenser）——而大多数人仍比较喜欢用“电容”（capacity），甚于用“电容”（capacitance）。</p>
+<p class="kindle-cn-kai">
+<a id="note_2" href="text00219.html#noteBack_2">[2]</a>
+ 图上所示的这个等效电路只有在低频时才正确。对于高频来说，该等效电路变得复杂得多，而且将包括各种所谓“寄生”电容和电感。</p>
+</body>
+</html>

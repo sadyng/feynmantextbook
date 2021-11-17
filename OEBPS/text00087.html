@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head><title></title>
+<link href="flow0004.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h2 class="kindle-cn-heading2">§3-2　矢量场的通量</h2>
+<p>在讨论下一个积分定理——关于散度方面的定理——之前，我们想学习一下物理意义较明显的关于热流的某种概念。我们曾定义过矢量h，它代表单位时间内通过单位面积的热量。假设在一块材料内部，有一个包围着体积V的某闭合曲面S（图3-3）。我们希望求出从这个<span class="kindle-cn-specialtext-qx">体积</span>
+ 里流出去的热量有多少。当然，我们可以通过计算流出<span class="kindle-cn-specialtext-qx">表面</span>
+ S的总热量来求得它。</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="048-2" class="kindle-cn-bodycontent-image-alone60-withnote" src="Image01655.jpg" />
+</div>
+<p class="kindle-cn-picture-txt-withmanycharactors">图3-3　闭合面S规定了体积V。单位矢量n是面积元da的外法线，而h则是该面积元处的热流矢量</p>
+<p>我们用da记为一个面积元的面积，这符号代表一个二维微分，例如，若该面积碰巧处在xy面上，则应有</p>
+<p class="kindle-cn-para-center">da=dxdy.</p>
+<p class="kindle-cn-para-no-indent">由于以后还将对体积进行积分，所以，为方便起见，考虑一个小立方体的微分体积。这样，当我们写出dV时，指的就是</p>
+<p class="kindle-cn-para-center">dV=dxdydz.</p>
+<p>有些人不喜欢写成da，而喜欢写成d<span class="math-super">2</span>
+ a以提醒人们注意那是一个二级量。他们同样不想用dV而要用d<span class="math-super">3</span>
+ V。我们则将采用那种较简单的符号，并假定你确能记住面积具有二维，而体积具有三维。</p>
+<p>通过面积元da流出的热量等于该面积乘以垂直于da的h分量。我们已把n定义为与表面成直角而指向外的单位矢量（图3-3）。希望得到的h分量为：</p>
+<p class="kindle-cn-para-center">h<span class="math-sub">n</span>
+ =h·n.　（3.9）</p>
+<p class="kindle-cn-para-no-indent">于是，通过da流出的热量为</p>
+<p class="kindle-cn-para-center">h·nda.　（3.10）</p>
+<p class="kindle-cn-para-no-indent">为了得到通过任意表面的总热量，我们对来自所有面积元的贡献求和。换句话说，将在整个表面对式（3.10）进行积分：</p>
+<p class="kindle-cn-para-center">通过S向外流出的总热量=∫<span class="math-sub">S</span>
+ h·nda.　（3.11）</p>
+<p>我们将把这个面积分称为“h通过该表面的通量”。通量这个词的原有意义是流量，因而面积分恰好意味着h通过该表面的流量。可以认为：h是热量流动的“流密度”，而它的面积分则是指向表面外的总热量流，也就是单位时间流出的热能（每秒的焦耳数）。</p>
+<p>我们希望把这一概念推广到矢量并不代表任何流动的东西那种情况。例如，它或许是电场。如果我们乐意的话，肯定也能对电场的法向分量在一个面上积分。尽管这并不是什么东西的流动，但我们仍称之为“通量”。我们说，</p>
+<p class="kindle-cn-para-center">E通过曲面S的通量=∫<span class="math-sub">S</span>
+ E·nda.　（3.12）</p>
+<p class="kindle-cn-para-no-indent">这就把“通量”这一词推广到指一矢量的“法向分量的面积分”了。即使所考虑的表面不是闭合的情况，我们也将使用同样的定义，就像这里讨论闭合面那样。</p>
+<p>回到热流的特殊情况，让我们以<span class="kindle-cn-specialtext-qx">热量守恒</span>
+ 的情况为例。例如，设想有某件材料初始加热以后就不再有热量产生或吸收。于是，如有净热量从闭合表面流出去，则该体积内热的含量就一定会减少。所以，在这种情况下热量应该守恒，我们说：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="049-1" class="kindle-cn-bodycontent-image-alone80" src="Image01656.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">式中Q是表面S内的热量。从S面出来的热通量等于S面内总热量Q对于时间变化率的负值。这种解释是可行的，因为我们正在谈论热流，而且已假定热量是守恒的。当然，假如那时热量正在产生，则我们也许就不能谈论该体积内的总热量了。</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="049-2" class="kindle-cn-bodycontent-image-alone60-withnote" src="Image01657.jpg" />
+</div>
+<p class="kindle-cn-picture-txt-withmanycharactors">图3-4　包围在S面内的体积V被一“截面”S<span class="math-sub">ab</span>
+ 分成两半。现在就有了包围在S<span class="math-sub">1</span>
+ =S<span class="math-sub">a</span>
+ +S<span class="math-sub">ab</span>
+ 面内的体积V<span class="math-sub">1</span>
+ 和包围在S<span class="math-sub">2</span>
+ =S<span class="math-sub">b</span>
+ +S<span class="math-sub">ab</span>
+ 面内的体积V<span class="math-sub">2</span>
+</p>
+<p>现在我们要指出一个关于任意矢量的通量的有意义的事实。如果愿意，你可以认为这矢量是热流矢量，但我们所要讲的内容对任一矢量场C都将是正确的。设想有一包围体积V的闭合曲面S，现用如图3-4所示的某种“截面”将体积分成两部分，我们就有两个闭合曲面和体积。体积V<span class="math-sub">1</span>
+ 被曲面S<span class="math-sub">1</span>
+ 包围，由原来表面的一部分S<span class="math-sub">a</span>
+ 和截面S<span class="math-sub">ab</span>
+ 构成。体积V<span class="math-sub">2</span>
+ 被曲面S<span class="math-sub">2</span>
+ 包围，由原来表面的其余部分S<span class="math-sub">b</span>
+ 再加上截面S<span class="math-sub">ab</span>
+ 构成。现在考虑下述问题：假设要计算通过曲面S<span class="math-sub">1</span>
+ 的向外通量，再加上通过曲面S<span class="math-sub">2</span>
+ 的向外通量。这个总和是否会等于通过开始时那个完整表面的通量呢？答案是肯定的。通过S<span class="math-sub">1</span>
+ 和S<span class="math-sub">2</span>
+ 所共有的S<span class="math-sub">ab</span>
+ 面部分的通量恰好互相抵消。关于从V<span class="math-sub">1</span>
+ 出来的矢量C的通量，我们可以写成：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="050-1" class="kindle-cn-bodycontent-image-alone80" src="Image01658.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">而从V<span class="math-sub">2</span>
+ 流出的通量，则是：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="050-2" class="kindle-cn-bodycontent-image-alone80" src="Image01659.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">注意！在这两个积分中，n<span class="math-sub">1</span>
+ 表示S<span class="math-sub">ab</span>
+ 属于S<span class="math-sub">1</span>
+ 时的外法线，而n<span class="math-sub">2</span>
+ 则表示S<span class="math-sub">ab</span>
+ 属于S<span class="math-sub">2</span>
+ 时的外法线，分别如图3-4所示。显然，n<span class="math-sub">1</span>
+ =-n<span class="math-sub">2</span>
+ ，因而</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="050-3" class="kindle-cn-bodycontent-image-alone80" src="Image01660.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">现在若把式（3.14）和（3.15）相加，则通过S<span class="math-sub">1</span>
+ 和S<span class="math-sub">2</span>
+ 两通量之和恰好等于那两个积分之和，而把这两个积分合在一起，就给出通过原来的曲面S=S<span class="math-sub">a</span>
+ +S<span class="math-sub">b</span>
+ 的通量。</p>
+<p>我们看到，通过整个外表面S的通量，总可以认为是该体积分成两部分后所得到的通量之和。还可以照样再分割下去——例如把V<span class="math-sub">1</span>
+ 再分成两块，你会看到同样的论证仍然适用。因此，不管将原来体积按<span class="kindle-cn-specialtext-qx">何种</span>
+ 方式分割，普遍正确的结果应该是：由原来积分表示的、通过外表面的通量，等于出自内部所有各小块的通量之和。</p>
+</body>
+</html>

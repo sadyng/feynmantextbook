@@ -1,0 +1,785 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head><link href="flow0006.css" rel="stylesheet" type="text/css" />
+<title>第8章　哈密顿矩阵</title>
+</head>
+<body><div></div>
+<h1 class="kindle-cn-heading-2">第8章　哈密顿矩阵</h1>
+<h2 class="kindle-cn-heading2"><a id="sec001"></a>
+ §8-1　振幅与矢量</h2>
+<p>在开始讲述本章的主题前，我们想来描述一些在量子力学文献中用得很多的数学概念。了解它们会使你们阅读这方面的其他书籍或论文时更为方便。第一个概念是：量子力学的方程与两个矢量的标积方程数学上十分相似。你们记得，如果<span class="kindle-cn-italic">χ</span>
+ 和<span class="kindle-cn-italic">φ</span>
+ 是两个状态，那么从<span class="kindle-cn-italic">φ</span>
+ 态开始而终止于<span class="kindle-cn-italic">χ</span>
+ 态的振幅，可以写成由<span class="kindle-cn-italic">φ</span>
+ 进入一组完全的基础态中各个基础态，再由各基础态进入<span class="kindle-cn-italic">χ</span>
+ 态之振幅，最后对这一组全部基础态求和：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04062.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">我们曾用施特恩-格拉赫装置解释这点，但要提醒你们注意：这里并不需要有这种装置。式（8.1）是数学定律，不论我们是否装上过滤设备，它总是正确的——不用老是想象有仪器在那儿。我们可以简单地把它看作振幅〈<span class="kindle-cn-italic">χ</span>
+ |<span class="kindle-cn-italic">φ</span>
+ 〉的一个公式。</p>
+<p>我们把式（8.1）与两个矢量<span class="kindle-cn-bold-italic">B</span>
+ 及<span class="kindle-cn-bold-italic">A</span>
+ 的点积公式作个比较。如果<span class="kindle-cn-bold-italic">B</span>
+ 与<span class="kindle-cn-bold-italic">A</span>
+ 是三维空间中的普通矢量，我们可以将点积写成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04063.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这里符号<img alt="" class="kindle-cn-inline-image" src="Image04064.jpg" />
+ 表示沿<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">y</span>
+ 及<span class="kindle-cn-italic">z</span>
+ 方向的3个单位矢量。于是<img alt="" class="kindle-cn-inline-image" src="Image04065.jpg" />
+ 就是通常所说的<img alt="" class="kindle-cn-inline-image" src="Image04066.jpg" />
+ ；<img alt="" class="kindle-cn-inline-image" src="Image04067.jpg" />
+ 则是通常说的<img alt="" class="kindle-cn-inline-image" src="Image04068.jpg" />
+ ；等等。这样，式（8.2）就等同于</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04069.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">这就是<span class="kindle-cn-bold-italic">B</span>
+ •<span class="kindle-cn-bold-italic">A</span>
+ 的点积。</p>
+<p>比较式（8.1）与（8.2），可以看出下述类似点：态<span class="kindle-cn-italic">χ</span>
+ 与<span class="kindle-cn-italic">φ</span>
+ 对应于两个矢量<span class="kindle-cn-bold-italic">B</span>
+ 与<span class="kindle-cn-bold-italic">A</span>
+ ，诸基础态<span class="kindle-cn-italic">i</span>
+ 对应于一些特定的矢量<img alt="" class="kindle-cn-inline-image" src="Image04070.jpg" />
+ ，我们用这些矢量来表示所有其他矢量。任何矢量都可表示成3个“基矢”<img alt="" class="kindle-cn-inline-image" src="Image04071.jpg" />
+ 的线性组合。而且，如果你知道该组合中每个“基矢”的系数——矢量的3个分量——你就知道了这个矢量的一切。类似地，任何量子力学状态可以用处在各个基础态的振幅〈<span class="kindle-cn-italic">i</span>
+ |<span class="kindle-cn-italic">φ</span>
+ 〉完全地表示出来，如果知道了这些系数，也就知道了有关此态的一切。因为存在着这样切近的类比，我们也常常将“态”称为“态矢量”。</p>
+<p>由于基矢<img alt="" class="kindle-cn-inline-image" src="Image04072.jpg" />
+ 都互相垂直，就有关系式</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04073.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这与各基础态<span class="kindle-cn-italic">i</span>
+ 之间的关系式（5.25）相对应：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04074.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">现在你们可以明白，为什么人们说基础态<span class="kindle-cn-italic">i</span>
+ 全都“正交”。</p>
+<p>在式（8.1）与点积之间有个小小的差别。我们知道</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04075.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">但在矢量代数中，</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04076.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">由于在量子力学中使用了复数，我们必须始终保持各项的先后次序，而在点积中，次序是无关紧要的。</p>
+<p>现在来考虑下列矢量等式：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04077.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这种写法有点与众不同，但它是正确的。它的含义与下式相同：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04078.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">不过请注意，式（8.6）涉及到一个<span class="kindle-cn-specialtext-qx">不同于</span>
+ 点积的量。点积只是数，而式（8.6）是<span class="kindle-cn-specialtext-qx">矢量</span>
+ 方程。矢量分析的一大诀窍就是从方程中抽象出<span class="kindle-cn-specialtext-qx">矢量</span>
+ 概念本身。或许有人也同样想从量子力学公式（8.1）中抽象出一个类似于“矢量”的东西来——这的确可以。我们将式（8.1）的两边移去〈<span class="kindle-cn-italic">χ</span>
+ |，从而写出如下方程（别怕，这只是个记法，不一会儿你们就会弄清符号的含义）：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04079.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">人们将括号〈<span class="kindle-cn-italic">χ</span>
+ |<span class="kindle-cn-italic">φ</span>
+ 〉分为两半。后半个括号|<span class="kindle-cn-italic">φ</span>
+ 〉常称为<span class="kindle-cn-specialtext-qx">右矢</span>
+ （ket），前半个括号〈<span class="kindle-cn-italic">χ</span>
+ |称为<span class="kindle-cn-specialtext-qx">左矢</span>
+ （bra）（放在一起，就构成“左-右”（“bra-ket”）——这是狄拉克提出的符号），半括号〈<span class="kindle-cn-italic">χ</span>
+ |及|<span class="kindle-cn-italic">φ</span>
+ 〉也称为<span class="kindle-cn-specialtext-qx">态矢量</span>
+ 。无论如何，它们<span class="kindle-cn-specialtext-qx">不是数</span>
+ ，而一般来说，我们希望计算所得的结果为数，所以这些“未完成”的量只是计算中的过渡步骤。</p>
+<p>实际上，迄今我们的所有结果都用数表示。我们是怎样设法避开矢量的呢？有意思的是，即使在通常的矢量代数中，我们也能够使所有的方程只包括数。譬如，我们总可以将矢量方程</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04080.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">改写为</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04081.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">于是我们就有了一个对<span class="kindle-cn-specialtext-qx">任何</span>
+ 矢量<span class="kindle-cn-bold-italic">C</span>
+ 都成立的点积方程。但是，如果对一切<span class="kindle-cn-bold-italic">C</span>
+ 都成立，那么写出<span class="kindle-cn-bold-italic">C</span>
+ 来就没有什么意思了！</p>
+<p>现在来看看式（8.1）。它是对<span class="kindle-cn-specialtext-qx">任何</span>
+ <span class="kindle-cn-italic">χ</span>
+ 都成立的方程。所以为简化书写起见，我们正可以<span class="kindle-cn-specialtext-qx">拿走</span>
+ <span class="kindle-cn-italic">χ</span>
+ 而将它改写为式（8.8）。该式与式（8.1）具有同样多的信息，只要我们理解到，它总是要在两边“左乘”某个〈<span class="kindle-cn-italic">χ</span>
+ |（这只不过是重新拼上括号而已）才得以“完成”。所以式（8.8）的意义不多不少正好与式（8.1）相同。当你想要数字时，就把合适的〈<span class="kindle-cn-italic">χ</span>
+ |放进去。</p>
+<p>或许你已对式（8.8）中的<span class="kindle-cn-italic">φ</span>
+ 感到疑惑。既然这式对<span class="kindle-cn-specialtext-qx">任何</span>
+ <span class="kindle-cn-italic">φ</span>
+ 成立，为什么我们还要保留<span class="kindle-cn-specialtext-qx">它</span>
+ ？的确，狄拉克提议，<span class="kindle-cn-italic">φ</span>
+ 也一样可以抽掉，于是我们就只有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04082.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这就是量子力学的伟大定律！（在矢量分析中没有与这类似的公式。）它表示如果在方程式等号两边从左、右两侧各<span class="kindle-cn-specialtext-qx">放进</span>
+ 任何两个态<span class="kindle-cn-italic">χ</span>
+ 和<span class="kindle-cn-italic">φ</span>
+ ，就<span class="kindle-cn-specialtext-qx">回到</span>
+ 式（8.1）。这种表达实际上并非很有用处，但它很巧妙地提示了方程对任何两个态都成立。</p>
+<h2 class="kindle-cn-heading2"><a id="sec002"></a>
+ §8-2　态矢量的分解</h2>
+<p>让我们再来看一下式（8.8）；可以用下述方式来考虑它。任何态矢量|<span class="kindle-cn-italic">φ</span>
+ 〉可以表示为一组具有适当系数的基“矢”的线性组合——或者，只要你喜欢，也可表示为一些比例恰当的“单位矢量”的叠加。为了强调系数〈<span class="kindle-cn-italic">i</span>
+ |<span class="kindle-cn-italic">φ</span>
+ 〉只是普通的（复）数，我们可以假设</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04083.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">那么式（8.8）就等同于</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04084.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">我们可以对任何别的态矢量，例如|<span class="kindle-cn-italic">χ</span>
+ 〉，写下类似的关系式，当然，其中的系数不同——譬如说为<img alt="" class="kindle-cn-inline-image" src="Image04085.jpg" />
+ 。于是就有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04086.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这里<img alt="" class="kindle-cn-inline-image" src="Image04087.jpg" />
+ 就是振幅〈<span class="kindle-cn-italic">i</span>
+ |<span class="kindle-cn-italic">χ</span>
+ 〉。</p>
+<p>假定我们一开始已从式（8.1）抽去<span class="kindle-cn-italic">φ</span>
+ ，那就有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04088.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">我们记得〈<span class="kindle-cn-italic">χ</span>
+ |<span class="kindle-cn-italic">i</span>
+ 〉＝〈<span class="kindle-cn-italic">i</span>
+ |<span class="kindle-cn-italic">χ</span>
+ 〉<span class="math-super">*</span>
+ ，故可将上式写为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04089.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">有趣的是，只要将式（8.13）与式（8.10）<span class="kindle-cn-specialtext-qx">相乘</span>
+ ，就能回到〈<span class="kindle-cn-italic">χ</span>
+ |<span class="kindle-cn-italic">φ</span>
+ 〉。在相乘时，必须注意求和指标，因为在两式中它们是完全不同的。让我们先把式（8.13）重新写为</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image04090.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">这当然不会改变什么。然后将它与式（8.10）相乘，就有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04091.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">不过，记住<img alt="" class="kindle-cn-inline-image" src="Image04092.jpg" />
+ ，因而在求和中只留下<span class="kindle-cn-italic">j</span>
+ ＝<span class="kindle-cn-italic">i</span>
+ 的项。于是得到</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04093.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">当然，这里<img alt="" class="kindle-cn-inline-image" src="Image04094.jpg" />
+ ，而<img alt="" class="kindle-cn-inline-image" src="Image04095.jpg" />
+ 。由此我们又一次看到与点积</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image04096.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">非常相似。唯一的差别在于取了<img alt="" class="kindle-cn-inline-image" src="Image04097.jpg" />
+ 的复数共轭。这样式（8.15）就说明如果态矢量〈<span class="kindle-cn-italic">χ</span>
+ |及|<span class="kindle-cn-italic">φ</span>
+ 〉在基矢〈<span class="kindle-cn-italic">i</span>
+ |或|<span class="kindle-cn-italic">i</span>
+ 〉上展开，那么由<span class="kindle-cn-italic">φ</span>
+ 到<span class="kindle-cn-italic">χ</span>
+ 的振幅就可由式（8.15）的那种类型的点积得到。当然，这个表式只是用不同符号写的式（8.1）罢了。我们就这样为了习惯新的记号而兜了一个圈子。</p>
+<p>或许我们应当再一次强调，三维空间的矢量是用<span class="kindle-cn-specialtext-qx">3个</span>
+ 相互正交的单位矢量来描写的，而量子力学状态的基矢|<span class="kindle-cn-italic">i</span>
+ 〉则必须遍布在适用于任何特定问题的完整的集合内。按具体情况，基础态可以有两个、三个、五个或无限多个。</p>
+<p>我们也曾谈到当粒子通过一个仪器时发生的情况。假如让粒子从某个定态<span class="kindle-cn-italic">φ</span>
+ 开始，通过一台仪器，然后来测量它们是否处在<span class="kindle-cn-italic">χ</span>
+ 态，其结果可由以下振幅来表示：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04098.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">在矢量代数中没有与这个符号相近的类似符号。（它更接近于张量代数，但这种类比没有特别的用处。）由第5章式（5.32）可知，我们可将式（8.16）写为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04099.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这正是两次使用基本法则式（8.9）的一个例子。</p>
+<p>如果在<span class="kindle-cn-italic">A</span>
+ 后面再放进另一台仪器<span class="kindle-cn-italic">B</span>
+ ，则有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04100.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这又是直接由狄拉克记号方法式（8.9）得到的——只要记得我们总可以在B与A之间划一个竖线（|），它正犹如因子1。</p>
+<p>顺便提一下，我们可以用另一种方法理解式（8.17）。设想处在<span class="kindle-cn-italic">φ</span>
+ 态的粒子进入仪器<span class="kindle-cn-italic">A</span>
+ ，而离开时则处在<span class="kindle-cn-italic">ψ</span>
+ （“psi”）态。换句话说，我们可以向自己提出这样的问题：能否找到这样的一个<span class="kindle-cn-italic">ψ</span>
+ 态，使得从<span class="kindle-cn-italic">ψ</span>
+ 态到<span class="kindle-cn-italic">χ</span>
+ 态的振幅在任何时刻和任何地点都恒等于振幅〈<span class="kindle-cn-italic">χ</span>
+ |<span class="kindle-cn-italic">A</span>
+ |<span class="kindle-cn-italic">φ</span>
+ 〉？答案是肯定的。我们想用下式代替式（8.17）：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04101.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">显然，只要</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04102.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">就可以从它确定<span class="kindle-cn-italic">ψ</span>
+ 。但你们会说：“这没有确定<span class="kindle-cn-italic">ψ</span>
+ ，只确定〈<span class="kindle-cn-italic">i</span>
+ |<span class="kindle-cn-italic">ψ</span>
+ 〉。”然而，〈<span class="kindle-cn-italic">i</span>
+ |<span class="kindle-cn-italic">ψ</span>
+ 〉<span class="kindle-cn-specialtext-qx">的确</span>
+ 确定了<span class="kindle-cn-italic">ψ</span>
+ 。因为，如果你已知道<span class="kindle-cn-italic">ψ</span>
+ 与各个基础态<span class="kindle-cn-italic">i</span>
+ 相联系的所有系数的话，<span class="kindle-cn-italic">ψ</span>
+ 就唯一地被定义了。事实上，可以利用我们的记法将式（8.20）的最后一项写成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04103.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这么一来，由于上式对所有<span class="kindle-cn-italic">i</span>
+ 成立，我们就可简写为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04104.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">于是我们可以说：“<span class="kindle-cn-italic">ψ</span>
+ 态就是从<span class="kindle-cn-italic">φ</span>
+ 态开始，通过仪器<span class="kindle-cn-italic">A</span>
+ 后所得到的态。”</p>
+<p>再举最后一个应用这一诀窍的例子。我们还是从式（8.17）出发。既然它对任何<span class="kindle-cn-italic">χ</span>
+ 与<span class="kindle-cn-italic">φ</span>
+ 成立，我们可以将两者都扔掉！于是可得<a id="ch1-back" href="text00368.html#ch1">
+<sup>(1)</sup>
+</a>
+</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04105.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">它表示什么意思呢？它的含义和把<span class="kindle-cn-italic">φ</span>
+ 与<span class="kindle-cn-italic">χ</span>
+ 代回去所得到的一样不多不少。写成式（8.23）时，它是个“开放”的未完成的方程。如果将它“右乘”|<span class="kindle-cn-italic">φ</span>
+ 〉，就变为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04106.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这正好回到式（8.22）。事实上，我们正可从式（8.22）略去对<span class="kindle-cn-italic">j</span>
+ 求和而写成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04107.jpg" />
+</div>
+<p>符号<span class="kindle-cn-italic">A</span>
+ 既不是振幅，也不是矢量，它是一种称为<span class="kindle-cn-specialtext-qx">算符</span>
+ 的新东西，是一种“作用在”一个态上以产生一个新态的东西——式（8.25）就表示|<span class="kindle-cn-italic">ψ</span>
+ 〉是<span class="kindle-cn-italic">A</span>
+ 作用到|<span class="kindle-cn-italic">φ</span>
+ 〉上所得到的结果。这又是个开放方程，直到将某个左矢如〈<span class="kindle-cn-italic">χ</span>
+ |乘之才得以完成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04108.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">当然，如果利用任一组基矢给出振幅矩阵〈<span class="kindle-cn-italic">i</span>
+ |<span class="kindle-cn-italic">A</span>
+ |<span class="kindle-cn-italic">j</span>
+ 〉——也可写为<img alt="" class="kindle-cn-inline-image" src="Image04109.jpg" />
+ ——那么就完全描写出算符<span class="kindle-cn-italic">A</span>
+ （的特性）了。</p>
+<p>对这一新的数学记法，我们实际上没有加入任何新东西。之所以要面面俱到地讨论这一记号方法，是要把各种方程的书写方式告诉你们，因为你们会在许多书上发现以不完全的形式书写的方程，而在遇到它们时你没有理由对之束手无策。如果你愿意，总可以加入一些略去的部分使方程成为表示数量间关系的形式，这样看来更熟悉些。</p>
+<p>正如你们将看到的，“左矢”与“右矢”是一种十分方便的记法。首先，从现在开始我们可以用态矢量来表示一个状态。当我们想要表述一个具有确定动量<span class="kindle-cn-bold-italic">p</span>
+ 的状态时，就可说：“状态|<span class="kindle-cn-bold-italic">p</span>
+ 〉。”我们也可说某个任意态|<span class="kindle-cn-italic">ψ</span>
+ 〉。为前后一致起见，我们将总是用右矢（记为|<span class="kindle-cn-italic">ψ</span>
+ 〉）来表示一个态。（当然，这是个随意的选择，我们同样可以选用左矢〈<span class="kindle-cn-italic">ψ</span>
+ |表示态。）</p>
+<h2 class="kindle-cn-heading2"><a id="sec003"></a>
+ §8-3　世界的基础态是什么？</h2>
+<p>我们已经发现世界上的任何状态可以用基础态的叠加——具有适当系数的线性组合——表示出来。你们可能首先会问，这些基础态是<span class="kindle-cn-specialtext-qx">什么</span>
+ ？这里存在着许多不同的可能性，例如，你们可以将自旋投影到<span class="kindle-cn-italic">z</span>
+ 方向或别的某个方向上。存在着许许多多不同的<span class="kindle-cn-specialtext-qx">表象</span>
+ ，这跟人们可以用不同的<span class="kindle-cn-specialtext-qx">坐标系</span>
+ 来表示通常的矢量相类似。其次，你们要问用<span class="kindle-cn-specialtext-qx">哪些</span>
+ 系数？这取决于物理状况。不同的系数集合对应于不同的物理条件。重要的是要知道你在其中研究的“空间”是什么，换句话说，基础态的物理意义是什么。所以，一般来说，你必须知道的第一件事情是基础态是什么样子的，然后才能够知道如何用这些基础态来描写一个状态。</p>
+<p>我们想在这里根据现在流行的物理观念，略微提前谈一点自然界的一般量子力学描述是怎样的。首先，人们得选定一种基础态的特定表象——不同的表象总是可能的。例如，对自旋1/2粒子，可以利用相对于<span class="kindle-cn-italic">z</span>
+ 轴的正和负两种态。但<span class="kindle-cn-italic">z</span>
+ 轴本身并无任何特殊之处——你可随意取任何别的轴。然而为前后一贯起见我们总是采用<span class="kindle-cn-italic">z</span>
+ 轴。假定我们从一个电子的情况开始。除了电子自旋的两种可能性（沿着<span class="kindle-cn-italic">z</span>
+ 轴“朝上”和“朝下”）外，还有电子的动量。我们选取一组基础态，每个基础态对应于动量的一个值。那么，假如电子没有确定的动量怎么办呢？这没有关系，我们说的只是<span class="kindle-cn-specialtext-qx">基础</span>
+ 态是什么。如果电子没有确定的动量，它总有取某一个动量的一定振幅，取另一个动量有另一振幅等等。而如果电子并非一定朝上自旋，它总有一定振幅以这个动量朝上自旋，有另一个振幅以那个动量朝下自旋，等等。<span class="kindle-cn-specialtext-qx">就我们现在所知</span>
+ ，对一个电子的完全描述，只需要用<span class="kindle-cn-specialtext-qx">动量</span>
+ 和<span class="kindle-cn-specialtext-qx">自旋</span>
+ 来描写的基础态就可以了。所以对单个电子而言，一组令人满意的基础态|<span class="kindle-cn-italic">i</span>
+ 〉就是指动量的不同数值，以及自旋究竟朝上还是朝下的振幅的不同组合——即系数<span class="kindle-cn-italic">C</span>
+ 的不同组合描写不同的状况。对任何特定电子的行为，可以这样来描写：它的自旋朝上或朝下的振幅是多少，对所有可能的动量值而言，它具有某个动量值或另一个动量值的振幅又是多少。于是你们可以看到单个电子的完全量子力学描述包括些什么内容。</p>
+<p>对多于一个电子的系统又如何呢？那时基础态变得较为复杂。假设有两个电子，首先，自旋有4种可能状态，即：两电子自旋均朝上，第一个朝下而第二个朝上，第一个朝上而第二个朝下，或两者都朝下。另外我们也必须标出第一个电子具有动量<img alt="" class="kindle-cn-inline-image" src="Image04110.jpg" />
+ ，第二个电子具有动量<img alt="" class="kindle-cn-inline-image" src="Image04111.jpg" />
+ 。对两个电子而言的基础态需要指明两个动量和两个自旋的性质。对于7个电子，我们则必须指明7个动量和7个自旋的性质。</p>
+<p>如果有一个质子和一个电子，我们必须标出质子的自旋方向及其动量，以及电子的自旋方向及其动量。至少这是近似正确的。<span class="kindle-cn-specialtext-qx">我们并不真正知道</span>
+ 这个世界的正确表象是什么。如果从一开始就能够指明电子自旋及其动量，对质子也有同样的参数，你就会有一组基础态。能够这样那就很好。但对质子的“内部”怎么办呢？让我们这样来看这个问题。在氢原子中有一个质子和一个电子，我们有许多不同的基础态来描述它——质子及电子朝上和朝下的自旋，质子和电子的种种可能的动量。于是就存在着振幅<img alt="" class="kindle-cn-inline-image" src="Image04112.jpg" />
+ 的不同组合，它们合在一起描写处在不同状态中的氢原子的性质。但是，假定我们将整个氢原子看作一个“粒子”，如果我们不知道氢原子由一个质子及一个电子组成，也许会一开始就说：“噢，我知道基础态是什么——它们对应于氢原子的特定的动量。”错了，因为氢原子具有内部结构，于是，它可以具有不同内能的各种状态，从而，描写真实的性质就需要更多的细节。</p>
+<p>问题是：质子是否有内部结构？我们是否一定要通过给出质子、介子和奇异粒子的所有可能状态来描写质子？我们不知道。而即使我们假设电子是简单的，我们对它必须要讲的只是它的动量和自旋，但可能明天我们发现了电子也有内部齿轮和轮子。那就意味着我们的表示是不完全的，或错的，或者是近似的——这跟只用动量来描写氢原子的表示是不完全一样的，因为那种表示忽略了氢原子内部有可能成为激发态这样的事实。假如电子内部也可能激发而转变为其他某个东西，譬如说，一个<span class="kindle-cn-italic">μ</span>
+ 子，那么对它的描写不仅要给出新粒子的状态，而且大概还要利用某些更复杂的内部机构来描写它。<span class="kindle-cn-specialtext-qx">今天在基本粒子研究中的主要问题</span>
+ ，就是要揭示什么是描述自然界的正确表象。在目前，我们<span class="kindle-cn-specialtext-qx">猜想</span>
+ ，对电子来说指明其动量与自旋就够了。我们也猜想存在着理想质子，还有它的一些<span class="kindle-cn-italic">π</span>
+ 介子，K介子，等等，而所有这些都得指明。共有几十种粒子——真是迷人！哪些<span class="kindle-cn-specialtext-qx">是</span>
+ 基本粒子，哪些<span class="kindle-cn-specialtext-qx">不是</span>
+ 基本粒子的问题——关于这些你们现在听得很多——就是要发现在世界的最终量子力学描述中最后的<span class="kindle-cn-specialtext-qx">表象</span>
+ 究竟是什么样的。电子的动量将来是否仍旧是描述自然的正确东西？甚至于整个问题到底是否该这么提！这个问题在任何科学研究中必然会一再被提出来。无论如何，我们看到了问题——如何去找到表象。我们不知道答案是什么，甚至还不知道我们是否提出了“正确”的问题，但如问题正确，我们必须首先要查明任一特定的粒子是否“基本的”粒子。<a id="ch2-back" href="text00368.html#ch2">
+<sup>(2)</sup>
+</a>
+</p>
+<p>在非相对论量子力学中——假定能量不太高，以致你们不会干扰奇异粒子等等的内部过程——你们可以不必考虑这些细节而做出一些相当好的工作来。你尽可以只说明电子和核的动量及自旋，就会一切顺利。在大多数化学反应及其他低能事件中，核内不发生什么变化，它们不受到激发。再者，如果一个氢原子缓慢运动并轻轻地与其他氢原子相撞——根本不会引起内部激发或辐射，或任何类似的复杂情况，它的内部运动始终是处于基态能量——你可以应用这样的近似，即将整个氢原子视为一整个客体或粒子，而不必担心它的内部<span class="kindle-cn-specialtext-qx">可能</span>
+ 发生某种变化。只要在碰撞中动能比10eV（使氢原子激发到另一种内部状态所需的能量）低得多，上述近似就是个颇好的近似。我们将经常作这种不包含内部运动可能性的近似，从而减少必须纳入基础态的细节的数目。当然，这一来就忽略了在某些高能情况下（通常）会出现的一些现象，但利用这种近似我们得以大大简化物理问题的分析。例如，我们可以讨论低能下两个氢原子的碰撞或任何化学过程而不必顾虑原子核也可能被激发这个事实。概而言之，当我们可以略去粒子的任何内部激发态的效应时，我们就可选择一组基础态，这些基础态就是具有确定动量以及角动量<span class="kindle-cn-italic">z</span>
+ 分量的状态。</p>
+<p>于是，描写自然界的一个问题就是找出基础态的一种适当的表象。但这只是开始。我们还要能够说出会“发生”什么。假如我们知道了某个时刻世界的“状态”，就想知道下一个时刻的状态。所以我们还须找到决定事物如何随时间而变的规律。现在我们就来论述量子力学框架中的第二部分——状态怎样随时间而变化。</p>
+<h2 class="kindle-cn-heading2"><a id="sec004"></a>
+ §8-4　状态怎样随时间而变</h2>
+<p>我们已经谈过如何表示让某个东西通过一个装置的情形。现在考虑一种方便而令人愉快的“装置”，它只是等候几分钟；就是说，先提供一个状态<span class="kindle-cn-italic">φ</span>
+ ，在你分析它之前，就只要让它待几分钟。或许你会让它待在某个特殊的电场或磁场中——它依赖于世界中的物理环境。总而言之，无论条件如何，你都让该物体从时间<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">1</span>
+ 待到时间<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">2</span>
+ 。假设它在<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">1</span>
+ 从第一个装置出来时处在状态<span class="kindle-cn-italic">φ</span>
+ ，然后它通过一台“装置”，但该“装置”只是把时间推延到<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">2</span>
+ 。在这段延迟过程中，可能发生着种种情况——有外力作用或其他把戏——于是就会发生某些事情。在时间推延的末了，在某个态<span class="kindle-cn-italic">χ</span>
+ 中找到这东西的振幅与没有延迟时所具有的振幅不再完全相同了。既然“等待”只是一种特别的“装置”，我们就可以使用与式（8.17）同样的表式给出振幅以描写所发生的事情。因为“等待”这种操作特别重要，我们将称之为<span class="kindle-cn-italic">U</span>
+ 而不称为<span class="kindle-cn-italic">A</span>
+ ，并标明起始和末了时刻<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">2</span>
+ ，将它记为<img alt="" class="kindle-cn-inline-image" src="Image04113.jpg" />
+ 。于是所求的振幅就是</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04114.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">像任何其他这样的振幅一样，可以用某一种或另一种基础态系统表示它而将上式写为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04115.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">于是<span class="kindle-cn-italic">U</span>
+ 就可由一组完整的振幅，即由以下矩阵完全描写：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04116.jpg" />
+</div>
+<p>顺便指出，矩阵<img alt="" class="kindle-cn-inline-image" src="Image04117.jpg" />
+ 提供了比所需的更多的细节。第一流的高能理论物理学家考虑下列一般性质的一些问题（因为这正是通常进行实验的方式）。他从一对粒子开始，譬如说从无穷远来到一起的两个质子。（在实验室中，通常一个粒子静止，而另一个来自某个加速器，就原子尺度而言加速器实际上在无穷远处。）两个粒子碰撞后，结果在某些方向上得到具有一定动量的许多粒子，譬如两个K介子，6个<span class="kindle-cn-italic">π</span>
+ 介子，及两个中子等等。出现这种情况的振幅有多大？这可用下面的数学公式来描写：用<span class="kindle-cn-italic">φ</span>
+ 态表示入射粒子的自旋与动量。<span class="kindle-cn-italic">χ</span>
+ 态则是待求的出射状态。例如，朝这个或那个方向运动的6个介子及各带着自己的自旋朝一定方向出射的两个中子的振幅有多大，等等。换句话说，<span class="kindle-cn-italic">χ</span>
+ 态将由给出最终产物的所有动量和自旋等等来表征。接着，理论物理学家的工作就是计算振幅式（8.27）。然而，他实际上只对<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">1</span>
+ 为－∞和<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">2</span>
+ 为＋∞的这种特殊情况感兴趣。（对过程的细节没有什么实验数据，有的只是关于入射粒子和出射粒子的数据。）当<img alt="" class="kindle-cn-inline-image" src="Image04118.jpg" />
+ 和<img alt="" class="kindle-cn-inline-image" src="Image04119.jpg" />
+ 时，<img alt="" class="kindle-cn-inline-image" src="Image04120.jpg" />
+ 的极限情况称为<span class="kindle-cn-italic">S</span>
+ ，于是他要知道的就是</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04121.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">或者，利用式（8.28），他要计算矩阵</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04122.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">上式称为<span class="kindle-cn-italic">S</span>
+ 矩阵。所以，如果你看到一个理论物理学家一面在地板上踱来踱去，一面说道：“我所要做的就是计算<span class="kindle-cn-italic">S</span>
+ 矩阵。”你就知道他所操心的是什么了。</p>
+<p>如何分析或阐明关于<span class="kindle-cn-italic">S</span>
+ 矩阵的定律是个有趣的问题。在高能相对论量子力学中，采用了一种做法，而在非相对论量子力学中则可采用另一种非常方便的做法。（这另一种做法也可用在相对论情况下，但那样做并不很方便。）这种方法是算出小的时间间隔的情况下——即<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">2</span>
+ 与<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">1</span>
+ 十分靠近时的<span class="kindle-cn-italic">U</span>
+ 矩阵。如果对于相继的时间间隔可以找到一系列这样的<span class="kindle-cn-italic">U</span>
+ 矩阵，我们就能够观察到情况如何随时间变化。你们马上会意识到这种做法对相对论的情况并不那么合适，因为你们大概不想去做那种对发生在不同地点的每一种事件是否“同时”都得逐一说明的工作吧。但我们不必担心这事——我们这里只打算考虑非相对论力学。</p>
+<p>假定我们考虑一个由时刻<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">1</span>
+ 推延到<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">3</span>
+ 的<span class="kindle-cn-italic">U</span>
+ 矩阵，而<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">3</span>
+ 大于<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">2</span>
+ 。换句话说，取三个相继时刻：<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">1</span>
+ 小于<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">2</span>
+ ，<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">2</span>
+ 小于<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">3</span>
+ 。然后我们断言从<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">1</span>
+ 到<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">3</span>
+ 的矩阵是从<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">1</span>
+ 推延到<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">2</span>
+ ，然后再从<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">2</span>
+ 推延到<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">3</span>
+ 的两个矩阵的连乘积。这正如<span class="kindle-cn-italic">B</span>
+ 和<span class="kindle-cn-italic">A</span>
+ 两个装置串联的情形一样。于是，根据§5-6的记法，可以写出</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04123.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">换言之，我们能够分析任何时间间隔，只要能够分析该时间间隔中的一系列短时间间隔。只需将所有小段连乘在一起就行，这就是非相对论量子力学的分析方法。</p>
+<p>于是，我们的问题就是弄清无穷小时间间隔下的矩阵<img alt="" class="kindle-cn-inline-image" src="Image04124.jpg" />
+ ，这里<img alt="" class="kindle-cn-inline-image" src="Image04125.jpg" />
+ 。我们自问：如果现在有个态<span class="kindle-cn-italic">φ</span>
+ ，那么在无穷小时间Δ<span class="kindle-cn-italic">t</span>
+ 后它变成什么样？让我们想一想怎么来写出它。称时刻<span class="kindle-cn-italic">t</span>
+ 的态为<img alt="" class="kindle-cn-inline-image" src="Image04126.jpg" />
+ （我们写出<span class="kindle-cn-italic">ψ</span>
+ 的时间依赖关系非常明确，就表明我们说明了时刻<span class="kindle-cn-italic">t</span>
+ 的状况）。现在我们要问，在很短的时间间隔Δ<span class="kindle-cn-italic">t</span>
+ 后情况如何呢？答案是</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04127.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">此式的含义与式（8.25）相同，就是说，在时刻（<span class="kindle-cn-italic">t</span>
+ ＋Δ<span class="kindle-cn-italic">t</span>
+ ）找到<span class="kindle-cn-italic">χ</span>
+ 态的振幅是</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04128.jpg" />
+</div>
+<p>由于我们尚不大擅长于这些抽象的东西，让我们把振幅投影到一个确定的表象中。如果将式（8.31）两边都乘上〈<span class="kindle-cn-italic">i</span>
+ |，就有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04129.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">我们也可将<img alt="" class="kindle-cn-inline-image" src="Image04130.jpg" />
+ 分解为基础态：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04131.jpg" />
+</div>
+<p>可以这样来理解式（8.34）：如果用<img alt="" class="kindle-cn-inline-image" src="Image04132.jpg" />
+ 表示时刻<span class="kindle-cn-italic">t</span>
+ 处在基础态<span class="kindle-cn-italic">i</span>
+ 的振幅，那我们就可把这个振幅（记住，这只是一个数！）看成随时间而变。每个<img alt="" class="kindle-cn-inline-image" src="Image04133.jpg" />
+ 成为<span class="kindle-cn-italic">t</span>
+ 的一个函数。而且我们对这振幅<span class="kindle-cn-specialtext-qx">怎样</span>
+ 随时间而变也有些了解。每一个（t＋Δ<span class="kindle-cn-italic">t</span>
+ ）时刻的振幅跟<span class="kindle-cn-italic">t</span>
+ 时刻的<span class="kindle-cn-specialtext-qx">所有其他</span>
+ 振幅与一组系数的乘积之和成比例。将<span class="kindle-cn-italic">U</span>
+ 矩阵表为<span class="kindle-cn-italic">U</span>
+ <span class="math-sub">ij</span>
+ ，意即</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04134.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">那就可将式（8.34）写成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04135.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这就是量子力学的动力学方程的样式。</p>
+<p>但是，除去一件事外我们对<span class="kindle-cn-italic">U<span class="math-sub">ij</span>
+</span>
+ 知道得还不多。我们知道当Δ<span class="kindle-cn-italic">t</span>
+ 趋于零时，不会发生任何变化——我们应该得到原有状态。所以，<span class="kindle-cn-italic">U<span class="math-sub">ii</span>
+</span>
+ →1；而对i≠j，<span class="kindle-cn-italic">U<span class="math-sub">ij</span>
+</span>
+ →0。换句话说，如Δ<span class="kindle-cn-italic">t</span>
+ →0，<span class="kindle-cn-italic">U<span class="math-sub">ij</span>
+</span>
+ →<span class="kindle-cn-italic">δ<span class="math-sub">ij</span>
+</span>
+ 。我们也可认为，对小的Δ<span class="kindle-cn-italic">t</span>
+ ，每个系数<span class="kindle-cn-italic">U<span class="math-sub">ij</span>
+</span>
+ 与<span class="kindle-cn-italic">δ<span class="math-sub">ij</span>
+</span>
+ 的差应当是个与Δ<span class="kindle-cn-italic">t</span>
+ 成比例的量，于是可以写出</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04136.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">然而，由于某些历史的与其他方面的原因，通常由系数<span class="kindle-cn-italic">K<span class="math-sub">ij</span>
+</span>
+ 中提出因子<img alt="" class="kindle-cn-inline-image" src="Image04137.jpg" />
+ <a id="ch3-back" href="text00368.html#ch3">
+<sup>(3)</sup>
+</a>
+ ，我们喜欢将式（8.36）写成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04138.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">当然，这与式（8.36）相同，如果你们愿意的话，它正好定义系数<img alt="" class="kindle-cn-inline-image" src="Image04139.jpg" />
+ 。<span class="kindle-cn-italic">H<span class="math-sub">ij</span>
+</span>
+ 项正是系数<img alt="" class="kindle-cn-inline-image" src="Image04140.jpg" />
+ 对<span class="kindle-cn-italic">t</span>
+ <span class="math-sub">2</span>
+ 的导数在<img alt="" class="kindle-cn-inline-image" src="Image04141.jpg" />
+ 时的值。</p>
+<p>将<span class="kindle-cn-italic">U</span>
+ 的这种形式用于式（8.35），我们有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04142.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">对<span class="kindle-cn-italic">δ<span class="math-sub">ij</span>
+</span>
+ 项求和，正好得<img alt="" class="kindle-cn-inline-image" src="Image04143.jpg" />
+ ，可将它移到方程式左边。再除以Δ<span class="kindle-cn-italic">t</span>
+ ，我们就看出是一个导数的式子</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04144.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">或</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04145.jpg" />
+</div>
+<p>你们记得，<img alt="" class="kindle-cn-inline-image" src="Image04146.jpg" />
+ 就是（时刻<span class="kindle-cn-italic">t</span>
+ ）在基础态中的一个<span class="kindle-cn-italic">i</span>
+ 找到状态<span class="kindle-cn-italic">ψ</span>
+ 的振幅〈<span class="kindle-cn-italic">i</span>
+ |<span class="kindle-cn-italic">ψ</span>
+ 〉。所以式（8.39）告诉我们每个系数〈<span class="kindle-cn-italic">i</span>
+ |<span class="kindle-cn-italic">ψ</span>
+ 〉怎样随时间变化。但这等于说式（8.39）告诉我们态<span class="kindle-cn-italic">ψ</span>
+ 如何随时间变化，因为我们就是用振幅〈<span class="kindle-cn-italic">i</span>
+ |<span class="kindle-cn-italic">ψ</span>
+ 〉来描写<span class="kindle-cn-italic">ψ</span>
+ 的。<span class="kindle-cn-italic">ψ</span>
+ 随时间的变化由矩阵<span class="kindle-cn-italic">H<span class="math-sub">ij</span>
+</span>
+ 来描写，<span class="kindle-cn-italic">H<span class="math-sub">ij</span>
+</span>
+ 当然必定包括能使系统发生变化而给予它的性质。<span class="kindle-cn-italic">H<span class="math-sub">ij</span>
+</span>
+ 包括作用的物理意义，而且一般说来，可能依赖于时间，如果我们知道了它，我们对系统随时间变化的行为就可以有完整的描述。所以式（8.39）就是世界的动力学的量子力学定律。</p>
+<p>（应指出，我们所取的总是一组固定的、不随时间变化的基础态。有人用的是会变化的基础态。这类似于在力学中使用转动坐标系，我们不想陷入这种复杂的情况。）</p>
+<h2 class="kindle-cn-heading2"><a id="sec005"></a>
+ §8-5　哈密顿矩阵</h2>
+<p>描述量子力学世界的思路是，我们需要选取一组基础态<span class="kindle-cn-italic">i</span>
+ ，并通过给出系数为<span class="kindle-cn-italic">H<span class="math-sub">ij</span>
+</span>
+ 的矩阵来写出物理定律。于是我们就有了一切——我们就可以回答关于会发生什么事情的任何问题。所以必须知道求出在任何物理条件下的<span class="kindle-cn-italic">H</span>
+ 的法则——这些物理条件是指磁场或电场，等等。这是最困难的部分。例如，对新的奇异粒子，我们根本不知道该用什么<span class="kindle-cn-italic">H<span class="math-sub">ij</span>
+</span>
+ 。换句话说，没有人知道整个世界的<span class="kindle-cn-specialtext-qx">完全</span>
+ 的<span class="kindle-cn-italic">H<span class="math-sub">ij</span>
+</span>
+ 。（部分困难是，当人们甚至不知道基础态是什么时，当然很难指望他会找到<span class="kindle-cn-italic">H<span class="math-sub">ij</span>
+</span>
+ ！）对非相对论性现象及某些其他的特殊情况，我们确已有了很好的近似。特别是，我们已经有了描写原子中电子运动所需要的方法——可以用于描写化学。但我们不知道对于全宇宙而言全部的正确的<span class="kindle-cn-italic">H</span>
+ 是什么。</p>
+<p>系数<span class="kindle-cn-italic">H<span class="math-sub">ij</span>
+</span>
+ 称为<span class="kindle-cn-specialtext-qx">哈密顿矩阵</span>
+ ，或简称为<span class="kindle-cn-specialtext-qx">哈密顿</span>
+ 。（活跃于19世纪30年代的哈密顿怎么会命名在一个量子力学矩阵上，有一段历史故事。）把它称为<span class="kindle-cn-specialtext-qx">能量矩阵</span>
+ 更恰当，其理由到我们应用它时就会明白。所以<span class="kindle-cn-specialtext-qx">问题</span>
+ 就是：找出你的哈密顿！</p>
+<p>哈密顿有一个可以直接了当地推得的性质，那就是</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04147.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">此性质来自于以下的条件：系统处在<span class="kindle-cn-specialtext-qx">某个</span>
+ 态的总概率不会改变。如果起初有一个粒子——一个物体或整个世界，那么随着时间的流逝你得到的仍然是它。在任何地方找到它的总概率是</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image04148.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">它必定不会随时间而变。如果这对任何初始状况<span class="kindle-cn-italic">φ</span>
+ 正确，那么式（8.40）也必定正确。</p>
+<p>作为第一个例子，我们取一个物理环境不随时间变化的情况，意思就是<span class="kindle-cn-specialtext-qx">外界</span>
+ 物理条件与时间无关，于是<span class="kindle-cn-italic">H</span>
+ 与时间无关。没有什么人将电磁铁通上电流或关掉。我们还取一个只要用一个基础态描写的系统。这是一种近似，对于静止氢原子或与之类似的体系所可以作的一种近似。于是式（8.39）就成为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04149.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">只有一个方程——就是这些！如果<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">11</span>
+ 是常数，这个微分方程很容易解得：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04150.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这就是具有确定能量<span class="kindle-cn-italic">E</span>
+ ＝<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">11</span>
+ 的状态与时间的关系。你们已看到为什么应该称<span class="kindle-cn-italic">H<span class="math-sub">ij</span>
+</span>
+ 为能量矩阵了。它不过是能量概念对于更复杂情况的推广。</p>
+<p>接着，为了再多理解一点有关方程的含义，我们来研究具有两个基础态的系统。这时式（8.39）成为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04151.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">如各个<span class="kindle-cn-italic">H</span>
+ 仍旧与时间无关，你们会很容易解出这个方程组。为提高兴趣，我们将这留给你们去尝试一下，后面我们将回过来解这个问题。的确，只要<span class="kindle-cn-italic">H</span>
+ 系数与时间无关，你们就能够在不知道<span class="kindle-cn-italic">H</span>
+ 的情况下解量子力学问题。</p>
+<h2 class="kindle-cn-heading2"><a id="sec006"></a>
+ §8-6　氨分子</h2>
+<p>现在我们要来向你们说明怎样使用量子力学的动力学方程去描写某个特定的物理系统。我们选取一个有趣而又简单的例子，在这个例子中通过对哈密顿作一些合理的猜测，我们可以求得某些重要的——并且是实用的——结果。我们打算考虑的是可用两个态描写的情况：氨分子。</p>
+<p>氨分子有1个氮原子和3个氢原子，氢原子都位于氮原子下面的一个平面上，于是这个分子成金字塔形，就如图8-1（a）中所示的那样。这个分子像任何其他分子一样有无穷多个状态。它可以绕任何可能的轴自转，可以朝任何方向运动，可以在内部发生振动，等等，等等。因此，它根本不是个双态系统。但我们要作个近似，即认为所有其他态都固定不变，因为它们并不包括在我们目前考虑的问题里。我们只考虑分子绕其对称轴的自转（如图所示），它的平动动量为零，并且它的振动尽可能地小。这就限定了所有的条件，只有一点除外：<span class="kindle-cn-specialtext-qx">对氮原子来说仍然存在着两种可能的位置</span>
+ ——氮原子可以在氢原子平面的一侧或另一侧，如图8-1（a）及（b）所示。所以我们把分子当作双态系统来讨论。这就是说，我们实际上考虑的只有两个状态，而假设所有其他状态都保持不变。你们看到，即使我们知道分子以一定角动量绕对称轴自转，以一定的动量运动，以及以确定的方式振动，但仍然存在着两种可能的状态。氮原子在“上面”，如图8-1（a）那样，我们就说分子处在态|1〉，而当氮原子在“下面”，如图8-1（b）那样，就说分子处在态|2〉。我们将把态|1〉及|2〉取作分析氨分子行为的一组基础态。任何时刻分子的实际状态|<span class="kindle-cn-italic">ψ</span>
+ 〉可由<img alt="" class="kindle-cn-inline-image" src="Image04152.jpg" />
+ 即处于态|1〉的振幅，及<img alt="" class="kindle-cn-inline-image" src="Image04153.jpg" />
+ 即处于态|2〉的振幅表示出来。于是，利用式（8.8），可以把态矢量|<span class="kindle-cn-italic">ψ</span>
+ 〉写作</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04154.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">或</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04155.jpg" />
+</div>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50-withnote" src="Image04156.jpg" />
+<p class="kindle-cn-picture-txt-withfewcharactors">图8-1　氨分子的两种等价的几何构形</p>
+</div>
+<p>有趣的是，如果知道在某个时刻分子处在某态，那么稍过一会儿它就将<span class="kindle-cn-specialtext-qx">不</span>
+ 再处于同一态了。两个<span class="kindle-cn-italic">C</span>
+ 系数将依式（8.43）而随时间变化，该式对任何双态系统都成立。例如，假定你进行过某种观察——或者对分子进行挑选——因此你<span class="kindle-cn-specialtext-qx">知道</span>
+ 分子<span class="kindle-cn-specialtext-qx">起初</span>
+ 处在态|1〉。在稍后一时刻，会有一定机会在态|2〉中找到它。为了求出机会有多大，我们必须去解那个告诉我们振幅如何随时间变化的微分方程。</p>
+<p>唯一的麻烦是我们不知道在式（8.43）中系数<span class="kindle-cn-italic">H<span class="math-sub">ij</span>
+</span>
+ 怎样得到。然而，我们<span class="kindle-cn-specialtext-qx">能够</span>
+ 讲出一些东西来。假设分子一旦处在态|1〉，它就不再有机会进入态|2〉，反之亦然。于是<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">12</span>
+ 及<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">21</span>
+ 都应为零，从而式（8.43）变为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image04157.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">很容易解出这两个方程，我们得到</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04158.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这正是具有能量<img alt="" class="kindle-cn-inline-image" src="Image04159.jpg" />
+ 的<span class="kindle-cn-specialtext-qx">定态</span>
+ 的振幅。然而，我们注意到，对氨分子来说，两个态|1〉及|2〉有确定的对称性。假如自然界真是合理的话，矩阵元<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">11</span>
+ 与<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">22</span>
+ 应当相等。我们都用<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ 来表示这两者，因为它们对应着如果<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">12</span>
+ 与<span class="kindle-cn-italic">H<span class="math-sub">21</span>
+</span>
+ 等于零时状态所具有的能量。但式（8.45）并没告诉我们氨分子的真实行为。原来氮原子有可能穿过3个氢原子中央而翻到另一边去。这是十分困难的，越过一半路程也需要大量能量。如果氮原子没有足够的能量那它怎么能翻过去呢？这里存在着它能穿透势垒的<span class="kindle-cn-specialtext-qx">若干</span>
+ 振幅。在量子力学中有可能很快地穿透一个从能量来看是被禁止的区域。所以，确实有一个很小的振幅使开始处于态|1〉的分子变为态|2〉。系数<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">12</span>
+ 与<span class="kindle-cn-italic">H<span class="math-sub">21</span>
+</span>
+ 并非真正为零。由对称性，它们也应当相等——至少在大小上如此。事实上，我们已经知道，一般来说，<span class="kindle-cn-italic">H<span class="math-sub">ij</span>
+</span>
+ 必须等于<span class="kindle-cn-italic">H<span class="math-sub">ji</span>
+</span>
+ 的共轭复数，所以它们只可能在相位上有差别。结果表明，正如你们将会明白的，即使让它们彼此相等也并不失一般性。为以后的方便，我们让它们都等于一个负数，即取<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">12</span>
+ ＝<span class="kindle-cn-italic">H<span class="math-sub">21</span>
+</span>
+ ＝－<span class="kindle-cn-italic">A</span>
+ 。于是就有下列一对方程：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04160.jpg" />
+</div>
+<p>这个方程组足够简单，可以用多种方法去解。有一种方便的解法如下。取两式之和，得到</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04161.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">它的解是</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04162.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">然后，再取式（8.46）与（8.47）的差，就有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image04163.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">由此得</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04164.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">我们称两个积分常数为<span class="kindle-cn-italic">a</span>
+ 与<span class="kindle-cn-italic">b</span>
+ ；当然，它们必须选得使对任何特定的物理问题都能给出适当的初始条件。通过（8.48）与（8.49）两式的加减，我们得到<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ ：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04165.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">它们除第二项的符号外都相同。</p>
+<p>我们求出了解，但它们的意义是什么呢？（量子力学中的麻烦不仅在于求解方程，而且在于理解求出的解的意义是什么！）首先，注意到若<span class="kindle-cn-italic">b</span>
+ ＝0，两项具有相同的频率<img alt="" class="kindle-cn-inline-image" src="Image04166.jpg" />
+ <img alt="" class="kindle-cn-inline-image" src="Image04167.jpg" />
+ 。如果一切都以同一频率变化，就意味着系统处在某个确定的能量状态中——在这里能量是<img alt="" class="kindle-cn-inline-image" src="Image04168.jpg" />
+ 。所以存在着一个具有这种能量的定态，这时两个振幅<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ 相等。我们得到如下结果：如果氮原子“在上”或“在下”两个状态具有相同的振幅，则<span class="kindle-cn-specialtext-qx">氨分子就有确定的能量</span>
+ （<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ －<span class="kindle-cn-italic">A</span>
+ ）。</p>
+<p>当<span class="kindle-cn-italic">a</span>
+ ＝0时，还有另一个可能的定态，这时两个振幅都有频率<img alt="" class="kindle-cn-inline-image" src="Image04169.jpg" />
+ 。所以，若两个振幅等值反号，即<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ ＝－<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ ，则存在另一种具有确定能量（<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ ＋<span class="kindle-cn-italic">A</span>
+ ）的定态。这些是两个仅有的具有确定能量的状态。下章中我们将更详细地讨论氨分子的状态，这里我们只提两件事。</p>
+<p>我们得到结论，<span class="kindle-cn-specialtext-qx">因为</span>
+ 氮原子有一定的机会从一个位置翻转到另一个位置，所以分子的能量并不正好是我们原来所预料的<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ ，而是有（<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ ＋<span class="kindle-cn-italic">A</span>
+ ）与（<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ －<span class="kindle-cn-italic">A</span>
+ ）两个能级。不管分子具有怎样的能量，它的每一个可能的状态都“分裂”成两个能级。我们说<span class="kindle-cn-specialtext-qx">每</span>
+ 一个状态，是因为你们记得，我们当初挑出了一个特定的转动态、内能态，等等。对这样的每一个可能情况，由于分子的翻转，都出现了双重能级。</p>
+<p>现来问下面一个有关氨分子的问题。假设<span class="kindle-cn-italic">t</span>
+ ＝0时，我们<span class="kindle-cn-specialtext-qx">知道</span>
+ 分子处在态|1〉，换句话说，<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ （0）＝1，<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ （0）＝0。那么在时刻<span class="kindle-cn-italic">t</span>
+ 发现分子处在态|2〉的概率有多大，或者，在时刻<span class="kindle-cn-italic">t</span>
+ 发现分子仍处在态|1〉的概率有多大？初始条件告诉我们式（8.50）及（8.51）中的<span class="kindle-cn-italic">a</span>
+ 与<span class="kindle-cn-italic">b</span>
+ 是什么。令<span class="kindle-cn-italic">t</span>
+ ＝0，就有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04170.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">显而易见<span class="kindle-cn-italic">a</span>
+ ＝<span class="kindle-cn-italic">b</span>
+ ＝1。将这些值代入<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ （<span class="kindle-cn-italic">t</span>
+ ）及<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ （<span class="kindle-cn-italic">t</span>
+ ）的表式，经整理后有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image04171.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">以上两式可改写为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04172.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">两振幅随时间作简谐式变化。</p>
+<p>时刻<span class="kindle-cn-italic">t</span>
+ 在态|2〉找到分子的概率是<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ （<span class="kindle-cn-italic">t</span>
+ ）的绝对值平方：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04173.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这个概率开始是0（理应如此），增大到1，然后在0和1之间来回摆动，如图8-2的曲线<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">2</span>
+ 所示。分子处在|1〉态的概率当然不会一直保持为1。概率“倾泻”入第二状态直至在第一状态中找到分子的概率为零，如图8-2的曲线<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">1</span>
+ 所示。概率就这样在0和1之间摆荡。</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80-withnote" src="Image04174.jpg" />
+<p class="kindle-cn-picture-txt-withmanycharactors">图8-2　<span class="kindle-cn-italic">t</span>
+ ＝0时处于|1〉态的氨分子在<span class="kindle-cn-italic">t</span>
+ 时刻仍处在|1〉态的概率是<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">1</span>
+ ；<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">2</span>
+ 是在|2〉态发现氨分子的概率</p>
+</div>
+<p>很早之前我们见到过两个弱耦合的相同的摆所发生的情况（见第1卷第49章）。当我们将其中一个拉向一边然后放开，它就会摆动，但渐渐地另一个也开始摆起来。不一会第二个摆获得了所有能量。接着，过程逆转，第一个摆又获得能量。这和上述情况完全相类似。能量来回交换的速率取决于两摆之间的耦合——即“振动”得以漏过去的速率。你们该还记得，对两个摆的组合有两种特殊运动——每种都有确定频率——我们称之为基本模式。如果将两个摆一起向一边拉开，它们就以同一频率一起摆动。另一方面，将一摆向一边拉开而将另一摆向另一边拉开，就会有另一种稳定模式，它也具有确定的频率。</p>
+<p>你看，这里我们有类似的情况——在数学上氨分子就像一对摆。这里有两个频率——<img alt="" class="kindle-cn-inline-image" src="Image04175.jpg" />
+ 及<img alt="" class="kindle-cn-inline-image" src="Image04176.jpg" />
+ ，各对应于它们一起振动和反相振动。</p>
+<p>摆的类比并不比同样方程具有同样的解这条原理深奥多少。振幅的线性方程式（8.39）非常像谐振子的线性方程。（事实上，这就是经典折射率理论成功的原因，在这种理论中，我们用谐振子代替了量子力学的原子，即使从经典上说这也不是一种对于电子绕核转动的合理观点。）如果你将氨原子拉向一边，你就会得到这两个频率的<span class="kindle-cn-specialtext-qx">叠加</span>
+ ，从而得到一种<span class="kindle-cn-specialtext-qx">拍</span>
+ 现象，因为系统不再处于这个或那个有确定频率的状态了。然而，氨分子的能级分裂全然是一种量子力学的效应。</p>
+<p>氨分子的能级分裂有重要的实际应用，我们将在下章中讨论。我们终于有了个能利用量子力学来理解的实际物理问题的例子！</p>
+<div class="empty"></div>
+<p class="kindle-cn-noindent">————————————————————</p>
+<p class="fnote">
+<a id="ch1" href="text00368.html#ch1-back">(1)</a>
+ &nbsp;你们可能想我们得写上|<span class="kindle-cn-italic">A</span>
+ |而不只是<span class="kindle-cn-italic">A</span>
+ 。但这个符号看起来像“<span class="kindle-cn-italic">A</span>
+ 的绝对值”符号，所以两条竖线通常略去了。一般来说，竖线（|）的作用很像因子1。</p>
+<p class="fnote">
+<a id="ch2" href="text00368.html#ch2-back">(2)</a>
+ &nbsp;从20世纪70年代以来，粒子物理学有很大的进展。关于粒子构造最流行的是“标准模型”。但它也还存在不少问题。有兴趣的读者可参阅有关书籍和文献。——译者注</p>
+<p class="fnote">
+<a id="ch3" href="text00368.html#ch3-back">(3)</a>
+ &nbsp;这里在符号上遇到一些麻烦。在因子<img alt="" class="kindle-cn-inline-image" src="Image04177.jpg" />
+ 中，i的意思是虚数单位<img alt="" class="kindle-cn-inline-image" src="Image04178.jpg" />
+ ，而<span class="kindle-cn-specialtext-qx">不是</span>
+ 表示第<span class="kindle-cn-italic">i</span>
+ 个基础态的<span class="kindle-cn-specialtext-qx">指标<span class="kindle-cn-italic">i</span>
+</span>
+ ！我们希望你们不致混淆。</p>
+</body>
+</html>

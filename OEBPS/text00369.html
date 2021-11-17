@@ -1,0 +1,941 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head><link href="flow0006.css" rel="stylesheet" type="text/css" />
+<title>第9章　氨微波激射器</title>
+</head>
+<body><div></div>
+<h1 class="kindle-cn-heading-2">第9章　氨微波激射器</h1>
+<h2 class="kindle-cn-heading2"><a id="sec001"></a>
+ §9-1　氨分子的状态</h2>
+<p>本章我们打算讨论量子力学在一个实用的器件——氨微波激射器上的应用。你们也许会奇怪为什么我们打断量子力学讨论的正规进程去研究一个特殊问题，但是，你们会看到，这个特殊问题的许多特征在量子力学的一般理论中相当普遍，如果仔细考察了这个问题，你们将学到许多东西。氨微波激射器是产生电磁波的器件，其工作原理系建立在我们上一章简单讨论过的氨分子性质的基础上。让我们先把上章已经得到的结果概括一下。</p>
+<p>氨分子有许多状态，但我们只将其视为双态系统，即只考虑分子处于任何一种特定的转动或平动状态时所发生的事情。双态的物理模型可以描绘如下。设想氨分子绕通过氮原子并垂直于氢原子组成的平面的轴转动，如图9-1所示，其中仍然存在着两种可能的状态——氮原子可以在氢原子平面的这边或那边。我们称这两个状态为｜1〉及｜2〉。这两个态就取为我们分析氨分子行为的一组基础态。</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80-withnote" src="Image04179.jpg" />
+<p class="kindle-cn-picture-txt-withmanycharactors">图9-1　氨分子双基础态的物理模型。这种状态具有电偶极矩<span class="kindle-cn-italic">μ</span>
+</p>
+</div>
+<p>在一个具有两种基础态的系统中，系统的任何态｜<span class="kindle-cn-italic">ψ</span>
+ 〉总可用这两个基础态的线性组合来描写；这就是说，存在着处于一种基础态的一定振幅<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ 以及处于另一基础态的振幅<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ 。可以把系统的态矢量写成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04180.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">式中</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image04181.jpg" />
+</p>
+<p>这两个振幅随时间变化的关系满足哈密顿方程式（8.43）。利用氨分子的两种状态的对称性，可取<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">11</span>
+ ＝<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">22</span>
+ ＝<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ ，及<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">12</span>
+ ＝<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">21</span>
+ ＝－<span class="kindle-cn-italic">A</span>
+ ，从而得到解［见式（8.50）及（8.51）］</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04182.jpg" />
+</div>
+<p>我们现在要更仔细地考察这两个一般解。假设分子原先处在系数<span class="kindle-cn-italic">b</span>
+ 为零的态｜<span class="kindle-cn-italic">ψ</span>
+ <span class="math-sub">Ⅱ</span>
+ 〉中。那么当<span class="kindle-cn-italic">t</span>
+ ＝0时，处于态｜1〉及｜2〉的振幅相同，<span class="kindle-cn-specialtext-qx">并且它们一直保持这种状态。</span>
+ 它们的相位以同样的方式，即以同样的频率（<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ －<span class="kindle-cn-italic">A</span>
+ ）/<img alt="" class="kindle-cn-inline-image" src="Image04183.jpg" />
+ 随时间变化。类似地，如果我们将分子置于<span class="kindle-cn-italic">a</span>
+ ＝0的状态｜<span class="kindle-cn-italic">ψ</span>
+ <span class="math-sub">Ⅰ</span>
+ 〉，振幅<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ 等于<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ 的负值，这个关系也将一直保持下去。两个振幅都以频率（<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ ＋<span class="kindle-cn-italic">A</span>
+ ）/<img alt="" class="kindle-cn-inline-character" src="Image04183.jpg" />
+ 随时间变化。以上所述就是<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ 之间的关系与时间无关的仅有的两种可能状态。</p>
+<p>我们已经找到了振幅的<span class="kindle-cn-specialtext-qx">大小不变</span>
+ 而它们的相位以相同频率变化的两个特解，按§7-1的定义，它们是<span class="kindle-cn-specialtext-qx">定态</span>
+ ，意即具有<span class="kindle-cn-specialtext-qx">确定能量的状态</span>
+ 。态｜<span class="kindle-cn-italic">ψ</span>
+ <span class="math-sub">Ⅱ</span>
+ 〉具有能量<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅱ</span>
+ ＝<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ －<span class="kindle-cn-italic">A</span>
+ ，而态｜<span class="kindle-cn-italic">ψ</span>
+ <span class="math-sub">Ⅰ</span>
+ 〉具有能量<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅰ</span>
+ ＝<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ ＋<span class="kindle-cn-italic">A</span>
+ 。这两者是存在的仅有的两种定态，所以我们发现分子有两个能级，能量差为2<span class="kindle-cn-italic">A</span>
+ 。（当然，我们指的是相对于原先假设中所给定的转动和振动状态而言的两个能级。）<a id="ch1-back" href="text00369.html#ch1">
+<sup>(1)</sup>
+</a>
+</p>
+<p>如果氮原子没有上下翻转的可能性，就得取<span class="kindle-cn-italic">A</span>
+ 等于零，于是两个能级将在能量<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ 处彼此重叠在一起。但实际能级并不是这样，它们的<span class="kindle-cn-specialtext-qx">平均</span>
+ 能量是<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ ，但它们分裂，离开<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ 距离为±<span class="kindle-cn-italic">A</span>
+ ，在两个状态的能量之间有2<span class="kindle-cn-italic">A</span>
+ 的间隔。实际上，由于<span class="kindle-cn-italic">A</span>
+ 非常小，能量差也非常小。</p>
+<p>从原子内部激发一个<span class="kindle-cn-specialtext-qx">电子</span>
+ 所需要的能量比这高得多——需要可见光或紫外光光子。为了激发分子的<span class="kindle-cn-specialtext-qx">振动</span>
+ ，需要红外光光子。至于<span class="kindle-cn-specialtext-qx">转动</span>
+ 的激发，状态的能量差就对应于远红外光的光子。但能量差2<span class="kindle-cn-italic">A</span>
+ 低于上述任何值，事实上，它低于红外波段进入了微波区域。实验发现，有一对间隔是10<span class="math-super">－4</span>
+ eV——相当于频率24000 MHz——的能级。显然这意味着2<span class="kindle-cn-italic">A</span>
+ ＝<span class="kindle-cn-italic">hf</span>
+ ，即<span class="kindle-cn-italic">f</span>
+ ＝24000MHz（对应的波长是1.25cm）。所以，这种分子在跃迁时发射的不是通常意义下的光，而是微波。</p>
+<p>为以下的讨论，我们要稍稍改进一下对这两种具有确定能量的状态的描述。假设我们取两个数<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ 的和而得到一个振幅<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">Ⅱ</span>
+ ：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04184.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">此式的意义是什么？这正是在某个新的状态｜Ⅱ〉中找到态｜<span class="kindle-cn-italic">Φ</span>
+ 〉的振幅，而在这个新的状态中，原有基础态的振幅是相等的。如果把<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">Ⅱ</span>
+ 写成〈Ⅱ｜<span class="kindle-cn-italic">Φ</span>
+ 〉，则可从式（9.4）中抽出｜<span class="kindle-cn-italic">Φ</span>
+ 〉——因为此式对任何<span class="kindle-cn-italic">Φ</span>
+ 成立，从而可得</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04185.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">此式同下式意义相同</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04186.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">态｜Ⅱ〉处于态｜1〉的振幅是</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04187.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">显然这正好是1，因为｜1〉及｜2〉是基础态。态｜Ⅱ〉处在态｜2〉的振幅也是1，所以态｜Ⅱ〉是一个在两个基础态｜1〉及｜2〉中具有相等振幅的状态。</p>
+<p>但是，我们碰到了一点麻烦。态｜Ⅱ〉处在<span class="kindle-cn-specialtext-qx">这个</span>
+ 或<span class="kindle-cn-specialtext-qx">那个</span>
+ 基础态的总概率大于1。不过这只是意味着该态矢量未适当地“归一化”。只要记住令〈Ⅱ｜Ⅱ〉＝1，（这对任何态都必须成立）那我们就能够消除这个麻烦。利用一般关系式</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image04188.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">设<span class="kindle-cn-italic">Φ</span>
+ 及χ都是态Ⅱ，并对基础态｜1〉及｜2〉求和，就有</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04189.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">要使这个式子等于1，只要改变式（9.4）中<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">Ⅱ</span>
+ 的定义，将<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">Ⅱ</span>
+ 写为</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image04190.jpg" />
+</p>
+<p>同样，我们可以构造出一个振幅</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image04191.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">或</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04192.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这个振幅是态｜<span class="kindle-cn-italic">Φ</span>
+ 〉在一个新态｜Ⅰ〉上的投影，这个新态处在态｜1〉的振幅与处在态｜2〉的振幅差一符号。即式（9.6）的意义与下式相同：</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image04193.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">或</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04194.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">由此可得</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image04195.jpg" />
+</p>
+<p>我们做所有这一切的原因在于表明态｜Ⅰ〉及｜Ⅱ〉<span class="kindle-cn-specialtext-qx">可以取作一组新的基础态</span>
+ ，用它描写氨分子的定态特别方便。你们记得，作为一组基础态要满足</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04196.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">我们已使</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04197.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">由式（9.5）及（9.7）很容易证明</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04198.jpg" />
+</p>
+<p>任何态<span class="kindle-cn-italic">Φ</span>
+ 处在我们的新基础态｜Ⅰ〉及｜Ⅱ〉中的振幅<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">Ⅰ</span>
+ ＝〈Ⅰ｜<span class="kindle-cn-italic">Φ</span>
+ 〉及<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">Ⅱ</span>
+ ＝〈Ⅱ｜<span class="kindle-cn-italic">Φ</span>
+ 〉也必须满足式（8.39）形式的哈密顿方程。事实上，若将式（9.2）减式（9.3）然后再对<span class="kindle-cn-italic">t</span>
+ 求导，就有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04199.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">如取式（9.2）及（9.3）的和再对<span class="kindle-cn-italic">t</span>
+ 求导，就得</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04200.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">用｜Ⅰ〉和｜Ⅱ〉作基础态，哈密顿矩阵具有简单的形式</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image04201.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">注意式（9.8）与（9.9）看起来都正好跟§8-6中在单态系统下所得的方程相像。对应于单一的能量它们具有简单的随时间作指数式变化的关系。处在各个态的振幅各自独立地随时间变化。</p>
+<p>当然，我们上面所找到的两个定态｜<span class="kindle-cn-italic">ψ</span>
+ <span class="math-sub">Ⅰ</span>
+ 〉及｜<span class="kindle-cn-italic">ψ</span>
+ <span class="math-sub">Ⅱ</span>
+ 〉是方程式（9.8）及（9.9）的解。对于态｜<span class="kindle-cn-italic">ψ</span>
+ <span class="math-sub">Ⅰ</span>
+ 〉（这时<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ ＝－<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ ）有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04202.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">而对态｜<span class="kindle-cn-italic">ψ</span>
+ <span class="math-sub">Ⅱ</span>
+ 〉（这时<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ ＝<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ ）则有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04203.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">还记得式（9.10）中的振幅就是</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04204.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">从而式（9.10）和下式相同：</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image04205.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">这就是说，定态的态矢量｜<span class="kindle-cn-italic">ψ</span>
+ <span class="math-sub">Ⅰ</span>
+ 〉与基础态的态矢量｜Ⅰ〉的差别只在于有个与状态的能量相应的指数因子。事实上，当<span class="kindle-cn-italic">t</span>
+ ＝0时</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04206.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">态｜Ⅰ〉的物理组态与能量为（<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ ＋<span class="kindle-cn-italic">A</span>
+ ）的定态相同。同样，对第二个定态我们有</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image04207.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">态｜Ⅱ〉正是<span class="kindle-cn-italic">t</span>
+ ＝0时能量为（<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ －<span class="kindle-cn-italic">A</span>
+ ）的定态。于是我们的两个新基础态｜Ⅰ〉及｜Ⅱ〉在物理上与具有确定能量但去掉了指数时间因子的状态形式上相同，因而它们可以成为与时间无关的基础态。（下面我们会发现不去区别定态｜<span class="kindle-cn-italic">ψ</span>
+ <span class="math-sub">Ⅰ</span>
+ 〉和｜<span class="kindle-cn-italic">ψ</span>
+ <span class="math-sub">Ⅱ</span>
+ 〉以及它们的基础态｜Ⅰ〉和｜Ⅱ〉是方便的，因为它们的差别只在于明显的时间因子。）</p>
+<p>总之，态矢量｜Ⅰ〉｜及｜Ⅱ〉是一对基矢，它们适合于描写氨分子的确定能量的状态。它们与我们原来的基矢的关系是</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04208.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">处在｜Ⅰ〉及｜Ⅱ〉中的振幅与<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ ，<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ 的关系是</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04209.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">任何状态都可用｜1〉及｜2〉的线性组合表示——系数为<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ ，或者用确定能量的基础态｜Ⅰ〉及｜Ⅱ〉的线性组合表示——系数为<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">Ⅰ</span>
+ 与<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">Ⅱ</span>
+ 。于是</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04210.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">或</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04211.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">第二种形式给出了在能量为<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅰ</span>
+ ＝E<span class="math-sub">0</span>
+ ＋<span class="kindle-cn-italic">A</span>
+ 的状态或在能量为<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅰ</span>
+ ＝E<span class="math-sub">0</span>
+ －<span class="kindle-cn-italic">A</span>
+ 的状态找到态｜<span class="kindle-cn-italic">Φ</span>
+ 〉的振幅。</p>
+<h2 class="kindle-cn-heading2"><a id="sec002"></a>
+ §9-2　静电场中的分子</h2>
+<p>若氨分子处在两个确定能态之一，我们以某种频率ω扰动它，ω满足<img alt="" class="kindle-cn-inline-image" src="Image04183.jpg" />
+ <span class="math-sub">ω</span>
+ ＝<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅰ</span>
+ －<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅱ</span>
+ ＝2<span class="kindle-cn-italic">A</span>
+ ，这时系统就可能由一个态跃迁到另一个态。或者，如果它原来处在较高能态，它就可能变到较低能态而发出一个光子。但是为了诱发这种跃迁，必须与状态发生物理上的联系——某种扰动系统的方法。必须有某种外部机制如磁场或电场来影响该状态。在现在所讨论的特定情况下，这些态对于电场较敏感。所以，接下来我们来考察氨分子处在外电场中的行为。</p>
+<p>为讨论电场中的行为，我们将回到原来的基础态｜1〉及｜2〉，而不使用｜Ⅰ〉及｜Ⅱ〉。假设在垂直于氢原子组成的平面的方向上存在一个电场。暂时不去考虑氮原子上、下翻转的可能性，那么对于氮原子的两种位置，这个分子的能量是否相同？一般说来并不相同。由于电子更倾向于靠近氮原子核而不是氢原子核，所以氢原子略带正电。真实的能量取决于电子分布的详细状况。要精确描写出该分布的情况是个复杂的问题，但无论如何，净效应是氨分子具有一个电偶极矩，如图9-1所示。我们可以在不知道电荷位移的方向与大小的详细情况下继续进行我们的分析。但为了跟其他人的记号相一致，让我们假设电偶极矩是<span class="kindle-cn-bold-italic">μ</span>
+ ，方向<span class="kindle-cn-specialtext-qx">从</span>
+ 氮原子垂直指向氢原子平面。</p>
+<p>当氮原子由一边翻转到另一边时，质心并不移动，但电偶极矩反转。由于这个偶极矩的存在，分子处在电场<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ 中的能量将取决于分子的取向。<a id="ch2-back" href="text00369.html#ch2">
+<sup>(2)</sup>
+</a>
+ 按照上面所作的假定，如氮原子的指向沿着场的方向，势能就高，如与场方向相反，势能就低，两者能量的间隔是2<span class="kindle-cn-italic">μ</span>
+ <img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ 。</p>
+<p>在到此为止的讨论中，我们只假设了<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ 与<span class="kindle-cn-italic">A</span>
+ 的值而不知道怎么去计算它们。根据正确的物理理论，应有可能根据所有原子核和电子的位置与运动来计算出这些常数。但从没有人作过这种计算。这样一个系统包括10个电子和4个原子核，这种计算实在是太复杂的问题。事实上，关于这个分子的情况，别人知道的比我们的也多不了许多。人们所能够说的只是，当电场存在时，两种状态的能量是不同的，其差值正比于电场。我们令比例系数为2<span class="kindle-cn-italic">μ</span>
+ ，但其值必须由实验确定。我们也可以说分子翻转的振幅是<span class="kindle-cn-italic">A</span>
+ ，但它也必须由实验测定。没有人会告诉我们<span class="kindle-cn-italic">μ</span>
+ 和<span class="kindle-cn-italic">A</span>
+ 的精确理论值，因为详细计算实在太复杂。</p>
+<p>对于处在电场中的氨分子，我们的描写必须有些改变。如果不考虑分子由一个位形翻转到另一个位形的振幅，我们可以预料这两个态｜1〉与｜2〉的能量是（<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ ±<span class="kindle-cn-italic">μ</span>
+ <img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ ）。按照上一章的做法，我们取</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04213.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">我们还假定施加的电场不会显著地影响分子的几何形状，因此，也不会影响氨分子从一位置跳至另一位置的振幅。于是可以认为<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">12</span>
+ 与<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">21</span>
+ 没有变化，即</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04214.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">现在我们必须来解具有这些新的<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">ij</span>
+</span>
+ 值的哈密顿方程式（8.43）。我们本可以像过去那样来解方程，但因为以后有几种场合需要求双态系统的解，让我们对一般情况下的任意<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">ij</span>
+</span>
+ ——只假定它们不随时间变化——一劳永逸地求出方程的解来。</p>
+<p>我们要求下列一对哈密顿方程的一般解：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04215.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">由于这些是常系数线性微分方程，我们总可找到依赖于变量<span class="kindle-cn-italic">t</span>
+ 的指数函数的解。我们得先来求对<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ 两者来说有相同时间相关性的解；可以用尝试函数</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04216.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">因为这样一个解对应于能量<span class="kindle-cn-italic">E</span>
+ ＝<img alt="" class="kindle-cn-inline-image" src="Image04183.jpg" />
+ ω的状态，我们可以直接写出</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04217.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这里<span class="kindle-cn-italic">E</span>
+ 仍然未知，要求使微分方程式（9.16）及（9.17）得到满足来给于确定。</p>
+<p>将式（9.18）及（9.19）的<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ 代入微分方程式（9.16）及（9.17）中，导数项正好给出－iE/<img alt="" class="kindle-cn-inline-image" src="Image04183.jpg" />
+ 乘以<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ 或<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ ，所以左边就是<span class="kindle-cn-italic">EC</span>
+ <span class="math-sub">1</span>
+ 和<span class="kindle-cn-italic">EC</span>
+ <span class="math-sub">2</span>
+ 。消去公共指数因子，我们得到</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04218.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">经整理之后得到</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04219.jpg" />
+</div>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04220.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这齐次代数方程组，只有在<span class="kindle-cn-italic">a</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">a</span>
+ <span class="math-sub">2</span>
+ 的系数行列式为零，即当</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04221.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">时，<span class="kindle-cn-italic">a</span>
+ <span class="math-sub">1</span>
+ 和<span class="kindle-cn-italic">a</span>
+ <span class="math-sub">2</span>
+ 才有非零解。</p>
+<p>然而，当只有两个方程和两个未知数时，我们无需这种深奥的概念。两个方程式（9.20）与（9.21）中的每个都给出两个系数<span class="kindle-cn-italic">a</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">a</span>
+ <span class="math-sub">2</span>
+ 的比，这两个比必须相等。由式（9.20）有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04222.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">由式（9.21）有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04223.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这两个比值相等，我们得到<span class="kindle-cn-italic">E</span>
+ 必须满足的方程</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04224.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这与解式（9.22）得到的结果相同。不论哪种解法都得到一个<span class="kindle-cn-italic">E</span>
+ 的二次方程，它有两个解</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04225.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">能量<span class="kindle-cn-italic">E</span>
+ 有两个可能值。注意两个解对能量都给出<span class="kindle-cn-specialtext-qx">实数</span>
+ ，因为<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">11</span>
+ 与<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">22</span>
+ 是实数，而<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">12</span>
+ <span class="kindle-cn-italic">H</span>
+ <span class="math-sub">21</span>
+ ＝<img alt="" class="kindle-cn-inline-image" src="Image04226.jpg" />
+ ，都是正实数。</p>
+<p>利用与前面同样的约定，我们称较高的能量为<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅰ</span>
+ ，较低的能量为<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅱ</span>
+ 。于是</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04227.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">在式（9.18）及（9.19）中分别使用这两个能量值，就得到两个定态（确定能量的状态）的振幅。如果没有外来扰动，系统原先处在两态中某一个态，就将一直处在该态，只是相位会改变。</p>
+<p>可以对两种特殊情况验证我们的结果。如<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">12</span>
+ ＝<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">21</span>
+ ＝0，就有<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅰ</span>
+ ＝<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">11</span>
+ 及<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅱ</span>
+ ＝<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">22</span>
+ 。这无疑是正确的，因为这时式（9.16）与（9.17）之间没有耦合，分别表示能量为<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">11</span>
+ 和<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">22</span>
+ 的状态。其次，如令<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">11</span>
+ ＝<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">22</span>
+ ＝<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ 及<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">21</span>
+ ＝<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">12</span>
+ ＝－<span class="kindle-cn-italic">A</span>
+ ，我们就会得到先前得到过的解：</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image04228.jpg" />
+</p>
+<p>对一般情况，两个解<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅰ</span>
+ 和<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅱ</span>
+ 对应于两个状态，这两个状态又可以写成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04229.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这两个态就有式（9.18）及（9.19）给出的<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ ，其中<span class="kindle-cn-italic">a</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">a</span>
+ <span class="math-sub">2</span>
+ 仍待定。它们的比值由式（9.23）或（9.24）给出。它们还需满足一个条件。如果已知系统处在定态之一，那么在｜1〉或｜2〉中找到它的概率之和必定等于1，即必须有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04230.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">或等价地</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04231.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这些条件并没有唯一地确定<span class="kindle-cn-italic">a</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">a</span>
+ <span class="math-sub">2</span>
+ ，它们仍有个不确定的任意的相位，即有<span class="kindle-cn-italic">e</span>
+ <span class="math-super">i<span class="kindle-cn-italic">δ</span>
+</span>
+ 这样一个因子未确定。虽然可以写出各个<span class="kindle-cn-italic">a</span>
+ 的一般解<a id="ch3-back" href="text00369.html#ch3">
+<sup>(3)</sup>
+</a>
+ ，但算出每一种具体情况下各<span class="kindle-cn-italic">a</span>
+ 的值通常更方便些。</p>
+<p>现在让我们回到电场中的氨分子这一特例上去。利用式（9.14）与（9.15）所给定的<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">11</span>
+ ，<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">22</span>
+ 及<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">12</span>
+ 的值，我们得到两个定态的能量</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04232.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这两个能量作为电场强度<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ 的函数画在图9-2中。当电场为零时，两个能量当然正好是<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">0</span>
+ ±<span class="kindle-cn-italic">A</span>
+ 。在施加电场之后，两个能级之间的分裂增加。这种分裂起先随<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ 缓慢增大，但最后变为与<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ 成正比例。（曲线是双曲线。）在极强的电场中，能量成为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04233.jpg" />
+</div>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04234.jpg" />
+<p class="kindle-cn-picture-txt-withfewcharactors">图9-2　处于电场中的氨分子的能级</p>
+</div>
+<p class="kindle-cn-para-no-indent">
+<span class="kindle-cn-specialtext-qx">当氮原子在两个位置上的能量相差非常大时，它在两个位置之间来回翻转的振幅就不起什么作用了</span>
+ 。这是个有趣的问题，我们后面还要谈到它。</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04235.jpg" />
+<p class="kindle-cn-picture-txt-withmanycharactors">图9-3　氨分子束可以用电场分离，在该电场中<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ <span class="math-super">2</span>
+ 具有垂直于分子束方向上的梯度</p>
+</div>
+<p>我们终于可以理解氨微波激射器的工作原理了。其概念如下。首先，我们要找到一种把处在｜Ⅰ〉态的分子和处在｜Ⅱ〉态的分子分离开的方法<a id="ch4-back" href="text00369.html#ch4">
+<sup>(4)</sup>
+</a>
+ 。然后，使处于较高能态｜Ⅰ〉的分子通过一个共振频率为24000 MHz的谐振腔。分子会把能量交给谐振腔——交的方式将在后面讨论——从而在离开腔时分子处在态｜Ⅱ〉之中。每一个发生这样跃迁的分子都把<span class="kindle-cn-italic">E</span>
+ ＝<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅰ</span>
+ －<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅱ</span>
+ 的能量交给谐振腔。来自分子的能量将在腔内表现为电能。</p>
+<p>我们如何使两种状态的分子分离？一种办法是：使氨气由细小喷嘴射出，连续通过两个狭缝后形成一细束，如图9-3所示，然后让细束通过一个具有颇大横向电场的区域。产生电场的电极形状要做得使电场在横越分子束方向上迅速地变化。于是电场的平方<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ •<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ 在垂直于分子束的方向上有很大的梯度。而处在｜Ⅰ〉态的分子所具有的能量随<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ <span class="math-super">2</span>
+ 而增大，因此这部分分子束将向<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ <span class="math-super">2</span>
+ 较低的区域偏转。相反，处在｜Ⅱ〉的分子将向<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ <span class="math-super">2</span>
+ 较大的区域偏转，因为它的能量随<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ <span class="math-super">2</span>
+ 增大而减小。</p>
+<p>附带提一下，对实验室中所能产生的电场来说，能量<span class="kindle-cn-italic">μ</span>
+ <img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ 总是远小于<span class="kindle-cn-italic">A</span>
+ 。在这样的情况下，式（9.30）中的平方根可以近似取为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04236.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">所以，就实用的目的而言，能级是</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04237.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">及</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04238.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">而能量的变化近似地与<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ <span class="math-super">2</span>
+ 成线性关系。于是作用在分子上的力是</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04239.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">许多分子在电场中具有正比于<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ <span class="math-super">2</span>
+ 的能量。比例系数就是分子的极化率。由于分母中的<span class="kindle-cn-italic">A</span>
+ 值很小，氨分子具有异常高的极化率。所以，氨分子对电场异常敏感。（你估计一下氨气的介电系数是多少？）</p>
+<h2 class="kindle-cn-heading2"><a id="sec003"></a>
+ §9-3　在随时间变化的场中的跃迁</h2>
+<p>在氨微波激射器中，处在态｜Ⅰ〉且具有能量<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅰ</span>
+ 的分子束被送入一个共振腔，如图9-4所示。而另一分子束则被丢弃。在腔内有一个随时间变化的电场，于是我们要讨论的下一个问题就是分子处在随时间变化的电场中的行为。我们碰到了完全不同类型的问题——具有随时间变化的哈密顿的问题。由于<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">ij</span>
+</span>
+ 依赖于<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ ，<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">ij</span>
+</span>
+ 也就随时间而变，于是我们必须确定系统在这种情况下的行为。</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80-withnote" src="Image04240.jpg" />
+<p class="kindle-cn-picture-txt-withfewcharactors">图9-4　氨微波激射器示意图</p>
+</div>
+<p>首先，我们写下待解的方程：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04241.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">为明确起见，我们设电场作正弦式变化，于是可以写出</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04242.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">在实际操作中频率ω与分子跃迁的共振频率ω<span class="math-sub">0</span>
+ ＝2<span class="kindle-cn-italic">A</span>
+ /<img alt="" class="kindle-cn-inline-image" src="Image04183.jpg" />
+ 极为接近，但此刻我们想使问题保持普遍性，所以还是设它具有任意值。解上述方程的最好方法是像先前那样构成<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">2</span>
+ 的线性组合。于是我们将两个方程相加，除以2的平方根，再利用式（9.13）中<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">Ⅰ</span>
+ 及<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">Ⅱ</span>
+ 的定义。就得到</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04243.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">你们会注意到这与式（9.9）相同，只是多了一个由电场引起的额外项。类似地，将式（9.36）中的两个方程相减，可得</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04244.jpg" />
+</div>
+<p>现在的问题是，怎样解这些方程？它们比先前的那组方程更难解，因为<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ 依赖于<span class="kindle-cn-italic">t</span>
+ ，而事实上，对于一般的<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ （<span class="kindle-cn-italic">t</span>
+ ），其解无法用初等函数表示。然而，只要电场很小，我们可以得到一个很好的近似解。首先我们写出</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04245.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">如果不存在电场，那么只要选取<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅰ</span>
+ 与<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅱ</span>
+ 为两个复常量，这些解就是正确的，事实上，因为处在态｜Ⅰ〉的概率是<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">Ⅰ</span>
+ 的绝对值平方，而处在态｜Ⅱ〉的概率是<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">Ⅱ</span>
+ 的绝对值平方，处在态｜Ⅰ〉或态｜Ⅱ〉的概率正好是｜<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅰ</span>
+ ｜<span class="math-super">2</span>
+ 或｜<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅱ</span>
+ ｜<span class="math-super">2</span>
+ 。例如，系统开始时处于态｜Ⅱ〉，那么<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅰ</span>
+ 为零而｜<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅱ</span>
+ ｜<span class="math-super">2</span>
+ 是1，这种状况将一直继续下去。如果分子本来处在态｜Ⅱ〉，那么就没有机会变为态｜Ⅰ〉。</p>
+<p>注意，我们将方程写成式（9.40）的形式的思路是，如果<span class="kindle-cn-italic">μ</span>
+ <img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ 比<span class="kindle-cn-italic">A</span>
+ 小，那么解答依然可写成这种形式，只是<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅰ</span>
+ 与<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅱ</span>
+ 变成随时间缓慢变化的函数了。所谓“缓慢变化”是指与指数函数<span class="kindle-cn-specialtext-qx">相比较而言</span>
+ 。这就是诀窍。我们利用<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅰ</span>
+ 与<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅱ</span>
+ 变化缓慢这个事实来得到近似解。</p>
+<p>现在我们要把式（9.40）中的<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">Ⅰ</span>
+ 代入微分方程式（9.39），但必须记住<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅰ</span>
+ 也是<span class="kindle-cn-italic">t</span>
+ 的函数。我们有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04246.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">微分方程就变成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04247.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">类似地，d<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">Ⅱ</span>
+ /d<span class="kindle-cn-italic">t</span>
+ 的微分方程成为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04248.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">现在你们会注意到每个方程的两边都有相等的项。我们先将它们消去，再将第一个方程乘以<img alt="" class="kindle-cn-inline-image" src="Image04249.jpg" />
+ ，将第二个方程乘以<img alt="" class="kindle-cn-inline-image" src="Image04250.jpg" />
+ 。要记住（<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅰ</span>
+ －<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅱ</span>
+ ）＝2<span class="kindle-cn-italic">A</span>
+ ＝<img alt="" class="kindle-cn-inline-image" src="Image04183.jpg" />
+ ω<span class="math-sub">0</span>
+ ，最后就有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04251.jpg" />
+</div>
+<p>现在我们有了一对外观上简单的方程——当然，它们仍然是精确的。一个变量的导数是时间函数<img alt="" class="kindle-cn-inline-image" src="Image04252.jpg" />
+ 乘以第二个变量，第二个变量的导数则是类似的一个时间函数乘以第一个变量。尽管不能得出这些简单方程的一般解，我们仍将就某些特殊情况求解这些方程。</p>
+<p>我们只对振动电场的情况感兴趣，至少当前是这样。将<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ （<span class="kindle-cn-italic">t</span>
+ ）取为式（9.37）的形式，我们发现<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅰ</span>
+ 与<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅱ</span>
+ 的方程变为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04253.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">如果<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ <span class="math-sub">0</span>
+ 足够小，<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅰ</span>
+ 与<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅱ</span>
+ 的变化率也就小。两个<span class="kindle-cn-italic">γ</span>
+ 随时间<span class="kindle-cn-italic">t</span>
+ 的变化不会很大，特别是跟指数项所引起的迅速变化相比而言。这些指数项具有实部及虚部，它们以频率（ω＋ω<span class="math-sub">0</span>
+ ）或（ω－ω<span class="math-sub">0</span>
+ ）振荡。以（ω＋ω<span class="math-sub">0</span>
+ ）振荡的这一项在平均值零上下变化得很快，因此，对<span class="kindle-cn-italic">γ</span>
+ 的变化率的平均值贡献并不很大。这样，我们就可以合理地取一个很好的近似，即用它们的平均值，也就是零，来代替这些项。只要舍去它们，即可取作我们的近似式：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04254.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">即使剩下的其指数与（ω－ω<span class="math-sub">0</span>
+ ）成比例的那一项也变化得很快，除非ω接近于ω<span class="math-sub">0</span>
+ 。只有这时右边的变化才会足够缓慢，以至当我们将方程对<span class="kindle-cn-italic">t</span>
+ 求积分时才能得到可觉察到的量值。换句话说，对<span class="kindle-cn-specialtext-qx">弱</span>
+ 电场而言，只有那些靠近ω<span class="math-sub">0</span>
+ 的频率才是重要的。</p>
+<p>在得到式（9.45）所作的近似下，方程才可以精确地解出，但解法仍颇复杂，所以我们现在不想解它，而要等到以后碰到同样类型的另一个问题时再说。现在我们只求出近似解——或更确切地说，我们将找出完全共振，即ω＝ω<span class="math-sub">0</span>
+ 时的精确解，以及频率接近于共振频率时的近似解。</p>
+<h2 class="kindle-cn-heading2"><a id="sec004"></a>
+ §9-4　共振跃迁</h2>
+<p>首先让我们考虑完全共振的情况。如果取ω＝ω<span class="math-sub">0</span>
+ ，则式（9.45）的两个方程的指数均等于1，于是便有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04255.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">如果先从这些方程中消去<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅰ</span>
+ ，然后消去<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅱ</span>
+ ，我们就发现每个<span class="kindle-cn-italic">γ</span>
+ 都满足简谐运动的微分方程：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04256.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这些方程的一般解可由正弦和余弦函数组成。很容易验证，下列方程式就是一种解：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04257.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">式中<span class="kindle-cn-italic">a</span>
+ 与<span class="kindle-cn-italic">b</span>
+ 是根据特定的物理条件来定的常数。</p>
+<p>例如，设<span class="kindle-cn-italic">t</span>
+ ＝0时分子系统处在较高能态｜Ⅰ〉，由式（9.40）可知，这要求<span class="kindle-cn-italic">t</span>
+ ＝0时<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅰ</span>
+ ＝1及<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅱ</span>
+ ＝0。在这种情况下，就要求<span class="kindle-cn-italic">a</span>
+ ＝1，<span class="kindle-cn-italic">b</span>
+ ＝0。往后某时刻<span class="kindle-cn-italic">t</span>
+ 分子处在态｜Ⅰ〉的概率是<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅰ</span>
+ 的绝对值平方，即</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04258.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">类似地，分子处于态｜Ⅱ〉的概率是<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅱ</span>
+ 的绝对值平方，即</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04259.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">只要<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ 很小，并且处于共振情况下，概率就由简单的振荡函数给出。处在态｜Ⅰ〉的概率由1下降为0，然后再回升到1，同时，处在态｜Ⅱ〉的概率则由0上升到1，再下降。两种概率随时间的变化曲线如图9-5所示。不用说，两概率的和总是等于1，分子总得处在<span class="kindle-cn-specialtext-qx">某个状态</span>
+ 之中！</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80-withnote" src="Image04260.jpg" />
+<p class="kindle-cn-picture-txt-withmanycharactors">图9-5　在正弦型电场中的氨分子处于两种状态的概率</p>
+</div>
+<p>设氨分子通过共振腔需要时间<span class="kindle-cn-italic">T</span>
+ 。如果使腔长正好满足<img alt="" class="kindle-cn-inline-image" src="Image04261.jpg" />
+ ，那么进腔时处在态｜Ⅰ〉的分子离开时必处于态｜Ⅱ〉。如果它进入空腔时处于高能态，离开腔时就处于低能态。换句话说，它的能量减少了，能量不可能丢失到其他地方，只可能进入产生场的机制中去。你们可以看到分子能量怎么馈入共振腔的振荡中去的有关细节是不简单的，不过，我们不必去研究这些细节，因为我们可以利用能量守恒原理。（如果我们一定要研究这些细节，那么除了原子的量子力学外我们还要考虑共振腔中场的量子力学。）</p>
+<p>概括一下：分子进入共振腔后，以正好恰当的频率振荡的腔内电场诱发分子从高能态跃迁至低能态，而所释放的能量则馈入振荡电场。在一个工作着的微波激射器中，分子提供足够的能量以维持腔的振荡——不仅提供足够功率以弥补腔内损耗，还提供少量可从腔中引出的额外功率。于是，分子能量被转换为外界的电磁场能量。</p>
+<p>记住，在分子束进入共振腔之前，必须使用一个分离分子束的过滤装置，只让高能态的分子进入腔内。不难证明，如果你在开始时用的是低能态的分子，整个过程将沿相反方向进行，从腔中取出能量。如果使未过滤的分子束进入，那么有多少分子取走能量就有多少分子释放能量，最终什么也不发生。当然，在实际运行中，不必使（<img alt="" class="kindle-cn-inline-image" src="Image04262.jpg" />
+ ）正好是<span class="kindle-cn-italic">π</span>
+ /2。对任何其他值（除去正好是<span class="kindle-cn-italic">π</span>
+ 的整数倍外），都有一定概率从态｜Ⅰ〉跃迁至态｜Ⅱ〉。但对其他值来说，器件的效率不是100％；许多离腔时本来应该把一些能量交给空腔的分子并没有把能量交给腔。</p>
+<p>在实际情况中，所有分子的速度并不都相同，它们具有某种形式的麦克斯韦分布。这意味着不同分子的理想的时间周期不相同，因此不可能同时对所有分子都获得100％的效率。此外，还存在另一种容易想到的复杂性，但此刻我们不想为此费心。大家记得腔内的电场通常在腔中处处不同。因此，当分子通过共振腔时，分子所在处的电场以比我们所假设的随时间作简谐式振荡更为复杂的方式变化。显然，必须用更繁复的积分来精确计算这个问题，但其基本概念仍然相同。</p>
+<p>还有另外一些制造微波激射器的方法，代替用施特恩-格拉赫装置分离态｜Ⅰ〉的分子和态｜Ⅱ〉的分子，也可以将原子（像气体或固体）预先放在腔内，用某种方法使原子从态｜Ⅱ〉变到态｜Ⅰ〉。一种方法是在所谓三态<a id="ch5-back" href="text00369.html#ch5">
+<sup>(5)</sup>
+</a>
+ 微波激射器中使用的方法。为此，所用的原子系统要有3个能级，如图9-6所示，它们具有下列特性。系统会吸收频率为<img alt="" class="kindle-cn-inline-image" src="Image04263.jpg" />
+ 的辐射（如光），从最低能级<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">Ⅱ</span>
+ 跳到高能级<span class="kindle-cn-italic">E</span>
+ ′，然后迅速发射光子<img alt="" class="kindle-cn-inline-image" src="Image04264.jpg" />
+ 而落到能量<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">1</span>
+ 的态｜Ⅰ〉。态｜Ⅰ〉有长的寿命，因而这个态的布居数会增多，这样，就会达到于态｜Ⅰ〉与态｜Ⅱ〉之间发生微波激射的条件。虽然这种器件称为“三态”微波激射器，它的工作方式实际上和我们所描写的双态系统完全一样。</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80-withnote" src="Image04265.jpg" />
+<p class="kindle-cn-picture-txt-withfewcharactors">图9-6　“三态”微波激射器的能级</p>
+</div>
+<p>激光（Light Amplification by Stimulated Emission of Radiation）只不过是一种工作在光学频率的激射器。激光的“共振腔”通常由两块反射镜组成，在两反射镜之间建立起驻波。</p>
+<h2 class="kindle-cn-heading2"><a id="sec005"></a>
+ §9-5　偏离共振的跃迁</h2>
+<p>最后，我们想要搞清在共振腔频率接近、但不严格等于ω<span class="math-sub">0</span>
+ 的情况下状态如何变化。我们能够精确解答这个问题，但我们并不打算这样做，而讨论一种重要情况，即电场较弱，而且时间间隔<span class="kindle-cn-italic">T</span>
+ 也较小，从而<img alt="" class="kindle-cn-inline-image" src="Image04266.jpg" />
+ 远小于1。这样，即使在我们刚计算过的完全共振的情况下，产生跃迁的概率也较小。假设我们仍从<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅰ</span>
+ ＝1及<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅱ</span>
+ ＝0开始。在时间<span class="kindle-cn-italic">T</span>
+ 内我们预料<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅰ</span>
+ 仍然保持近似等于1，而<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅱ</span>
+ 则保持远小于1。这样问题就很容易。我们可以从式（9.45）的第二个方程来计算<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅱ</span>
+ ，取<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅰ</span>
+ 等于1，并从<span class="kindle-cn-italic">t</span>
+ ＝0积分到<span class="kindle-cn-italic">t</span>
+ ＝<span class="kindle-cn-italic">T</span>
+ 。我们得到</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04267.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">将此<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅱ</span>
+ 值用于式（9.40）中即给出时间间隔<span class="kindle-cn-italic">T</span>
+ 内从态｜Ⅰ〉跃迁至态｜Ⅱ〉的振幅。发生跃迁的概率<span class="kindle-cn-italic">P</span>
+ （Ⅰ→Ⅱ）是｜<span class="kindle-cn-italic">γ</span>
+ <span class="math-sub">Ⅱ</span>
+ ｜<span class="math-super">2</span>
+ ，即</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04268.jpg" />
+</div>
+<p>将在一定时间间隔内跃迁的概率作为共振腔频率的函数作图是很有意义的，从这可以看出在共振频率ω<span class="math-sub">0</span>
+ 附近跃迁概率对频率依赖的灵敏程度。我们将这样的<span class="kindle-cn-italic">P</span>
+ （Ⅰ→Ⅱ）曲线画在图9-7中。（通过将纵坐标表示的概率除以ω＝ω<span class="math-sub">0</span>
+ 处的概率值，峰值的纵坐标被调整到1。）我们在衍射理论中已见到过这样的曲线，所以你们对它应该已经熟悉了。当（ω－ω<span class="math-sub">0</span>
+ ）＝2<span class="kindle-cn-italic">π</span>
+ /<span class="kindle-cn-italic">T</span>
+ 时，曲线相当迅速地下降至零，而对更大的频率偏差，再也不能重新达到可观的数值。事实上，曲线下面积的绝大部分位于±<span class="kindle-cn-italic">π</span>
+ /<span class="kindle-cn-italic">T</span>
+ 的区间之内，可以证明<a id="ch6-back" href="text00369.html#ch6">
+<sup>(6)</sup>
+</a>
+ 曲线下的面积正好是2<span class="kindle-cn-italic">π</span>
+ /<span class="kindle-cn-italic">T</span>
+ ，并等于图中所画的阴影矩形的面积。</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80-withnote" src="Image04269.jpg" />
+<p class="kindle-cn-picture-txt-withfewcharactors">图9-7　氨分子跃迁概率与频率的函数关系</p>
+</div>
+<p>让我们就一个真实的微波激射器来考察上述结果的含义。假设氨分子在腔内呆了适当长的时间，比方说1ms。那么对<span class="kindle-cn-italic">f</span>
+ <span class="math-sub">0</span>
+ ＝24000MHz，我们可以求出频率偏差为（<span class="kindle-cn-italic">f</span>
+ －<span class="kindle-cn-italic">f</span>
+ <span class="math-sub">0</span>
+ ）/<span class="kindle-cn-italic">f</span>
+ <span class="math-sub">0</span>
+ ＝1/<span class="kindle-cn-italic">f</span>
+ <span class="math-sub">0</span>
+ <span class="kindle-cn-italic">T</span>
+ ，这个数值为5×10<span class="math-super">－8</span>
+ 时，跃迁概率下降为零。显然频率必须非常接近于ω<span class="math-sub">0</span>
+ 才能得到可观的跃迁概率。这一效应是能够用“原子”钟获得极高精度的基础，而原子钟就是根据微波激射器原理工作的。</p>
+<h2 class="kindle-cn-heading2"><a id="sec006"></a>
+ §9-6　光的吸收</h2>
+<p>上面的处理方法适用于比氨微波激射器更普遍的情况。我们处理过分子在电场的影响下的行为，不论场是否局限于腔内。所以我们可以简单地把一束“光”——微波频率——照射到分子上，并求发射或吸收的概率。我们的方程同样适用于这种情况，但我们用辐射的<span class="kindle-cn-specialtext-qx">强度</span>
+ 而不是用电场作为参数来重新写出那些方程。如果定义强度∮为每秒钟通过单位面积的平均能量，则由第2卷第27章，我们可以写出</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04270.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">（<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ 的最大值是2<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ <span class="math-sub">0</span>
+ 。）于是跃迁概率为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04271.jpg" />
+</div>
+<p>通常照射在这样一种系统上的光并不是严格单色的。因此，值得再求解一个问题——就是计算光的频率分布在包括ω<span class="math-sub">0</span>
+ 在内的一定宽度区间上的跃迁概率，令每单位频率间隔的光强为<img alt="" class="kindle-cn-inline-image" src="Image04272.jpg" />
+ 。这时，从｜Ⅰ〉至｜Ⅱ〉跃迁的概率成为一个积分：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04273.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">一般来说，<img alt="" class="kindle-cn-inline-image" src="Image04272.jpg" />
+ 随ω的变化将远比尖锐的共振项来得缓慢。两个函数也许就像图9-8所示那种样子。在这种情况下，我们就可以将<img alt="" class="kindle-cn-inline-image" src="Image04272.jpg" />
+ 用它在尖锐的共振曲线中央位置处的值<img alt="" class="kindle-cn-inline-image" src="Image04274.jpg" />
+ 来代替，并将它提出积分号外。所留下的正是图9-7的曲线下的积分，如我们所知此积分正好等于2<span class="kindle-cn-italic">π</span>
+ /<span class="kindle-cn-italic">T</span>
+ 。我们得到如下结果</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04275.jpg" />
+</div>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80-withnote" src="Image04276.jpg" />
+<p class="kindle-cn-picture-txt-withmanycharactors">图9-8　光谱强度<img alt="" class="kindle-cn-inline-image" src="Image04272.jpg" />
+ 可以近似地用它在ω<span class="math-sub">0</span>
+ 处的值表示</p>
+</div>
+<p>这是个重要的结果，因为它是<span class="kindle-cn-specialtext-qx">光被任何分子或原子系统吸收的普遍理论</span>
+ 。尽管我们是从考虑态｜Ⅰ〉比态｜Ⅱ〉能量高的情况开始的，但我们的讨论中没有任何依赖这个事实的地方。如果态｜Ⅰ〉具有的能量比态｜Ⅱ〉<span class="kindle-cn-specialtext-qx">低</span>
+ ，式（9.55）仍然成立；这时<span class="kindle-cn-italic">P</span>
+ （Ⅰ→Ⅱ）就表示从入射电磁波<span class="kindle-cn-specialtext-qx">吸收</span>
+ 能量发生跃迁的概率。任何原子系统对光的吸收总是与能量差为<img alt="" class="kindle-cn-inline-image" src="Image04277.jpg" />
+ 的两个状态之间在振荡电场中发生跃迁的振幅有关。所以，对任何特定情况，此振幅总是用我们这里所用的方法计算，并可得到如式（9.55）那样的表式。因此，我们要强调指出这个结果的下列几个特点。首先，概率正比于T。换句话说，单位时间发生跃迁的概率是常数。其次，这个概率正比于入射到系统上的<span class="kindle-cn-specialtext-qx">光强</span>
+ 。最后，跃迁概率正比于<span class="kindle-cn-italic">μ</span>
+ <span class="math-super">2</span>
+ 。你们该记得，<span class="kindle-cn-italic">μ</span>
+ <span class="math-super"><img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+</span>
+ 决定了由电场<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ 所引起的能量变化。正因为这一点，<span class="kindle-cn-italic">μ</span>
+ <span class="math-super"><img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+</span>
+ 作为耦合项也出现在式（9.38）及（9.39）中，就是它引起原来是定态的两个状态｜Ⅰ〉与｜Ⅱ〉之间的跃迁。换句话说，对于我们所考虑的小的<img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+ ，<span class="kindle-cn-italic">μ</span>
+ <span class="math-super"><img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+</span>
+ 就是哈密顿矩阵元中联系着态｜Ⅰ〉与｜Ⅱ〉的所谓“微扰项”。在一般情况下，我们要用矩阵元〈Ⅱ｜<span class="kindle-cn-italic">H</span>
+ ｜Ⅰ〉代替<span class="kindle-cn-italic">μ</span>
+ <span class="math-super"><img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+</span>
+ （见§5-6）。</p>
+<p>在第1卷§42-5中我们讲过用爱因斯坦系数<span class="kindle-cn-italic">A</span>
+ 与<span class="kindle-cn-italic">B</span>
+ 表示的光的吸收，受激发射，及自发发射之间的关系。现在，我们终于有了计算这些系数的量子力学程序了。我们所说的双态氨分子的<span class="kindle-cn-italic">P</span>
+ （Ⅰ→Ⅱ）正好对应于爱因斯坦辐射理论的吸收系数<span class="kindle-cn-italic">B</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">nm</span>
+</span>
+ 。对于复杂的氨分子——无论什么人要对它进行计算都太困难——我们已将矩阵元〈Ⅱ｜<span class="kindle-cn-italic">H</span>
+ ｜Ⅰ〉取作为<span class="kindle-cn-italic">μ</span>
+ <span class="math-super"><img alt="" class="kindle-cn-inline-image" src="Image04212.jpg" />
+</span>
+ ，并讲明<span class="kindle-cn-italic">μ</span>
+ 要由实验得到。对简单的原子系统，属于任何特定跃迁的<span class="kindle-cn-italic">μ</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">mn</span>
+</span>
+ 可由以下<span class="kindle-cn-specialtext-qx">定义</span>
+ 计算出：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image04278.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这里<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">mn</span>
+</span>
+ 是包括弱电场效应的哈密顿矩阵元。这样计算出的<span class="kindle-cn-italic">μ</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">mn</span>
+</span>
+ 称为<span class="kindle-cn-specialtext-qx">电偶极子矩阵元</span>
+ 。所以，光的吸收与发射的量子力学理论就归结为对特定原子系统计算这些矩阵元。</p>
+<p>我们对简单的双态系统的研究就这样使我们得以理解光的吸收与发射的普遍问题。</p>
+<div class="empty"></div>
+<p class="kindle-cn-noindent">————————————————————</p>
+<p class="fnote">
+<a id="ch1" href="text00369.html#ch1-back">(1)</a>
+ &nbsp;往后你自己在阅读或与别人交谈时，如果有个区分阿拉伯数字1及2和罗马数字Ⅰ及Ⅱ的简便方法将是有益的。我们觉得对阿拉伯数字保留“one”和“two”的名称，而用“eins”及“zwei”来称呼Ⅰ及Ⅱ是方便的（虽然称作“unus”及“duo”也许更合理些！）。（以上外文分别是英文、德文和意大利文“一”和“二”的意思。——译者注）</p>
+<p class="fnote">
+<a id="ch2" href="text00369.html#ch2-back">(2)</a>
+ &nbsp;很抱歉，我们不得不引进一个新的记号，因为我们已经用<span class="kindle-cn-italic">p</span>
+ 和<span class="kindle-cn-italic">E</span>
+ 来表示动量和能量，所以不想再用它们来表示偶极矩和电场。记住，在这一节中<span class="kindle-cn-italic">μ</span>
+ 是<span class="kindle-cn-specialtext-qx">电</span>
+ 偶极矩。</p>
+<p class="fnote">
+<a id="ch3" href="text00369.html#ch3-back">(3)</a>
+ &nbsp;例如，下面就是一组可能的解，你很容易验证它们：<img alt="" class="kindle-cn-inline-image3" src="Image04279.jpg" />
+</p>
+<p class="fnote">
+<a id="ch4" href="text00369.html#ch4-back">(4)</a>
+ &nbsp;从现在起我们写｜Ⅰ〉与｜Ⅱ〉来代替｜<span class="kindle-cn-italic">ψ</span>
+ Ⅰ〉与｜<span class="kindle-cn-italic">ψ</span>
+ Ⅱ〉。你们必定记得实际的态｜ψⅠ〉与｜ψⅡ〉是能量的基础态乘以适当的指数因子。</p>
+<p class="fnote">
+<a id="ch5" href="text00369.html#ch5-back">(5)</a>
+ &nbsp;本书原文three-state，译作“三态”。现在普遍使用的术语是“三能级”three-level。——译者注</p>
+<p class="fnote">
+<a id="ch6" href="text00369.html#ch6-back">(6)</a>
+ &nbsp;利用公式<img alt="" class="kindle-cn-inline-image2" src="Image04280.jpg" />
+</p>
+</body>
+</html>

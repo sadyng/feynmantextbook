@@ -1,0 +1,752 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" xmlns:epub="http://www.idpf.org/2007/ops" lang="zh-CN">
+<head>
+<title>第6章　概率</title>
+<link href="flow0002.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="chapter" id="chapter">
+<h1 class="kindle-cn-heading-1">第6章　概率</h1>
+<p>
+<span class="kaiti">我们这个世界的真正逻辑寓于概率的计算之中。</span>
+</p>
+<p class="kindle-cn-para-right">
+<span class="kaiti">——J.C.麦克斯韦</span>
+</p>
+<h2 class="kindle-cn-heading2" id="hh2-27">§6-1　机会和可能性</h2>
+<p>“机会”是日常生活中通常使用的一个词汇。无线电在播送明天的天气预报时可能会说：“明天下雨的机会是60%。”你也许会说：“我能活上100岁的机会是不大的。”科学家也使用机会这个词。一个地震学家可能会对这样的问题感兴趣：“明年在南加利福尼亚州发生某一级地震的机会有多大？”一个物理学家也许会提出这样的问题：“在下一个10 s内，某一特定盖革计数器将记录到20个计数的机会是多少？”一个政治家或国务活动家可能对下列问题感兴趣：“下一个10年内发生核战争的机会是多少？”同样，你也许会对从这一章中将学到一些东西的机会发生兴趣。</p>
+<p>所谓<span class="kindle-cn-specialtext-qx">机会</span>
+ 指的是某种类似于猜测的事。为什么我们要猜测呢？希望作出判断而只掌握不完全的信息或不确定的知识时，我们就要进行猜测。我们要对这是些什么东西或者可能会发生什么事情进行猜测。由于必须作出决定，我们常常要进行猜测。比如说，明天我是否要带上雨衣？我应设计一座能够防御哪种程度地震的新大厦？我是否要为自己建造一个放射性微粒掩蔽所？我是否要在国际谈判中改变自己的立场？我今天是否要去上课？</p>
+<p>有时我们所以要进行猜测，是因为我们想用自己有限的知识来对某种情况说出<span class="kindle-cn-specialtext-qx">尽可</span>
+ <span class="kindle-cn-specialtext-qx">能</span>
+ 多的东西。事实上，任何一个判断本质上都是一种猜测。同样，任何物理理论都是一种猜测，其中有成功的，也有失败的。概率论就是为进行较好猜测而产生的一种理论体系。应用概率的语言能使我们定量地谈论某些情况，而这些情况的变化可能很大，但确有某种一贯的平均行为。</p>
+<p>让我们来研究向上抛掷硬币这件事。如果抛掷——以及硬币本身——都是“可靠”的，那么对任何一次特定的抛掷，我们无法预期能得到什么样的结果。然而我们可能会感到，在大量的抛掷中应该得到数目大致相等的正面和反面。我们说：“每次抛掷以正面落地的概率是0.5。”</p>
+<p>我们只对将来要做的那些观察谈论概率。<span class="kindle-cn-specialtext-qx">所谓在一次观察中将得到一个特定结果的</span>
+ “<span class="kindle-cn-specialtext-qx">概率</span>
+ ”，<span class="kindle-cn-specialtext-qx">就是指我们在大量重复这个观察时对其中出现该特定结果的最可能分数的估计</span>
+ 。如果我们设想重复作某种观察——比如看一下刚抛掷的硬币——<span class="kindle-cn-italic">N</span>
+ 次，并且称<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">A</span>
+ 为<span class="kindle-cn-specialtext-qx">我们</span>
+ 对这些观察中最可能出现某一指定结果A——比如出现“正面”——的数的<span class="kindle-cn-specialtext-qx">估计</span>
+ ，那么所谓观察到A的概率<span class="kindle-cn-italic">P</span>
+ （A）就是指</p>
+<div class="kindle-cn-image"><img alt="" src="Image00051.jpg" style="width:40%" />
+ <span style="float:right;">（6.1）</span>
+</div>
+<p>对我们这个定义，需要作几点注释。首先，只有当所发生的事件是某一<span class="kindle-cn-specialtext-qx">可重复</span>
+ 的观察的可能结果时，我们才能谈到发生某件事的概率。像“那所房子里出现一个幽灵的概率是多少？”这类问题有没有任何意义是不清楚的。</p>
+<p>也许你会反对说，没有一种情况是严格重复的。没错。每个不同的观察至少要在不同的时间或者地点进行的。我们所能说的只是，对于我们想要达到的目的来说，凡是重复进行的观察应该看来似乎都是<span class="kindle-cn-specialtext-qx">等价的</span>
+ 。至少我们应当这样假定，每一次观察都在同样准备好的情况下进行，特别是在观察开始时都要带有同等程度的无知（玩纸牌时，如果我们偷看一下对方的牌，那么我们对自己获胜的机会的估计就显然与偷看前不同）。</p>
+<p>我们应当强调指出，式（6.1）中的<span class="kindle-cn-italic">N</span>
+ 和<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">A</span>
+ 并<span class="kindle-cn-specialtext-qx">不</span>
+ 代表实际所作观察的次数。<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">A</span>
+ 是我们在<span class="kindle-cn-italic">N</span>
+ 个<span class="kindle-cn-specialtext-qx">想象</span>
+ 的观察中<span class="kindle-cn-specialtext-qx">可能</span>
+ 得出结果A的观察的最佳<span class="kindle-cn-specialtext-qx">估计</span>
+ 。因此，概率有赖于我们的知识以及进行估计的能力，实际上有赖于我们的常识！幸好许多事物在常识上都有某种程度的一致性，所以不同的人会作出同样的估计。然而，概率不必是一些“绝对”的数字。既然它们与我们对事物的无知有关，那么如果我们所掌握的知识发生变化，它们也会变得不同。</p>
+<p>你们也许已经注意到我们的概率定义中另一个相当“主观”的方面。我们把<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">A</span>
+ 说成是对最可能次数的一个估计……。可是这并不意味着我们<span class="kindle-cn-specialtext-qx">不折不扣</span>
+ 地期望能观察到<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">A</span>
+ ，而是期望能得到一个<span class="kindle-cn-specialtext-qx">靠近</span>
+ <span class="kindle-cn-italic">N</span>
+ <span class="math-sub">A</span>
+ 的数，而且数<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">A</span>
+ 比其邻近的任何其他的数<span class="kindle-cn-specialtext-qx">更为可能</span>
+ 。比如说，我们抛掷一个硬币30次，那么我们可以预料，得到正面的数字不大可能正好是15，而很可能是某一靠近15的数，如12、13、14、15、16或17。然而，如果我们<span class="kindle-cn-specialtext-qx">必须</span>
+ 对之作出抉择，那么我们就会决定，15次正面要比任何其他的数<span class="kindle-cn-specialtext-qx">更为可取</span>
+ 。我们将写成：<span class="kindle-cn-italic">P</span>
+ （正面）=0.5。</p>
+<p>为什么我们选择15为一个比任何其他数更可取的数呢？我们一定跟自己进行过如下的争辩：如果在<span class="kindle-cn-italic">N</span>
+ 次抛掷中得到正面的最可能次数为<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ ，那么得到反面的最可能次数<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">T</span>
+ 就等于<span class="kindle-cn-italic">N</span>
+ -<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ （这里我们作了这样的假定，即每次抛掷<span class="kindle-cn-specialtext-qx">不是</span>
+ 得到正面<span class="kindle-cn-specialtext-qx">便是</span>
+ 得到反面，不会得到“其他”结果）。但如果硬币是“可靠”的，它就既不偏向正面，也不偏向反面。除非有某些理由可以认为硬币（或者抛掷）是不可靠的，我们就必须认为正面与反面具有相等的可能性。所以必须使<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">T</span>
+ =<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ 。这样就得到</p>
+<p class="kindle-cn-para-center">
+<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">T</span>
+ =<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ =<img alt="" class="kindle-cn-inline-image1a" src="Image00052.jpg" />
+ ，或者<span class="kindle-cn-italic">P</span>
+ （H）=<span class="kindle-cn-italic">P</span>
+ （T）=0.5.</p>
+<p>我们可以把这一论证推广到任何一种情况，在这种情况下，可以观察到<span class="kindle-cn-italic">m</span>
+ 个不同但又“相等”（即机会均等）的可能的结果。如果通过观察能得出<span class="kindle-cn-italic">m</span>
+ 个不同结果，而且又有理由相信，其中任何一个结果与别的任何结果同样可能，那么得到某一个<span class="kindle-cn-specialtext-qx">特定</span>
+ 结果A的概率就等于<span class="kindle-cn-italic">P</span>
+ （A）=1/<span class="kindle-cn-italic">m</span>
+ 。</p>
+<p>如果在一个不透明的箱子里有7个不同颜色的小球，我们“随便”（即不朝它看时）取出一个，那么得到某一种颜色的小球的概率是1/7。从已洗过的52张牌中“任意”抽出一张红桃10的概率是1/52。掷骰子而得到两个一点的概率是1/36。</p>
+<p class="kindle-cn-para-center">* * * *</p>
+<p>在第5章中，我们用原子核的表观面积，或者称为“截面”来描写它的大小。这样做时，实际上我们就是在谈概率。当我们向一块薄的材料发射一个高能粒子时，它有一定机会直接穿过去，也有一定机会碰撞在一个原子核上（既然原子核如此之小，以致我们无法<span class="kindle-cn-specialtext-qx">看到</span>
+ ，我们就不可能直接瞄准，而必须“盲目射击”）。设在这块薄板中有<span class="kindle-cn-italic">n</span>
+ 个原子，而每个原子的核具有截面积<span class="kindle-cn-italic">σ</span>
+ ，那么被所有这些核所“遮盖”的总面积为<span class="kindle-cn-italic">nσ</span>
+ 。在随机发射的很大数目<span class="kindle-cn-italic">N</span>
+ 中，我们预期能击中<span class="kindle-cn-specialtext-qx">某些</span>
+ 核的数目<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">C</span>
+ 与<span class="kindle-cn-italic">N</span>
+ 之比，犹如被遮盖的面积与薄板的总面积之比</p>
+<div class="kindle-cn-image"><img alt="" src="Image00053.jpg" style="width:40%" />
+ <span style="float:right;">（6.2）</span>
+</div>
+<p class="kindle-cn-noindent">因此我们可以说，任何一个入射粒子在穿过薄板时将经受一次撞击的<span class="kindle-cn-specialtext-qx">概率</span>
+ 为</p>
+<div class="kindle-cn-image"><img alt="" src="Image00054.jpg" style="width:40%" />
+ <span style="float:right;">（6.3）</span>
+</div>
+<p class="kindle-cn-noindent">其中<span class="kindle-cn-italic">n</span>
+ /<span class="kindle-cn-italic">A</span>
+ 是我们这块薄板中单位面积内的原子数。</p>
+<h2 class="kindle-cn-heading2" id="hh2-28">§6-2　涨落</h2>
+<div class="kindle-cn-sidebar-left"><img alt="" src="Image00055.jpg" style="width:100%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图6-1</span>
+ 　在每轮为30次抛掷的三轮游戏中所观察到的正面和反面的前后次序</p>
+</div>
+<p>我们现在想利用有关概率的概念来比较详细地考虑一下这样的一个问题：“如果我把一个硬币抛掷<span class="kindle-cn-italic">N</span>
+ 次，那么预期会得到多少次真正的正面？”然而在回答这个问题之前，让我们先来看一下在这样一个“实验”中确实会发生什么情况。图6-1表示<span class="kindle-cn-italic">N</span>
+ =30的这样一个实验在前三“轮”中所得的结果。“正面”和“反面”的前后次序完全是按照它们得到时的次序排列的。第一轮得到11次正面；第二轮也是11次；第三轮16次。在这三轮试验中，我们没有一回得到15次正面。是不是要对硬币开始发生怀疑呢？或者在这样一种游戏中，我们设想得到正面的最可能次数是15这一点错了呢？再做97轮实验，以便一共得到100轮每回抛掷30次的实验。实验的结果列在表6-1中<a id="ft1" href="text00015.html#fn_1">
+<span class="math-super">[1]</span>
+</a>
+ 。</p>
+<div class="kindle-cn-image">
+<p class="kindle-cn-caption">表6-1　在抛掷一个硬币30次的逐轮试验中每轮所得正面的数目</p>
+<img alt="" src="Image00056.jpg" style="width:100%" />
+</div>
+<p>如果观察一下表6-1中所列的各数，那么我们看到，大多数结果“靠近”15，而且位于12与18之间。如果我们为这些结果画一张<span class="kindle-cn-specialtext-qx">分布</span>
+ 图，那么就会对这些结果的细节有一个更好的理解。我们计算一下得到某一记录<span class="kindle-cn-italic">k</span>
+ 的实验次数，并把这个数对每一个<span class="kindle-cn-italic">k</span>
+ 作图，如图6-2所示。记录到15次正面的共有13轮游戏。记录到14次正面的也是13轮。得到16和17次的，每一个都<span class="kindle-cn-specialtext-qx">大于</span>
+ 13轮。我们是否断定这里对正面有所偏袒？我们的“最佳估计”是否不够好？是不是我们现在应该作出这个结论，即每轮30次抛掷的“最可能”记录实际上是16次正面？但是且慢！把所有各轮游戏加到一起，就总共抛掷了3 000次。而获得正面的总数是1 492。可见出现正面的抛掷其比数是0.497，很接近而稍<span class="kindle-cn-specialtext-qx">小</span>
+ 于0.5。当然我们<span class="kindle-cn-specialtext-qx">不应</span>
+ 假定抛掷后得到正面的概率大于0.5！至于某<span class="kindle-cn-specialtext-qx">特定</span>
+ 的一组观察经常得到16次正面这个事实，是一种<span class="kindle-cn-specialtext-qx">涨落</span>
+ 现象。然而我们仍然预期最可能的正面数是15。</p>
+<div class="kindle-cn-image"><img alt="" src="Image00057.jpg" style="width:74%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图6-2</span>
+ 　每轮30次抛掷的100轮游戏所得结果的概况。垂直线表示记录到<span class="kindle-cn-italic">k</span>
+ 次正面的各轮游戏的数目。虚线表示从概率计算求得的所期望记录到<span class="kindle-cn-italic">k</span>
+ 次的游戏轮数</p>
+</div>
+<p>我们可以提出这样的一个问题：“在30次抛掷的游戏中将获得15、16或任何其他次数正面的概率<span class="kindle-cn-specialtext-qx">是</span>
+ 多少？”我们已经说过，在抛掷一次的游戏中，得到<span class="kindle-cn-specialtext-qx">一次</span>
+ 正面的概率是0.5，得不到正面的概率也是0.5。在抛掷两次的游戏中，有<span class="kindle-cn-specialtext-qx">四种</span>
+ 可能的结果：即HH，HT，TH，TT<a id="ft2" href="text00015.html#fn_2">
+<span class="math-super">[2]</span>
+</a>
+ 。既然这些结果中的每一个都是同样可能的，我们就推断出：（a）记录到两次正面的概率是1/4；b）记录到一次正面的概率是2/4；（c）记录到零次正面的概率是1/4。这里有<span class="kindle-cn-specialtext-qx">两</span>
+ 种方式可以得到一次正面。但是得到两次或零次正面的方式各只有一种。</p>
+<p>现在我们来研究抛掷三次的游戏。第三次抛掷同样可能得到一个正面或者一个反面。这里得到三次正面的方式只有一种：我们<span class="kindle-cn-specialtext-qx">必须</span>
+ 在前两次抛掷中得到两次正面，而后在最后一次中也得到正面。可是这里有<span class="kindle-cn-specialtext-qx">三</span>
+ 种方式可以得到两次正面。在掷得两次正面（一种方式）后，我们可以掷出反面，或者在前两次抛掷中只掷出一次正面（两种方式）后，我们可以掷出一个正面。因此对于3—H，2—H，1—H，0—H等记录，其同样可能的方式的数目分别为1，3，3，1。共有八种不同的可能结果。于是其概率分别为1/8，3/8，3/8，1/8。</p>
+<p>刚才的讨论可以用图6-3所示的图解表示来概括。可以清楚看出，对于更大数目的抛掷，应如何来把这个图解表示继续下去。图6-4表示抛掷6次的这样一个图解表示。达到图中任何一点的所有“方式”的数目就是从起点开始到该点可以取的各种不同“途径”（即正面和反面相连的各种次序）的数目。最后一栏告诉我们掷得正面的总数。这样一种图表中出现的一组数称为<span class="kindle-cn-specialtext-qx">帕斯卡三角形</span>
+ 。这些数也称为<span class="kindle-cn-specialtext-qx">二项式系数</span>
+ ，因为它们也出现在（<span class="kindle-cn-italic">a</span>
+ +<span class="kindle-cn-italic">b</span>
+ ）<span class="math-super">
+<span class="kindle-cn-italic">n</span>
+</span>
+ 的展开式中。如果我们称<span class="kindle-cn-italic">n</span>
+ 为抛掷的次数，<span class="kindle-cn-italic">k</span>
+ 为掷得正面的次数，那么图表中的数字通常用符号<img alt="" class="kindle-cn-inline-image1a" src="Image00058.jpg" />
+ 来表示。顺便提一下，二项式系数也可以从下式</p>
+<div class="kindle-cn-image"><img alt="" src="Image00059.jpg" style="width:40%" />
+ <span style="float:right;">（6.4）</span>
+</div>
+<div class="kindle-cn-image"><img alt="" src="Image00060.jpg" style="width:50%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图6-3</span>
+ 　在抛掷三次的游戏中，能得到0，1，2，3次正面的方式数目的图解表示</p>
+</div>
+<div class="kindle-cn-image"><img alt="" src="Image00061.jpg" style="width:48%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图6-4</span>
+ 　类似于图6-3的抛掷6次的游戏的图解表示</p>
+</div>
+<p class="kindle-cn-noindent">算出，其中<span class="kindle-cn-italic">n</span>
+ ！称为“<span class="kindle-cn-italic">n</span>
+ 阶乘”，表示连乘积<span class="kindle-cn-italic">n</span>
+ （<span class="kindle-cn-italic">n</span>
+ -1）（<span class="kindle-cn-italic">n</span>
+ -2）…3·2·1的意思。</p>
+<p>我们现在打算根据式（6.1）来计算在<span class="kindle-cn-italic">n</span>
+ 次抛掷中得到<span class="kindle-cn-italic">k</span>
+ 次正面的概率<span class="kindle-cn-italic">P</span>
+ （<span class="kindle-cn-italic">k</span>
+ ，<span class="kindle-cn-italic">n</span>
+ ）。所有可能结果的总数是2<span class="math-super">
+<span class="kindle-cn-italic">n</span>
+</span>
+ （因为对每一抛掷有两个结果），得到<span class="kindle-cn-italic">k</span>
+ 次正面的总共有<img alt="" class="kindle-cn-inline-image1a" src="Image00062.jpg" />
+ 种，而每一种都是同样可能的，所以我们有</p>
+<div class="kindle-cn-image"><img alt="" src="Image00063.jpg" style="width:40%" />
+ <span style="float:right;">（6.5）</span>
+</div>
+<p>既然<span class="kindle-cn-italic">P</span>
+ （<span class="kindle-cn-italic">k</span>
+ ，<span class="kindle-cn-italic">n</span>
+ ）是我们期望会得到<span class="kindle-cn-italic">k</span>
+ 次正面的比数，那么在100轮游戏中，我们应预期共有100·<span class="kindle-cn-italic">P</span>
+ （<span class="kindle-cn-italic">k</span>
+ ，<span class="kindle-cn-italic">n</span>
+ ）轮会出现<span class="kindle-cn-italic">k</span>
+ 次正面。图6-2中虚线所经过的各点就是从100·<span class="kindle-cn-italic">P</span>
+ （<span class="kindle-cn-italic">k</span>
+ ，30）计算出来的那些点子。我们可以看到，我们<span class="kindle-cn-specialtext-qx">预期</span>
+ 有14或15轮游戏会记录到15次正面，然而只有13轮游戏观察到这个记录，我们<span class="kindle-cn-specialtext-qx">预期</span>
+ 有13或14轮游戏会记录到16次正面，但是却有16轮游戏观察到这个记录。这种涨落情况是“游戏的组成部分”。</p>
+<p>我们刚才用过的方法，可以应用于最一般的情况，也就是在单独一次观察中只能得出两种可能结果的情况。我们用W［表示“win”（赢）］和L［表示“lose”（输）］来表示这两种结果。在一般情况下，单独一个事件会得W或L的概率是无需相等的。设<span class="kindle-cn-italic">p</span>
+ 为得到结果W的概率。于是<span class="kindle-cn-italic">q</span>
+ ——这个得到结果L的概率必然等于（1-<span class="kindle-cn-italic">p</span>
+ ）。在一组<span class="kindle-cn-italic">n</span>
+ 轮的试验中，得到<span class="kindle-cn-italic">k</span>
+ 次结果为W的概率<span class="kindle-cn-italic">P</span>
+ （<span class="kindle-cn-italic">k</span>
+ ，<span class="kindle-cn-italic">n</span>
+ ）就等于</p>
+<div class="kindle-cn-image"><img alt="" src="Image00064.jpg" style="width:40%" />
+ <span style="float:right;">（6.6）</span>
+</div>
+<p>这个概率函数称为<span class="kindle-cn-specialtext-qx">伯努利</span>
+ 或<span class="kindle-cn-specialtext-qx">二项式</span>
+ 概率。</p>
+<h2 class="kindle-cn-heading2" id="hh2-29">§6-3　无规行走</h2>
+<p>另一个有趣的问题也需要用到概率概念。这就是“无规行走”的问题。在最简单的形式下，我们可以想象这样一个“游戏”，其中“游戏者”从<span class="kindle-cn-italic">x</span>
+ =0的一点出发，要求他每“移动”一次<span class="kindle-cn-specialtext-qx">要么</span>
+ 朝前（向+<span class="kindle-cn-italic">x</span>
+ 方向）走一步，<span class="kindle-cn-specialtext-qx">要么</span>
+ 朝后（向-<span class="kindle-cn-italic">x</span>
+ 方向）走一步。而朝前朝后必须<span class="kindle-cn-specialtext-qx">随机</span>
+ 决定，例如用抛掷硬币的方法。我们将怎样来描写这种运动的结果呢？在一般形式下，这个问题与气体中原子（或其他粒子）的运动，即布朗运动有关，也与测量中误差的组合有关。你们将会看到，无规行走问题与我们已讨论过的抛掷硬币问题密切有关。</p>
+<p>首先，让我们看几个无规行走的例子。我们可以用行走者在<span class="kindle-cn-italic">N</span>
+ 步中所经过的净距离<span class="kindle-cn-italic">D</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">N</span>
+</span>
+ 来表示他的进度。图6-5为无规行走者所走路径的三个例子（这里我们用图6-1所示抛掷硬币所得的结果作为随机选择的移动取向）。</p>
+<div class="kindle-cn-image"><img alt="" src="Image00065.jpg" style="width:77%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图6-5</span>
+ 　无规行走取得的进度。横坐标<span class="kindle-cn-italic">N</span>
+ 表示所走的步子总数；纵坐标<span class="kindle-cn-italic">D</span>
+ （<span class="kindle-cn-italic">N</span>
+ ）表示离开起点的净距离</p>
+</div>
+<p>对于这样一种移动我们可以说些什么呢？首先我们也许会问：“平均而言他走了多远？”我们必定<span class="kindle-cn-specialtext-qx">预期</span>
+ 他的平均进度将为零，因为他向前或向后走的可能性是均等的。然而我们有这样的感觉，随着<span class="kindle-cn-italic">N</span>
+ 的增加，他更可能偏离起点越来越远。因此我们也许要问，走过的用<span class="kindle-cn-specialtext-qx">绝对值</span>
+ 表示的平均距离是多少，也就是说|<span class="kindle-cn-italic">D</span>
+ |的平均值是多少。可是在这里用另一种量度“进度”的方法更为方便。这就是用距离的平方<span class="kindle-cn-italic">D</span>
+ <span class="math-super">2</span>
+ 来表示，它无论对正的还是负的移动都为正，所以它是这种随机漫步的一个合理<span class="kindle-cn-specialtext-qx">量度</span>
+ 。</p>
+<p>我们可以证明，<img alt="" class="kindle-cn-inline-image1a" src="Image00066.jpg" />
+ 的预期值恰好是所走步子的数目<span class="kindle-cn-italic">N</span>
+ 。所谓“预期值”，指的是可几值（也就是我们的最佳猜测），我们可以把它看作是对重复多次的一系列行走所<span class="kindle-cn-specialtext-qx">预期</span>
+ 的平均行为。我们用<img alt="" class="kindle-cn-inline-image1a" src="Image00067.jpg" />
+ 来表示这样一个预期值，并且也可以称它为“方均距离”。走一步后的<span class="kindle-cn-italic">D</span>
+ <span class="math-super">2</span>
+ 总是+1，所以当然<img alt="" class="kindle-cn-inline-image1a" src="Image00068.jpg" />
+ （所有的距离都将以一步为单位来量度。以后我们将不再写出距离的单位）。</p>
+<p>当<span class="kindle-cn-italic">N</span>
+ ＞1时，预期值<img alt="" class="kindle-cn-inline-image1a" src="Image00069.jpg" />
+ 可以从D<span class="math-sub">
+<span class="kindle-cn-italic">N</span>
+</span>
+ <span class="math-sub">-1</span>
+ 求得。如果走了（<span class="kindle-cn-italic">N</span>
+ -1）步后，我们得到<span class="kindle-cn-italic">D</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">N</span>
+</span>
+ <span class="math-sub">-1</span>
+ ，那么经过<span class="kindle-cn-italic">N</span>
+ 步后，就有<span class="kindle-cn-italic">D</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">N</span>
+</span>
+ =<span class="kindle-cn-italic">D</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">N</span>
+</span>
+ <span class="math-sub">-1</span>
+ +1<span class="kindle-cn-specialtext-qx">或</span>
+ <span class="kindle-cn-italic">D</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">N</span>
+</span>
+ =D<span class="math-sub">
+<span class="kindle-cn-italic">N</span>
+</span>
+ <span class="math-sub">-1</span>
+ -1。其平方为</p>
+<div class="kindle-cn-image"><img alt="" src="Image00070.jpg" style="width:40%" />
+ <span style="float:right;">（6.7）</span>
+</div>
+<p class="kindle-cn-noindent">对于大量独立的无规行走，我们所能预期得到的，每次只有每一个数值的一半，因此我们的平均预期值恰好是这两个可能值的平均值。于是<img alt="" class="kindle-cn-inline-image1a" src="Image00071.jpg" />
+ 的预期值就是<img alt="" class="kindle-cn-inline-image1a" src="Image00072.jpg" />
+ 。<span class="kindle-cn-specialtext-qx">一般而言</span>
+ ，我们对<img alt="" class="kindle-cn-inline-image1a" src="Image00073.jpg" />
+ 所应<span class="kindle-cn-specialtext-qx">期望</span>
+ 的“预期值”就是<img alt="" class="kindle-cn-inline-image1a" src="Image00074.jpg" />
+ （根据定义！）。所以</p>
+<div class="kindle-cn-image"><img alt="" src="Image00075.jpg" style="width:40%" />
+ <span style="float:right;">（6.8）</span>
+</div>
+<p>我们已经说明<img alt="" class="kindle-cn-inline-image1a" src="Image00076.jpg" />
+ ；因而得到</p>
+<div class="kindle-cn-image"><img alt="" src="Image00077.jpg" style="width:40%" />
+ <span style="float:right;">（6.9）</span>
+</div>
+<p class="kindle-cn-noindent">这是一个多么简单的结果！</p>
+<p>如果我们希望得到的不是距离的平方，而是像距离那样的一个数，以表示无规行走中“所作的从原点算起的进展”，那么我们可以用“方均根距离”<span class="kindle-cn-italic">D</span>
+ <span class="math-sub">rms</span>
+ 来表示：</p>
+<div class="kindle-cn-image"><img alt="" src="Image00078.jpg" style="width:40%" />
+ <span style="float:right;">（6.10）</span>
+</div>
+<p>我们已经指出，无规行走问题在数学形式上与本章开始时讨论过的那种抛掷硬币的游戏十分相似。如果我们设想每一步的取向对应于抛掷硬币中出现的正面或反面，那么<span class="kindle-cn-italic">D</span>
+ 正好是获得正面的次数与获得反面的次数的差值<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ -<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">T</span>
+ 。由于<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ +<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">T</span>
+ =<span class="kindle-cn-italic">N</span>
+ 是总的所走步数（或总的所抛掷次数），我们就有<span class="kindle-cn-italic">D</span>
+ =2<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ -<span class="kindle-cn-italic">N</span>
+ 。以前我们曾为预期的分布<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ （也称为<span class="kindle-cn-italic">k</span>
+ ）导出一个表达式，而且得到了如式（6.5）所示的结果。由于<span class="kindle-cn-italic">N</span>
+ 正好是一个常数，所以我们就为<span class="kindle-cn-italic">D</span>
+ 得到一个相应的分布（由于超过<span class="kindle-cn-italic">N</span>
+ /2后出现的每次正面都会使反面受到“损失”，所以在<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ 与<span class="kindle-cn-italic">D</span>
+ 之间相差一个因子2）。图6-2表示在无规行走30步的例子中可能得到的距离分布情况（其中<span class="kindle-cn-italic">k</span>
+ =15应读作<span class="kindle-cn-italic">D</span>
+ =0，<span class="kindle-cn-italic">k</span>
+ =16应读作<span class="kindle-cn-italic">D</span>
+ =2，等等）。</p>
+<p>
+<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ 和它的预期值<span class="kindle-cn-italic">N</span>
+ /2的偏差为</p>
+<div class="kindle-cn-image"><img alt="" src="Image00079.jpg" style="width:40%" />
+ <span style="float:right;">（6.11）</span>
+</div>
+<p>方均根（rms）偏差为</p>
+<div class="kindle-cn-image"><img alt="" src="Image00080.jpg" style="width:40%" />
+ <span style="float:right;">（6.12）</span>
+</div>
+<p>根据我们对<span class="kindle-cn-italic">D</span>
+ <span class="math-sub">rms</span>
+ 求得的结果，在走30步所预期的“典型”距离应是<img alt="" class="kindle-cn-inline-image1a" src="Image00081.jpg" />
+ <img alt="" class="kindle-cn-inline-image1a" src="Image00082.jpg" />
+ ，或者典型的<span class="kindle-cn-italic">k</span>
+ 应与15相差大约5.5/2≈2.8个单位。在图6-2中，我们可以看到，从中心量起的曲线“宽度”正好大约等于3个单位，和上述结果相一致。</p>
+<p>现在我们已有条件来考虑一直到目前为止被我们所回避的一个问题。我们怎样知道一块硬币是“可靠的”或是“灌过铅的”？现在我们至少能够为之提供一部分答案。对于一块可靠的硬币，我们预期其能出现正面的次数的比值是0.5，亦即</p>
+<div class="kindle-cn-image"><img alt="" src="Image00083.jpg" style="width:40%" />
+ <span style="float:right;">（6.13）</span>
+</div>
+<p>我们<span class="kindle-cn-specialtext-qx">也</span>
+ 预期实际的<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ 将偏离<span class="kindle-cn-italic">N</span>
+ /2大约有<img alt="" class="kindle-cn-inline-image1a" src="Image00084.jpg" />
+ ，或者说，它的<span class="kindle-cn-specialtext-qx">比值</span>
+ 与1/2的偏差为</p>
+<div class="kindle-cn-image"><img alt="" src="Image00085.jpg" style="width:40%" />
+</div>
+<p class="kindle-cn-noindent">
+<span class="kindle-cn-italic">N</span>
+ 越大，所<span class="kindle-cn-specialtext-qx">预期</span>
+ 的比值<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ /<span class="kindle-cn-italic">N</span>
+ 就越接近于二分之一。</p>
+<p>在图6-6中，我们根据本章前面提到的掷币记录画了一条表示比值<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ /<span class="kindle-cn-italic">N</span>
+ 的曲线。从图中可以看出，对于大的<span class="kindle-cn-italic">N</span>
+ ，得正面的比值趋向于接近0.5。遗憾的是，对任何给定的一轮或几轮，连观察到的偏差都<span class="kindle-cn-specialtext-qx">保证不了接近于预期</span>
+ 的偏差。总是有一定的机会出现大的涨落——一长串的正面或者一长串的反面，造成一个任意大的偏差。我们一切所能说的，只是<span class="kindle-cn-specialtext-qx">如果</span>
+ 偏差接近于预期的<img alt="" class="kindle-cn-inline-image1a" src="Image00086.jpg" />
+ （比如说在2或3倍之内），那么就没有理由去怀疑硬币的可靠性。如果偏差大得多，那么我们可以对硬币发生怀疑，但无法证明它是灌过铅的（或者抛掷者是非常机灵的）。</p>
+<div class="kindle-cn-image"><img alt="" src="Image00087.jpg" style="width:68%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图6-6</span>
+ 　在一连串N次抛掷中获得正面次数的比例</p>
+</div>
+<p>我们也没有考虑过应该如何来处理这样一块“硬币”或某一与之相似的“不确定的”物体（比如一块始终以两种方位中无论哪一种着地的石块），对于它们来说，我们很有理由认为出现正面和反面的概率应该是不同的。我们已经定义了<span class="kindle-cn-italic">P</span>
+ （H）=〈<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ 〉<span class="kindle-cn-italic">/N</span>
+ 。那么怎样知道<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ 的<span class="kindle-cn-specialtext-qx">预期值</span>
+ 是多少呢？在某些情况下，我们所能做得最好的，就是去观察在大量抛掷中所得正面的数目。由于缺少任何更好的数据，我们不得不令〈<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ 〉=<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">H</span>
+ （观察值）（除此之外，还能期望做什么呢）。然而必须理解到，在这样一种情况下，不同的实验或不同的观察者可能会推论出不同的概率<span class="kindle-cn-italic">P</span>
+ （H）。但是我们可以<span class="kindle-cn-specialtext-qx">预料</span>
+ ，这些不同的答案应该在偏差<img alt="" class="kindle-cn-inline-image1a" src="Image00088.jpg" />
+ 的范围内相互一致［假如<span class="kindle-cn-italic">P</span>
+ （H）接近于1/2的话］。实验物理学家常常这样说：“实验确定的”概率是有“误差”的，并且把它写成</p>
+<div class="kindle-cn-image"><img alt="" src="Image00089.jpg" style="width:40%" />
+ <span style="float:right;">（6.14）</span>
+</div>
+<p class="kindle-cn-noindent">在这样一个表示式中含有下列意义：<span class="kindle-cn-specialtext-qx">存在</span>
+ 着一个“真正的”或“正确的”概率，只要我们知道的东西足够多，就能把它计算出来，其次是由于有涨落，观察会发生“误差”。然而没有办法能使这种想法做到逻辑上始终如一。如果能领悟到下列几点或许要比较好一些，即概率概念在某种意义上是主观的，它总是建立在不肯定的知识上的，而且它的定量值是随着我们得到的信息越多而改变着。</p>
+<h2 class="kindle-cn-heading2" id="hh2-30">§6-4　概率分布</h2>
+<p>我们现在回到无规行走的问题上来，并且考虑它的一种修正。我们设想除了每一步的方向（+或-）可以随机选择外，每一步的<span class="kindle-cn-specialtext-qx">长度</span>
+ 也能以某种无法预定的方式变化着，唯一的条件就是<span class="kindle-cn-specialtext-qx">平均而言</span>
+ 步子的长度是一个单位。这种情况更能代表象气体中一个分子的热运动那样的状况。如果我们称一步的长度为<span class="kindle-cn-italic">S</span>
+ ，那么<span class="kindle-cn-italic">S</span>
+ 完全可以取任何一个值，但最通常的是“接近于”1。为明确起见，我们令〈<span class="kindle-cn-italic">S</span>
+ <span class="math-super">2</span>
+ 〉=1，或者与之同等<span class="kindle-cn-italic">，</span>
+ S<span class="math-sub">rms</span>
+ =1。〈<span class="kindle-cn-italic">D</span>
+ <span class="math-super">2</span>
+ 〉的推导将仿照以前一样，只是式（6.8）现在要加以改变而写成</p>
+<div class="kindle-cn-image"><img alt="" src="Image00090.jpg" style="width:49%" />
+ <span style="float:right;">（6.15）</span>
+</div>
+<p class="kindle-cn-noindent">同以前一样，我们得到</p>
+<div class="kindle-cn-image"><img alt="" src="Image00091.jpg" style="width:40%" />
+ <span style="float:right;">（6.16）</span>
+</div>
+<p>现在对于距离<span class="kindle-cn-italic">D</span>
+ ，我们会预期得到什么样的一种分布呢？比如在走了30步后，<span class="kindle-cn-italic">D</span>
+ =0的概率是多少？回答是0！<span class="kindle-cn-italic">D</span>
+ 取<span class="kindle-cn-specialtext-qx">任一特定值</span>
+ 的概率是0，因为根本没有一种机会能使后退的（长度是变化的）步子的总和与朝前的步子的总和正好相等。我们无法画出一张像图6-2那样的图。</p>
+<p>然而如果我们不是去问获得其值正好等于0，1，或2的那些<span class="kindle-cn-italic">D</span>
+ 的概率是多少，而代之以去问获得其值<span class="kindle-cn-specialtext-qx">靠近</span>
+ 0，1，或2的那些<span class="kindle-cn-italic">D</span>
+ 的概率有多大，那么我们就能得到与图6-2相似的曲线。我们定义<span class="kindle-cn-italic">P</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，Δ<span class="kindle-cn-italic">x</span>
+ ）为<span class="kindle-cn-italic">D</span>
+ 位于<span class="kindle-cn-italic">x</span>
+ 处一个间隔Δ<span class="kindle-cn-italic">x</span>
+ （比如从<span class="kindle-cn-italic">x</span>
+ 到<span class="kindle-cn-italic">x</span>
+ +Δ<span class="kindle-cn-italic">x</span>
+ ）内的概率。对于小的Δ<span class="kindle-cn-italic">x</span>
+ ，我们可以预期<span class="kindle-cn-italic">D</span>
+ 位于这个间隔内的概率，与间隔的宽度Δ<span class="kindle-cn-italic">x</span>
+ 成正比。因此我们可以写成</p>
+<p class="kindle-cn-para-center">
+<span class="kindle-cn-italic">P</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，Δ<span class="kindle-cn-italic">x</span>
+ ）=<span class="kindle-cn-italic">p</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）Δ<span class="kindle-cn-italic">x</span>
+ ，<span style="float:right;">（6.17）</span>
+</p>
+<p class="kindle-cn-noindent">函数<span class="kindle-cn-italic">p</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）称为<span class="kindle-cn-specialtext-qx">概率密度</span>
+ 。</p>
+<p>
+<span class="kindle-cn-italic">p</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）的形式与所走步子的数目<span class="kindle-cn-italic">N</span>
+ 有关，也与个别步子的长度分布有关。我们不能在这里给出有关的论证，但当<span class="kindle-cn-italic">N</span>
+ 很大时，对于所有合理的个别步子的长度分布，<span class="kindle-cn-italic">p</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）都是<span class="kindle-cn-specialtext-qx">相同</span>
+ 的，因而只取决于<span class="kindle-cn-italic">N</span>
+ 。在图6-7中，我们对三个<span class="kindle-cn-italic">N</span>
+ 值各作一条曲线。你们会注意到，这些曲线的“半宽度”（离<span class="kindle-cn-italic">x</span>
+ =0的典型散布范围）是<img alt="" class="kindle-cn-inline-image1a" src="Image00092.jpg" />
+ ，正如我们已证明过它理应如此。</p>
+<div class="kindle-cn-image"><img alt="" src="Image00093.jpg" style="width:78%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图6-7</span>
+ 　在步数为<span class="kindle-cn-italic">N</span>
+ 的无规行走中终止在从起点算起的距离<span class="kindle-cn-italic">D</span>
+ 处的概率密度（<span class="kindle-cn-italic">D</span>
+ 是用均方根步长为单位来量度的）</p>
+</div>
+<div class="kindle-cn-sidebar-right"><img alt="" src="Image00094.jpg" style="width:100%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图6-8</span>
+ 　无规行走中所通过的距离<span class="kindle-cn-italic">D</span>
+ ，它位于<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">2</span>
+ 之间的概率就是曲线<span class="kindle-cn-italic">p</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）下面从<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">1</span>
+ 到<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">2</span>
+ 的面积</p>
+</div>
+<p>你们可能也已注意到，靠近零处的<span class="kindle-cn-italic">p</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）值反比于<img alt="" class="kindle-cn-inline-image1a" src="Image00095.jpg" />
+ 。这是由于曲线都有相似的形状以及曲线下面的面积都应相等而来的。既然<span class="kindle-cn-italic">p</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）Δ<span class="kindle-cn-italic">x</span>
+ 是当Δ<span class="kindle-cn-italic">x</span>
+ 很小时在Δ<span class="kindle-cn-italic">x</span>
+ 中找到<span class="kindle-cn-italic">D</span>
+ 的概率，那么我们可以这样来确定在任意一个从<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">1</span>
+ 到<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">2</span>
+ 的间隔内<span class="kindle-cn-specialtext-qx">不论何处</span>
+ 找到<span class="kindle-cn-italic">D</span>
+ 的概率，只要把间隔分割成许多微小增量Δ<span class="kindle-cn-italic">x</span>
+ ，然后对每个增量的有关概率<span class="kindle-cn-italic">p</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）Δ<span class="kindle-cn-italic">x</span>
+ 相加而求其总和。<span class="kindle-cn-italic">D</span>
+ 落在<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">2</span>
+ 之间某处的概率，我们可以写作<span class="kindle-cn-italic">P</span>
+ （<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">1</span>
+ ＜<span class="kindle-cn-italic">D</span>
+ ＜<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">2</span>
+ ），它等于图6-8中所示阴影的面积。增量Δ<span class="kindle-cn-italic">x</span>
+ 取得越小，结果就越正确。因此我们可以写成</p>
+<div class="kindle-cn-image"><img alt="" src="Image00096.jpg" style="width:41%" />
+ <span style="float:right;">（6.18）</span>
+</div>
+<p>整个曲线下面的面积是<span class="kindle-cn-italic">D</span>
+ 落在不论何处（也就是它具有在<span class="kindle-cn-italic">x</span>
+ =-∞到<span class="kindle-cn-italic">x</span>
+ =+∞之间的<span class="kindle-cn-specialtext-qx">某一</span>
+ 值）的概率。这个概率当然是1。因而必须有</p>
+<div class="kindle-cn-image"><img alt="" src="Image00097.jpg" style="width:40%" />
+ <span style="float:right;">（6.19）</span>
+</div>
+<p class="kindle-cn-noindent">由于图6-7中的曲线与<img alt="" class="kindle-cn-inline-image1a" src="Image00098.jpg" />
+ 成比例地变宽，所以为了保持总面积等于1，它们的高度必须正比于<img alt="" class="kindle-cn-inline-image1a" src="Image00099.jpg" />
+ 。</p>
+<p>我们这里所描述的概率密度函数是最经常遇到的一种。通常把它称为<span class="kindle-cn-specialtext-qx">正常</span>
+ 或<span class="kindle-cn-specialtext-qx">高斯</span>
+ 概率密度。它的数学形式是</p>
+<div class="kindle-cn-image"><img alt="" src="Image00100.jpg" style="width:40%" />
+ <span style="float:right;">（6.20）</span>
+</div>
+<p class="kindle-cn-noindent">其中<span class="kindle-cn-italic">σ</span>
+ 称为<span class="kindle-cn-specialtext-qx">标准偏差</span>
+ ，在我们的情况中<img alt="" class="kindle-cn-inline-image1a" src="Image00101.jpg" />
+ ，或者当方均根步长不为1时</p>
+<div class="kindle-cn-image"><img alt="" src="Image00102.jpg" style="width:40%" />
+</div>
+<p>前面我们已提到，气体中一个分子或任何一个粒子的运动犹如一种无规行走。假定我们打开一个装着有机化合物的瓶子，让它的一部分蒸气跑到空气中去。如果外面有气流，以致空气在作循环运动，那么气流也将带着蒸气一起运动。然而即使在<span class="kindle-cn-specialtext-qx">完全静止的空气</span>
+ 中，蒸气也会渐渐散布开去，进行扩散，直到布满整个房间。我们可以从它的颜色或气味加以鉴别。有机化合物蒸气的个别分子之所以能在静止空气中散布开去，是由于这些分子与其他分子碰撞而造成的分子运动所致。如果我们知道其“步子”的平均大小，以及每秒所走的步数，那么就能求出一个或<span class="kindle-cn-italic">n</span>
+ 个分子在经过任何一段特定时间后在从其起点算起的某一距离被找到的概率。随着时间的消逝，步子越走越多，气体就会像图6-7中相继的几条曲线那样逐渐散开。在以后要讲的一章中，我们将求出步子的大小和步子的频率如何与气体的温度和压强有关。</p>
+<div class="kindle-cn-sidebar-left"><img alt="" src="Image00103.jpg" style="width:100%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图6-9</span>
+ 　气体中分子的速度分布</p>
+</div>
+<p>我们以前说过，气体的压强是由于分子撞击容器壁而形成的。以后如果要作较定量的描写时，我们就需要知道分子在弹跳时跑得有多快，因为它们所作的碰撞与这个速率有关。然而我们不能说这些分子具有如何<span class="kindle-cn-specialtext-qx">确定的</span>
+ 速率。这里必须用概率来描写。一个分子可以具有任何一个速率，但有些速率出现的可能性比另一些要大。我们可以这样来描写气体内正在发生什么，这就是说出任何一个特定分子具有速率在（<span class="kindle-cn-italic">v</span>
+ ）与<span class="kindle-cn-italic">（</span>
+ v+Δ<span class="kindle-cn-italic">v</span>
+ ）之间的概率<span class="kindle-cn-italic">p</span>
+ （<span class="kindle-cn-italic">v</span>
+ ）Δ<span class="kindle-cn-italic">v</span>
+ ，而<span class="kindle-cn-italic">p</span>
+ （<span class="kindle-cn-italic">v</span>
+ ）这个概率密度是速率<span class="kindle-cn-italic">v</span>
+ 的一个确定函数。往后我们会看到，麦克斯韦如何运用常识和概率观念为<span class="kindle-cn-italic">p</span>
+ （<span class="kindle-cn-italic">v</span>
+ ）找到一个数学表示式。函数<span class="kindle-cn-italic">p</span>
+ （<span class="kindle-cn-italic">v</span>
+ ）的形状<a id="ft3" href="text00015.html#fn_3">
+<span class="math-super">[3]</span>
+</a>
+ 如图6-9所示。速度可以取任何一个值，但是最可能取的是靠近最可几值或预期值〈<span class="kindle-cn-italic">v</span>
+ 〉的那一些。</p>
+<p>我们常常以稍微不同的方式去看待图6-9中的曲线。如果我们考虑一个典型容器（比如，其体积为1l）中的分子，那么容器中存在着极大数量的分子（<span class="kindle-cn-italic">N</span>
+ ≈10<span class="math-super">22</span>
+ ）。由于<span class="kindle-cn-italic">p</span>
+ （<span class="kindle-cn-italic">v</span>
+ ）Δ<span class="kindle-cn-italic">v</span>
+ 是<span class="kindle-cn-specialtext-qx">一个</span>
+ 分子具有在Δ<span class="kindle-cn-italic">v</span>
+ 间隔内的速度的概率，所以根据我们对概率的定义，我们说，找到速度处在间隔Δ<span class="kindle-cn-italic">v</span>
+ 内的分子数的<span class="kindle-cn-specialtext-qx">预期值</span>
+ 〈Δ<span class="kindle-cn-italic">N</span>
+ 〉应是</p>
+<p class="kindle-cn-para-center">〈Δ<span class="kindle-cn-italic">N</span>
+ 〉=<span class="kindle-cn-italic">Np</span>
+ （<span class="kindle-cn-italic">v</span>
+ ）Δ<span class="kindle-cn-italic">v</span>
+ .<span style="float:right;">（6.21）</span>
+</p>
+<p class="kindle-cn-noindent">我们称<span class="kindle-cn-italic">Np</span>
+ （<span class="kindle-cn-italic">v</span>
+ ）为“速度分布”。曲线下面两个速度<span class="kindle-cn-italic">v</span>
+ <span class="math-sub">1</span>
+ 与<span class="kindle-cn-italic">v</span>
+ <span class="math-sub">2</span>
+ 之间的面积，例如图6-9中所示阴影的面积代表了［对曲线<span class="kindle-cn-italic">Np</span>
+ （<span class="kindle-cn-italic">v</span>
+ ）来说］速度在<span class="kindle-cn-italic">v</span>
+ <span class="math-sub">1</span>
+ 和<span class="kindle-cn-italic">v</span>
+ <span class="math-sub">2</span>
+ 之间的分子的预期数。由于在气体的情况中，我们通常与大量的分子打交道，所以可以期望这一面积与预期数的偏差是小的（犹如<img alt="" class="kindle-cn-inline-image1a" src="Image00104.jpg" />
+ ），因此我们常常不说“预期”数，而代之以说：“具有速度在<span class="kindle-cn-italic">v</span>
+ <span class="math-sub">1</span>
+ 和<span class="kindle-cn-italic">v</span>
+ <span class="math-sub">2</span>
+ 之间的分子数<span class="kindle-cn-specialtext-qx">是</span>
+ 曲线下面的面积。”但是我们应当记住，这种陈述所谈到的总是<span class="kindle-cn-specialtext-qx">可几</span>
+ 数。</p>
+<h2 class="kindle-cn-heading2" id="hh2-31">§6-5　不确定性原理</h2>
+<p>在描写气体样品中10<span class="math-super">22</span>
+ 个或类似这样多个分子的行为时，概率的概念肯定是有用的，因为很清楚，即使要写下每个分子的位置或速度这种试图，也是不实际的。当概率最初运用于这类问题时，大家曾认为这是一种<span class="kindle-cn-specialtext-qx">方便</span>
+ ——一种处理非常复杂的情况的方法。现在我们认为，概率的概念是描写原子事件所<span class="kindle-cn-specialtext-qx">必不可少</span>
+ 的。按照量子力学这个有关粒子的数学理论，在<span class="kindle-cn-specialtext-qx">说明</span>
+ 位置和速度方面总是存在着某种不确定性。充其量我们可以说，任何粒子只有一定的概率可以使它的位置接近某一坐标<span class="kindle-cn-italic">x</span>
+ 。</p>
+<p>我们可以这样来引进一个概率密度函数<span class="kindle-cn-italic">p</span>
+ <span class="math-sub">1</span>
+ （<span class="kindle-cn-italic">x</span>
+ ），使<span class="kindle-cn-italic">p</span>
+ <span class="math-sub">1</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）Δ<span class="kindle-cn-italic">x</span>
+ 为在（<span class="kindle-cn-italic">x</span>
+ ）与（<span class="kindle-cn-italic">x</span>
+ +Δ<span class="kindle-cn-italic">x</span>
+ ）之间找到这个粒子的概率。如果这个粒子的位置被很好地限制在某个地方，比如说靠近<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">0</span>
+ ，那么函数<span class="kindle-cn-italic">p</span>
+ <span class="math-sub">1</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）就可能如图6-10（a）所示的曲线给出的那样。与之相似，我们必须用概率密度<span class="kindle-cn-italic">p</span>
+ <span class="math-sub">2</span>
+ （<span class="kindle-cn-italic">v</span>
+ ）来限定粒子的速度，而<span class="kindle-cn-italic">p</span>
+ <span class="math-sub">2</span>
+ （<span class="kindle-cn-italic">v</span>
+ ）Δ<span class="kindle-cn-italic">v</span>
+ 则表示能找到一个处于<span class="kindle-cn-italic">v</span>
+ 与<span class="kindle-cn-italic">v</span>
+ +Δ<span class="kindle-cn-italic">v</span>
+ 之间的速度的概率，如图6-10（b）所示。</p>
+<div class="kindle-cn-image"><img alt="" src="Image00105.jpg" style="width:94%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图6-10</span>
+ 　观察一个粒子的位置与速度时的概率密度</p>
+</div>
+<p>量子力学的基本结果之一是：两个函数<span class="kindle-cn-italic">p</span>
+ <span class="math-sub">1</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）与<span class="kindle-cn-italic">p</span>
+ <span class="math-sub">2</span>
+ （<span class="kindle-cn-italic">v</span>
+ ）不能予以独立选定，特别是不能把它们都取得任意的窄。如果我们称<span class="kindle-cn-italic">p</span>
+ <span class="math-sub">1</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）曲线的典型“宽度”为［Δ<span class="kindle-cn-italic">x</span>
+ ］，<span class="kindle-cn-italic">p</span>
+ <span class="math-sub">2</span>
+ （<span class="kindle-cn-italic">v</span>
+ ）曲线的典型宽度为［Δ<span class="kindle-cn-italic">v</span>
+ ］（各如图所示），那么自然界就要求这两个宽度的<span class="kindle-cn-specialtext-qx">乘积</span>
+ 至少要与数<span class="kindle-cn-italic">h</span>
+ /<span class="kindle-cn-italic">m</span>
+ 一样大，这里<span class="kindle-cn-italic">m</span>
+ 是粒子的质量，<span class="kindle-cn-italic">h</span>
+ 是一个称为<span class="kindle-cn-specialtext-qx">普朗克常量</span>
+ 的基本物理常数。我们可以把这个基本关系写成</p>
+<p class="kindle-cn-para-center">［Δ<span class="kindle-cn-italic">x</span>
+ ］·［Δ<span class="kindle-cn-italic">v</span>
+ ］≥<span class="kindle-cn-italic">h</span>
+ /<span class="kindle-cn-italic">m</span>
+ .<span style="float:right;">（6.22）</span>
+</p>
+<p>这个式子就是我们前面提到过的<span class="kindle-cn-specialtext-qx">海森伯不确定性原理</span>
+ 的一种表述。</p>
+<p>由于式（6.22）的右面是一个常数，这就表明，如果我们迫使一个粒子处于某一特定位置而试图把它“钉住”，结果它就获得一个很大的速度。或者是：如果我们迫使它跑得很慢，或以精确的速度运动，那么它就要“散开”，以致我们不能很好地知道它究竟在哪里。粒子的举止真是太奇妙了！</p>
+<p>不确定性原理描述了在叙述自然界的任何尝试中所必然存在着的那种内在的模糊性或不明确性。我们对自然界的最准确描写必须用<span class="kindle-cn-specialtext-qx">概率</span>
+ 的观念。有些人不喜欢用这种方法来描写自然界。不知怎么地，他们总觉得，只要能说出一个粒子<span class="kindle-cn-specialtext-qx">真正</span>
+ 在做什么，他们就能同时知道它的速度和位置。在量子力学发展的初期，爱因斯坦曾为这个问题十分担忧。他常摇头说：“啊！上帝肯定不是用掷骰子来决定电子应如何运动的！”他为这个问题担忧了好长时间，或许他从来也没有使他自己真正相信过这个事实，即：这是人们对自然界所能作出的最好描述。现在仍然有一两位物理学家在研究这问题，他们从直觉上深信，可以通过某种方式用另一种方法来描写这个世界，并且可以把有关事物行为的所有这种不确定性都消除掉。然而到现在没有一个是成功的。</p>
+<p>当我们希望描写原子结构时，确定一个粒子的位置所必然要出现的不确定性就变得极为重要。在氢原子中有一个由单个质子组成的核，核的外面有一个电子，而这个电子的位置的不确定性就同原子本身一样大！因此我们不能严格地说，电子在某一“轨道”上绕质子运动。最多我们可以说，在一个离质子距离为<span class="kindle-cn-italic">r</span>
+ 的体积元Δ<span class="kindle-cn-italic">V</span>
+ 内有一定的<span class="kindle-cn-specialtext-qx">机会</span>
+ ［<span class="kindle-cn-italic">p</span>
+ （<span class="kindle-cn-italic">r</span>
+ ）Δ<span class="kindle-cn-italic">V</span>
+ ］观察到这个电子，概率密度<span class="kindle-cn-italic">p</span>
+ （<span class="kindle-cn-italic">r</span>
+ ）由量子力学来确定。对一个未受扰动的氢原子来说，<img alt="" class="kindle-cn-inline-image1a" src="Image00106.jpg" />
+ <img alt="" class="kindle-cn-inline-image1a" src="Image00107.jpg" />
+ ，这是一个如图6-8所示的那种钟形函数。数<span class="kindle-cn-italic">a</span>
+ 是“典型”的半径，函数由这里开始减小很快。既然在离原子核距离远大于a的地方找到电子的概率很小，我们可以把a设想为“原子的半径”，大约等于10<span class="math-super">-10</span>
+ m。</p>
+<p>如果想象有这样一团“云”，它的密度正比于我们能观察到的电子的概率密度，那么我们就能形成氢原子的图像。这样一团云的一个实例如图6-11所示。所以我们对氢原子的最好“写照”便是一团“电子云”（虽然我们<span class="kindle-cn-specialtext-qx">实际</span>
+ 上指的是“概率云”）围绕着一个核。电子就处在云中某一地方，但自然界只允许我们知道在任何一个特定位置上能找到它的<span class="kindle-cn-specialtext-qx">机会</span>
+ 是多少。</p>
+<div class="kindle-cn-image"><img alt="" src="Image00108.jpg" style="width:58%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图6-11</span>
+ 　使氢原子形象化的一种方法。这里云的密度（洁白度）表示能观察到的电子的概率密度</p>
+</div>
+<p>在尽可能多地了解自然界的努力中，现代物理学曾发现，有些事情永远不可能确切地“知道”。我们的许多知识必然总是不确定的。而用概率来表述时，我们所能获得的知识则<span class="kindle-cn-specialtext-qx">最多</span>
+ 。</p>
+</div>
+<hr/>
+<div class="footnote">
+<p class="kindle-cn-footnote">
+<a id="fn_1" href="text00015.html#ft1">[1]</a>
+ 在前三轮游戏之后，实际上是这样进行实验的，即把放在一只盒子中的30个分币剧烈摇动，然后数一下出现正面的数目。</p>
+<p class="kindle-cn-footnote">
+<a id="fn_2" href="text00015.html#ft2">[2]</a>
+ 这里“H”为英语单词“Head”的略写，此处意为“正面”，“T”为英语单词“Tail”的略写，此处意为“反面”。——译者注</p>
+<p class="kindle-cn-footnote">
+<a id="fn_3" href="text00015.html#ft3">[3]</a>
+ 麦克斯韦的表示式是<img alt="" class="kindle-cn-inline-image1a" src="Image00109.jpg" />
+ ，其中<span class="kindle-cn-italic">a</span>
+ 是一个与温度有关的常数，而<span class="kindle-cn-italic">C</span>
+ 应选定得使总的概率等于1。</p>
+</div>
+</body>
+</html>

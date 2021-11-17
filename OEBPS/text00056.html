@@ -1,0 +1,613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" xmlns:epub="http://www.idpf.org/2007/ops" lang="zh-CN">
+<head>
+<title>第47章　声、波动方程</title>
+<link href="flow0002.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="chapter" id="chapter">
+<h1 class="kindle-cn-heading-1">第47章　声、波动方程</h1>
+<h2 class="kindle-cn-heading2" id="hh2-255">§47-1　波</h2>
+<p>本章我们将讨论<span class="kindle-cn-specialtext-qx">波动</span>
+ 现象。这种现象出现在整个物理学的许多领域中，所以我们应当把注意力放在它上面，不仅是因为这里所考察的特殊例子——声，而且也因为有关的概念在物理学的所有分支中有着相当广泛的应用。</p>
+<p>我们在研究谐振子时已经指出过，振动系统的例子不仅在力学中存在，而且在电学中也同样存在。波动与振动系统有关，但波动不仅仅表现为在一处的随时间的振动，并且还在空间中传播。</p>
+<div class="kindle-cn-sidebar-left"><img alt="" src="Image01406.jpg" style="width:100%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图47-1</span>
+ 　频率略有差异的两个波源在时间上的干涉形成拍</p>
+</div>
+<p>实际上我们已经研究过波动。在研究光学，讨论光的波动性质时，我们曾特别研究若干位于不同地方以同一频率振动的波源发出的几列波在空间的干涉现象。而在光波即电磁波以及其他任何形式的波动中所出现的两个重要现象，我们还不曾讨论。其中一个现象就是，波在<span class="kindle-cn-specialtext-qx">时间</span>
+ 上而不是在空间上的<span class="kindle-cn-specialtext-qx">干涉</span>
+ 现象。如果两个声源的频率稍有差别，在我们同时收听这两个声音时，有时声波波峰一起来，有时则是波峰和波谷一起来（见图47-1）。这样所产生的声音的起伏就形成拍现象，或者说时间上的干涉。第二个重要现象涉及到波型，当波动约束在一定体积中，在界面之间来回反射时，就形成了这种现象。</p>
+<p>当然，在研究电磁波时，本来可以对这些效应加以讨论。我们之所以没有这样做，是因为只使用一种例子也许会使我们不能体会到实际上已同时学习了许多不同的课题。为了强调波动概念的普适性超出了电动力学范围，我们这里考虑一种不同的例子，特别是声波的情况。</p>
+<p>我们在海岸边缘见到过由长长的大浪形成的水波翻腾的情况，也见过由表面张力的涟漪形成的小水波。这又是一些波动的例子。再举另外一种例子，在固体中有两类弹性波：一类是压缩波（或纵波），固体中的粒子沿着波传播的方向来回振动（气体中的声波就属于这一类）；另一类是横波，固体中的粒子在垂直于波传播的方向上振动。地震波包括了这两类弹性波，它们是由某处地壳的运动而造成的。</p>
+<p>在现代物理学中还可找到另一类波的例子。这类波给出了在确定地方发现粒子的概率振幅，即我们已经讨论过的“物质波”。它们的频率正比于能量，波数则正比于动量。这就是量子力学中的波。</p>
+<div class="kindle-cn-sidebar-right"><img alt="" src="Image01407.jpg" style="width:100%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图47-2</span>
+ 　实线表示在某一瞬时电场的可能情况，虚线表示在时间<span class="kindle-cn-italic">t</span>
+ 后的电场</p>
+</div>
+<p>在本章中我们将只考虑波速与波长无关的波动。例如，光在真空中的传播情况就是如此。对无线电波、蓝光、绿光或任何其他波长的光来说，光速都相同。由于这种性质，当初开始描写波现象时，我们并没有指出波在传播这一点。我们只是说，如果有一个电荷在某处运动，那么离开它<span class="kindle-cn-italic">x</span>
+ 处的电场正比于在较早时刻（<span class="kindle-cn-italic">t</span>
+ -<span class="kindle-cn-italic">x</span>
+ /<span class="kindle-cn-italic">c</span>
+ ）的加速度，而不是在<span class="kindle-cn-italic">t</span>
+ 时刻的加速度。所以，如果我们画出某个瞬间空间中的电场，如图47-2所示，那么经过时间<span class="kindle-cn-italic">t</span>
+ 后的电场将移动距离<span class="kindle-cn-italic">ct</span>
+ ，如图中所示。在这里所取的一维例子中，从数学上我们可以说，对这个一维的例子，电场是（<span class="kindle-cn-italic">x</span>
+ -<span class="kindle-cn-italic">ct</span>
+ ）的函数。我们看到，当<span class="kindle-cn-italic">t</span>
+ =0时，它是<span class="kindle-cn-italic">x</span>
+ 的某个函数。如果我们考虑较后一个时刻，只需适当增加<span class="kindle-cn-italic">x</span>
+ 值就可以得到同样的电场值。举例说，如果在<span class="kindle-cn-italic">t</span>
+ =0时，电场极大值出现在<span class="kindle-cn-italic">x</span>
+ =3处，那么，为了找到在时刻<span class="kindle-cn-italic">t</span>
+ 电场极大值的新位置，就得有</p>
+<p class="kindle-cn-para-center">
+<span class="kindle-cn-italic">x</span>
+ -<span class="kindle-cn-italic">ct</span>
+ =3　或　<span class="kindle-cn-italic">x</span>
+ =3+<span class="kindle-cn-italic">ct</span>
+ .</p>
+<p class="kindle-cn-noindent">我们看到，这样的函数表示了波的传播。</p>
+<p>所以，<span class="kindle-cn-italic">f</span>
+ （<span class="kindle-cn-italic">x</span>
+ -<span class="kindle-cn-italic">ct</span>
+ ）这种函数就表示了波。我们可以这样简单地总结波的描述</p>
+<p class="kindle-cn-para-center">
+<span class="kindle-cn-italic">f</span>
+ （<span class="kindle-cn-italic">x</span>
+ -<span class="kindle-cn-italic">ct</span>
+ ）=<span class="kindle-cn-italic">f</span>
+ ［<span class="kindle-cn-italic">x</span>
+ +Δ<span class="kindle-cn-italic">x</span>
+ -<span class="kindle-cn-italic">c</span>
+ （<span class="kindle-cn-italic">t</span>
+ +Δ<span class="kindle-cn-italic">t</span>
+ ）］，</p>
+<p class="kindle-cn-noindent">这里Δ<span class="kindle-cn-italic">x</span>
+ =<span class="kindle-cn-italic">c</span>
+ Δ<span class="kindle-cn-italic">t</span>
+ 。当然，还有另一种可能，即波源不是像图47-2中所示的那样在左边，而是在右边，结果波往负<span class="kindle-cn-italic">x</span>
+ 方向传播。这时就要用<span class="kindle-cn-italic">g</span>
+ （<span class="kindle-cn-italic">x</span>
+ +<span class="kindle-cn-italic">ct</span>
+ ）来描写波。</p>
+<p>此外，还存在这样一种可能性，空间同时存在着比方说一列以上的波，那么总电场就是两个独立传播的电场的和。电场的这种性质可以叙述为，假定<span class="kindle-cn-italic">f</span>
+ <span class="math-sub">1</span>
+ （<span class="kindle-cn-italic">x</span>
+ -<span class="kindle-cn-italic">ct</span>
+ ）是一列波，<span class="kindle-cn-italic">f</span>
+ <span class="math-sub">2</span>
+ （<span class="kindle-cn-italic">x</span>
+ -<span class="kindle-cn-italic">ct</span>
+ ）是另一列波，那么它们的和也是波。这就叫做叠加原理。叠加原理对于声波来说同样有效。</p>
+<p>我们都熟悉这样一个事实：声音产生以后，我们所听到的声音的顺序与产生时的顺序完全相同。假定高频的声音传播得比低频的快，那么短促尖锐的噪声将发生在乐声之后。类似地，如果红光跑得比蓝光快，那么当白光闪一下后，人们就会先看到红色，接着是白色，最后是蓝色。我们所知道的事实表明，情况并非如此。声与光在空气中的传播速率都非常接近于跟频率无关。跟频率有关的波传播的例子将在第48章中讨论。</p>
+<p>对于光（电磁波）的情况，我们提供了一条规则来确定因电荷的加速而在某点所产生的电场。人们现在可能也期望有这么一条规则，由此能借助声源本身的运动并考虑到声传播时间引起的推迟，确定声源外一给定距离上空气的某个物理量如压强的数值。对于光来说，这种做法是行得通的，因为我们所要知道的一切就是一处的电荷对在另一处的另一个电荷施加作用力。从一处到另一处的传播细节并不是绝对重要的。然而，在声的情况下，我们知道它通过声源与收听者之间的空气而传播。因此，无疑人们会提出一个很自然的问题：在任何给定时刻，空气的压强有多大。另外，我们还想确切地知道空气怎样运动。在电学情况下，我们可以接受一条规则，因为我们可以说自己还不知道电学定律，但对于声来说，我们就不能讲同样的话了。因为整个过程应当作为力学定律的结果而得到理解，所以我们当然不会满足于仅仅陈述声压如何通过空气而传播的规则。简言之，声学是力学的一门分支，所以它要用牛顿定律来解释。声波由一处往另一处的传播，只是力学定律及传播声的那种物质的性质（如果在气体中传播，就指气体的性质，如果在液体或固体中传播，就指这些介质的性质）的推论。以后我们将用类似的方法从电动力学定律导出光的性质和光波的传播。</p>
+<h2 class="kindle-cn-heading2" id="hh2-256">§47-2　声的传播</h2>
+<p>我们准备从牛顿定律导出声波在声源与接收者<span class="kindle-cn-specialtext-qx">之间</span>
+ 传播的特性，而对声源与接收者之间的相互作用将不予考虑。通常我们强调的是推导的结论而不是某一特殊推导过程本身。在本章中我们将采取相反的观点。在某种意义上，这里的要点就在于推导本身。在我们知道了旧现象的规律之后，能借助于已知现象来解释新现象这件事或许是数学物理学的最伟大艺术。数学物理学家要解决两个问题：一个是给定了方程之后求出解答，另一个是找出描写新现象的物理方程。这里的推导是属于后一种情形的一个例子。</p>
+<p>我们在这里将取一个最简单的例子——声波的一维传播。要进行这样的推导，首先必须对所发生的事情有一定的了解。这里所包含的基本事实就是，如果一个物体在空气中的某个地方运动着，我们就观察到有一种扰动在空气中传开。这是怎样的一种扰动？我们可以认为物体的运动产生了压强上的变化。当然，如果物体的运动相当缓慢，空气便只是绕着它流过去。但我们要讨论的是快速的运动，因此空气没有足够的时间作这样的流动。于是，随着物体的运动空气被压缩，引起压强上的变化，这种变化推动了周围的气体，接着这部分气体又被压缩，这又引起额外的压强，这样波就传播开了。</p>
+<p>现在我们要把这个过程写成公式。首先必须决定所需要的变量。在这个特定问题中，我们要知道空气移动了多远，所以在声波中空气的<span class="kindle-cn-specialtext-qx">位移</span>
+ 肯定是一个有关的变量。此外，我们还要描述，在空气移动时它的<span class="kindle-cn-specialtext-qx">密度</span>
+ 怎样变化。空气<span class="kindle-cn-specialtext-qx">压强</span>
+ 也会发生改变，所以这又是一个值得注意的变量。当然，空气还有<span class="kindle-cn-specialtext-qx">速度</span>
+ ，因而我们必须描写空气粒子的速度。这些粒子还有<span class="kindle-cn-specialtext-qx">加速度</span>
+ ——但是，当我们列举了这么多变量之后，立即会认识到，如果知道了空气<span class="kindle-cn-specialtext-qx">位移</span>
+ 怎样随时间而变化，那么速度和加速度也就知道了。</p>
+<p>我们已经说过，要考虑的是一维波动。如果离开波源足够远，以致所谓的<span class="kindle-cn-specialtext-qx">波前</span>
+ 非常接近于平面，那么就可以这样处理。取一个复杂性最小的例子会使论证比较简单一些。因此，我们可以说：位移<span class="kindle-cn-italic">χ</span>
+ 只取决于<span class="kindle-cn-italic">x</span>
+ 和<span class="kindle-cn-italic">t</span>
+ ，而与<span class="kindle-cn-italic">y</span>
+ 和<span class="kindle-cn-italic">z</span>
+ 无关。所以我们用<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）来描写空气的位移。</p>
+<p>这个描述完全吗？看来远远谈不上完全。因为我们一点也不知道空气分子运动的详情。它们往四面八方运动，这种情况肯定不能用函数<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）来描写。从分子动理论的观点来看，假定在一个地方分子密度较高，而在邻近的地方分子密度较低，那么分子就会从密度较高的区域跑向密度较低的区域，使得差异抵消。显然，这样一来就不会产生振动，于是也就没有声音。为了得到声波，必须出现下述情况：当分子由密度较高及压强较大的区域冲出去时，它们将把动量传递给邻近的密度较低区域中的分子。为了使声波得以产生，密度与压强上有变化的区域必须远远大于分子在与其他分子进行碰撞前所走过的距离。这段距离即平均自由程，而压强的波峰与波谷之间的距离必须远远超过它，不然分子就会自由地从波峰跑向波谷，一下子把波抹平。</p>
+<p>十分清楚，我们是在远大于平均自由程的尺度上来描写气体行为的，所以不用个别分子的运动来描写气体的性质。例如，所谓位移就是指一小块气体的质心的位移，而压强或密度则是这一小块区域中的压强或密度。我们称压强为<span class="kindle-cn-italic">P</span>
+ ，密度为<span class="kindle-cn-italic">ρ</span>
+ ，它们都是<span class="kindle-cn-italic">x</span>
+ 和<span class="kindle-cn-italic">t</span>
+ 的函数。我们必须记住这种描写只是近似的，只有当气体的有关性质随距离的变化不太快时才成立。</p>
+<h2 class="kindle-cn-heading2" id="hh2-257">§47-3　波动方程</h2>
+<p>声波现象的物理内容包括了三个特征：</p>
+<p>Ⅰ．气体的移动使密度发生变化。</p>
+<p>Ⅱ．密度上的变化对应着压强上的变化。</p>
+<p>Ⅲ．压强的不相等导致气体的运动。</p>
+<p>我们首先考虑Ⅱ。对于气体、液体或固体，压强是密度的某个函数。在声波抵达之前，我们有一个平衡状态，它的压强为<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">0</span>
+ ，对应的密度是<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">0</span>
+ 。介质中的压强<span class="kindle-cn-italic">P</span>
+ 与密度<span class="kindle-cn-italic">ρ</span>
+ 由某种函数关系<span class="kindle-cn-italic">P</span>
+ =<span class="kindle-cn-italic">f</span>
+ （<span class="kindle-cn-italic">ρ</span>
+ ）联系起来，特别是平衡状态时的压强<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">0</span>
+ 由<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">0</span>
+ =<span class="kindle-cn-italic">f</span>
+ （<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">0</span>
+ ）给定。声波中的压强相对于平衡值的变化是极其微小的。量度压强的一个方便单位是<span class="kindle-cn-specialtext-qx">巴（bar）</span>
+ ：1bar=10<span class="math-super">5</span>
+ N·m<span class="math-super">-2</span>
+ 。1atm非常接近于1bar，即1atm=1.0133bar。在声学中我们采用声强的对数标度，因为耳朵的灵敏度近似地按对数变化。这个标度是分贝（dB）标度，对于振幅为P的压强，其声压级<span class="kindle-cn-italic">I</span>
+ 用下式来定义</p>
+<div class="kindle-cn-image"><img alt="" src="Image01408.jpg" style="width:40%" />
+ <span style="float:right;">（47.1）</span>
+</div>
+<p class="kindle-cn-noindent">这里参考压强<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">参</span>
+ =2×10<span class="math-super">-10</span>
+ bar<a id="ft1" href="text00056.html#fn_1">
+<span class="math-super">[1]</span>
+</a>
+ 。如压强振幅为<span class="kindle-cn-italic">P</span>
+ =10<span class="math-super">3</span>
+ <span class="kindle-cn-italic">P</span>
+ <span class="math-sub">参</span>
+ =2×10<span class="math-super">-7</span>
+ bar，与之对应的就是60d B的中等强度的声音。我们看到，在声波中压强的变化与平衡压强或平均压强一个大气压相比极其微小，位移和密度的变化相应地也极其微小。在爆炸时，变化就不是这么小了；所产生的额外压强可能超过1个大气压。这么大的压强变化将导致新的效应，我们在以后再来讨论。对声音来说，通常我们不考虑超过100d B的声强级，120d B的声强级已使耳朵有痛觉。因此，对声波来说，如果写下</p>
+<p class="kindle-cn-para-center">
+<span class="kindle-cn-italic">P</span>
+ =<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">0</span>
+ +<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">e</span>
+ ，<span class="kindle-cn-italic">ρ</span>
+ =<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">0</span>
+ +<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">e</span>
+ ，<span style="float:right;">（47.2）</span>
+</p>
+<p class="kindle-cn-noindent">那么与<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">0</span>
+ 相比压强变化值<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">e</span>
+ 总是很小，而与密度<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">0</span>
+ 相比密度变化值<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">e</span>
+ 也总是很小。于是</p>
+<p class="kindle-cn-para-center">
+<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">0</span>
+ +<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">e</span>
+ =<span class="kindle-cn-italic">f</span>
+ （<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">0</span>
+ +<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">e</span>
+ ）=<span class="kindle-cn-italic">f</span>
+ （<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">0</span>
+ ）+<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">e</span>
+ <span class="kindle-cn-italic">f′</span>
+ （<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">0</span>
+ ）.<span style="float:right;">（47.3）</span>
+</p>
+<p class="kindle-cn-noindent">这里<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">0</span>
+ =<span class="kindle-cn-italic">f</span>
+ （<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">0</span>
+ ），而<span class="kindle-cn-italic">f′</span>
+ （<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">0</span>
+ ）是当<span class="kindle-cn-italic">ρ</span>
+ =<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">0</span>
+ 时得出的<span class="kindle-cn-italic">f</span>
+ （<span class="kindle-cn-italic">ρ</span>
+ ）的微商值。只是由于<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">e</span>
+ 很小，我们才可以取第二步等式。这样我们就发现额外压强<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">e</span>
+ 正比于额外密度<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">e</span>
+ ，如果称比例系数为<span class="kindle-cn-italic">κ</span>
+ ，则</p>
+<div class="kindle-cn-image"><img alt="" src="Image01409.jpg" style="width:59%" />
+ <span style="float:right;">（47.4）</span>
+</div>
+<p class="kindle-cn-noindent">所以，对于Ⅱ来说我们要得到的就是这个非常简单的关系式。</p>
+<div class="kindle-cn-sidebar-left"><img alt="" src="Image01410.jpg" style="width:100%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图47-3</span>
+ 　在<span class="kindle-cn-italic">x</span>
+ 处空气的位移为<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ），在<span class="kindle-cn-italic">x</span>
+ +Δ<span class="kindle-cn-italic">x</span>
+ 处为<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ +Δ<span class="kindle-cn-italic">t</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）。平面波中，截面为单位面积的空气柱原来的体积为<br/>
+Δ<span class="kindle-cn-italic">x</span>
+ ；新的体积为Δ<span class="kindle-cn-italic">x</span>
+ +<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ +Δ<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）-<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）</p>
+</div>
+<p>现在来考虑Ⅰ。我们假设没有被声波扰动的那部分空气的位置是<span class="kindle-cn-italic">x</span>
+ ，而在时刻<span class="kindle-cn-italic">t</span>
+ 由声波引起的位移是<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ），因此新的位置是<span class="kindle-cn-italic">x</span>
+ +<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ），如图47-3所示。我们还假设邻近的未受扰动的一部分空气的位置是<span class="kindle-cn-italic">x</span>
+ +Δ<span class="kindle-cn-italic">x</span>
+ ，而其新的位置是<span class="kindle-cn-italic">x</span>
+ +Δ<span class="kindle-cn-italic">x</span>
+ +<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ +Δ<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）。现在可以用下述方法来求出密度的变化。因为只限于平面波，所以我们可取垂直于<span class="kindle-cn-italic">x</span>
+ 方向的单位面积，<span class="kindle-cn-italic">x</span>
+ 方向就是声波传播的方向。于是由单位面积和Δ<span class="kindle-cn-italic">x</span>
+ 所围成的那部分空气的质量就是<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">0</span>
+ Δ<span class="kindle-cn-italic">x</span>
+ ，这里<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">0</span>
+ 是未受扰动的或平衡状态下的空气密度。这些空气在声波驱动下移到<span class="kindle-cn-italic">x</span>
+ +<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）与<span class="kindle-cn-italic">x</span>
+ +Δ<span class="kindle-cn-italic">x</span>
+ +<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ +Δ<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）之间，这样，这个区间内的气体质量应与未扰动前处在Δ<span class="kindle-cn-italic">x</span>
+ 区间内的气体质量相同。如果以<span class="kindle-cn-italic">ρ</span>
+ 表示新的密度，就有</p>
+<p class="kindle-cn-para-center">
+<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">0</span>
+ Δ<span class="kindle-cn-italic">x</span>
+ =<span class="kindle-cn-italic">ρ</span>
+ ［<span class="kindle-cn-italic">x</span>
+ +Δ<span class="kindle-cn-italic">x</span>
+ +<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ +Δ<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）-<span class="kindle-cn-italic">x</span>
+ -<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）］.<span style="float:right;">（47.5）</span>
+</p>
+<p class="kindle-cn-noindent">因为Δ<span class="kindle-cn-italic">x</span>
+ 很小，我们可以写出</p>
+<div class="kindle-cn-image"><img alt="" src="Image01411.jpg" style="width:48%" />
+</div>
+<p class="kindle-cn-noindent">这个微商是偏微商，因为<span class="kindle-cn-italic">χ</span>
+ 与时间<span class="kindle-cn-italic">t</span>
+ 及<span class="kindle-cn-italic">x</span>
+ 都有关系。我们的方程于是就变为</p>
+<div class="kindle-cn-image"><img alt="" src="Image01412.jpg" style="width:40%" />
+ <span style="float:right;">（47.6）</span>
+</div>
+<p class="kindle-cn-noindent">或</p>
+<div class="kindle-cn-image"><img alt="" src="Image01413.jpg" style="width:40%" />
+ <span style="float:right;">（47.7）</span>
+</div>
+<p class="kindle-cn-noindent">由于在声波中所有的变化都很小，因此<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">e</span>
+ 很小，<span class="kindle-cn-italic">χ</span>
+ 很小，<img alt="" class="kindle-cn-inline-image2" src="Image01414.jpg" />
+ 也很小。所以在我们刚找到的关系式</p>
+<div class="kindle-cn-image"><img alt="" src="Image01415.jpg" style="width:40%" />
+ <span style="float:right;">（47.8）</span>
+</div>
+<p class="kindle-cn-noindent">中，与<img alt="" class="kindle-cn-inline-image2" src="Image01416.jpg" />
+ 相比我们可以略去<img alt="" class="kindle-cn-inline-image2" src="Image01417.jpg" />
+ 。这样我们就得到Ⅰ所要求的关系式</p>
+<div class="kindle-cn-image"><img alt="" src="Image01418.jpg" style="width:40%" />
+ <span style="float:right;">（47.9）</span>
+</div>
+<p class="kindle-cn-noindent">这个方程从物理上是可以预料的；如果位移随着<span class="kindle-cn-italic">x</span>
+ 而改变，那么就会有密度上的变化。式中的符号也是正确的：如果位移<span class="kindle-cn-italic">χ</span>
+ 随着<span class="kindle-cn-italic">x</span>
+ 而增加，那么空气就扩展开来，密度就一定会下降。</p>
+<div class="kindle-cn-sidebar-right"><img alt="" src="Image01419.jpg" style="width:100%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图47-4</span>
+ 　作用在垂直于<span class="kindle-cn-italic">x</span>
+ 的单位面积上的压强在正<span class="kindle-cn-italic">x</span>
+ 方向上所产生的净力是<img alt="" class="kindle-cn-inline-image2" src="Image01420.jpg" />
+</p>
+</div>
+<p>现在我们需要第三个方程，那就是由压强改变所产生的运动方程。如果我们知道力与压强之间的关系，就可以得出运动方程。现在我们取一薄层空气，它的厚度为Δ<span class="kindle-cn-italic">x</span>
+ ，侧面积为与<span class="kindle-cn-italic">x</span>
+ 相垂直的单位面积，则此薄层气体的质量是<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">0</span>
+ Δ<span class="kindle-cn-italic">x</span>
+ ，其加速度为<img alt="" class="kindle-cn-inline-image2" src="Image01421.jpg" />
+ ，于是质量与加速度的乘积就是<img alt="" class="kindle-cn-inline-image2a" src="Image01422.jpg" />
+ （当Δ<span class="kindle-cn-italic">x</span>
+ 很小时，不管加速度<span class="kindle-cn-italic">∂</span>
+ <span class="math-super">2</span>
+ <span class="kindle-cn-italic">χ</span>
+ /<span class="kindle-cn-italic">∂</span>
+ <span class="kindle-cn-italic">t</span>
+ <span class="math-super">2</span>
+ 是指薄块边上的值还是指某个中间位置的值都没有关系）。假如现在我们求得在垂直于<span class="kindle-cn-italic">x</span>
+ 的单位面积上给予这层空气的作用力，那么它就等于<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">0</span>
+ Δ<span class="kindle-cn-italic">x</span>
+ （<span class="kindle-cn-italic">∂</span>
+ <span class="math-super">2</span>
+ <span class="kindle-cn-italic">χ</span>
+ /<span class="kindle-cn-italic">∂</span>
+ <span class="kindle-cn-italic">t</span>
+ <span class="math-super">2</span>
+ ）。在<span class="kindle-cn-italic">x</span>
+ 处沿+<span class="kindle-cn-italic">x</span>
+ 方向，单位面积所受的力是<span class="kindle-cn-italic">P</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ），在（<span class="kindle-cn-italic">x</span>
+ +Δ<span class="kindle-cn-italic">x</span>
+ ）处沿-<span class="kindle-cn-italic">x</span>
+ 方向，单位面积所受的力是<span class="kindle-cn-italic">P</span>
+ （<span class="kindle-cn-italic">x</span>
+ +Δ<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）（图47-4），由于Δ<span class="kindle-cn-italic">x</span>
+ 甚小，并且<span class="kindle-cn-italic">P</span>
+ 中的变化部分只有额外压强<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">e</span>
+ ，结果我们得到</p>
+<div class="kindle-cn-image"><img alt="" src="Image01423.jpg" style="width:65%" />
+ <span style="float:right;">（47.10）</span>
+</div>
+<p class="kindle-cn-noindent">最后，对于Ⅲ，我们有</p>
+<div class="kindle-cn-image"><img alt="" src="Image01424.jpg" style="width:40%" />
+ <span style="float:right;">（47.11）</span>
+</div>
+<p class="kindle-cn-noindent">这样就有足够的方程将各件事情联系起来，并将变量减少到一个，比如说<span class="kindle-cn-italic">χ</span>
+ 。利用（Ⅱ）式能从（Ⅲ）式中消去<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">e</span>
+ ，于是有</p>
+<div class="kindle-cn-image"><img alt="" src="Image01425.jpg" style="width:40%" />
+ <span style="float:right;">（47.12）</span>
+</div>
+<p class="kindle-cn-noindent">再利用（Ⅰ）式就可消去<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">e</span>
+ 。这样我们发现<span class="kindle-cn-italic">ρ</span>
+ <span class="math-sub">0</span>
+ 也被消去，余下的就是</p>
+<div class="kindle-cn-image"><img alt="" src="Image01426.jpg" style="width:40%" />
+ <span style="float:right;">（47.13）</span>
+</div>
+<p class="kindle-cn-noindent">我们令<img alt="" class="kindle-cn-inline-image2" src="Image01427.jpg" />
+ ，因此可写出</p>
+<div class="kindle-cn-image"><img alt="" src="Image01428.jpg" style="width:40%" />
+ <span style="float:right;">（47.14）</span>
+</div>
+<p class="kindle-cn-noindent">这就是描写物质中声波行为的波动方程。</p>
+<h2 class="kindle-cn-heading2" id="hh2-258">§47-4　波动方程的解</h2>
+<p>现在我们可以来看看这个方程是否确实描写了物质中声波的基本性质。我们希望由此推出声脉冲或扰动将以恒定速率运动，并且希望证实两个不同的脉冲可以相互穿过——叠加原理。我们还想证实声波可以往右或往左传播。所有这些性质都应当包括在这一个方程之中。</p>
+<p>我们已经说过，任何以恒定速度<span class="kindle-cn-italic">v</span>
+ 运动的平面波的扰动都具有形式<span class="kindle-cn-italic">f</span>
+ （<span class="kindle-cn-italic">x</span>
+ -<span class="kindle-cn-italic">vt</span>
+ ）。现在必须来看一下<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）=<span class="kindle-cn-italic">f</span>
+ （<span class="kindle-cn-italic">x</span>
+ -<span class="kindle-cn-italic">vt</span>
+ ）是否为波动方程的一个解。在计算<span class="kindle-cn-italic">∂</span>
+ <span class="kindle-cn-italic">χ</span>
+ /<span class="kindle-cn-italic">∂</span>
+ <span class="kindle-cn-italic">x</span>
+ 后，就得到<span class="kindle-cn-italic">∂</span>
+ <span class="kindle-cn-italic">χ</span>
+ /<span class="kindle-cn-italic">∂</span>
+ <span class="kindle-cn-italic">x</span>
+ =<span class="kindle-cn-italic">f′</span>
+ （<span class="kindle-cn-italic">x</span>
+ -<span class="kindle-cn-italic">vt</span>
+ ），再进行一次微商，则得到</p>
+<div class="kindle-cn-image"><img alt="" src="Image01429.jpg" style="width:40%" />
+ <span style="float:right;">（47.15）</span>
+</div>
+<p>这同一函数对<span class="kindle-cn-italic">t</span>
+ 的微商是-<span class="kindle-cn-italic">v</span>
+ 乘以函数的微商，即<img alt="" class="kindle-cn-inline-image2a" src="Image01430.jpg" />
+ ，而二阶时间微商是</p>
+<div class="kindle-cn-image"><img alt="" src="Image01431.jpg" style="width:40%" />
+ <span style="float:right;">（47.16）</span>
+</div>
+<p class="kindle-cn-noindent">很明显，倘使波速<span class="kindle-cn-italic">v</span>
+ 等于<span class="kindle-cn-italic">c</span>
+ <span class="math-sub">s</span>
+ ，<span class="kindle-cn-italic">f</span>
+ （<span class="kindle-cn-italic">x</span>
+ -<span class="kindle-cn-italic">vt</span>
+ ）就满足波动方程。因此，根据<span class="kindle-cn-specialtext-qx">力学定律</span>
+ 我们发现任何声扰动以速度<span class="kindle-cn-italic">c</span>
+ <span class="math-sub">s</span>
+ 传播。此外，我们还发现</p>
+<div class="kindle-cn-image"><img alt="" src="Image01432.jpg" style="width:40%" />
+</div>
+<p class="kindle-cn-noindent">这样我们<span class="kindle-cn-specialtext-qx">就把波速与介质的性质联系起来了</span>
+ 。</p>
+<p>假如考虑一列沿相反方向传播的波，那么<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）=<span class="kindle-cn-italic">g</span>
+ （<span class="kindle-cn-italic">x</span>
+ +<span class="kindle-cn-italic">vt</span>
+ ），不难看出这样一种扰动也满足波动方程。这列波跟从左向右行进的波的唯一差别就是<span class="kindle-cn-italic">v</span>
+ 前的符号，但是，无论函数中的变量是<span class="kindle-cn-italic">x</span>
+ -<span class="kindle-cn-italic">vt</span>
+ 还是<span class="kindle-cn-italic">x</span>
+ +<span class="kindle-cn-italic">vt</span>
+ ，都不影响<span class="kindle-cn-italic">∂</span>
+ <span class="math-super">2</span>
+ <span class="kindle-cn-italic">χ</span>
+ /<span class="kindle-cn-italic">∂</span>
+ <span class="kindle-cn-italic">t</span>
+ <span class="math-super">2</span>
+ 的符号，因为它包含的只是<span class="kindle-cn-italic">v</span>
+ <span class="math-super">2</span>
+ 项。由此可见我们具有以速度<span class="kindle-cn-italic">c</span>
+ <span class="math-sub">s</span>
+ 往左或往右传播的波的解答。</p>
+<p>叠加性是非常有趣的问题。假定我们已经找到波动方程的一个解，比方说<span class="kindle-cn-italic">χ</span>
+ <span class="math-sub">1</span>
+ ，这意味着<span class="kindle-cn-italic">χ</span>
+ <span class="math-sub">1</span>
+ 对<span class="kindle-cn-italic">x</span>
+ 的二阶微商等于<img alt="" class="kindle-cn-inline-image2" src="Image01433.jpg" />
+ 乘以<span class="kindle-cn-italic">χ</span>
+ <span class="math-sub">1</span>
+ 对<span class="kindle-cn-italic">t</span>
+ 的二阶微商。现在如果有任意另一个解<span class="kindle-cn-italic">χ</span>
+ <span class="math-sub">2</span>
+ 亦具有同样的性质。假定把这两个解叠加起来，就有</p>
+<p class="kindle-cn-para-center">
+<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）=<span class="kindle-cn-italic">χ</span>
+ <span class="math-sub">1</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）+<span class="kindle-cn-italic">χ</span>
+ <span class="math-sub">2</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ），<span style="float:right;">（47.17）</span>
+</p>
+<p class="kindle-cn-noindent">我们要证实<span class="kindle-cn-italic">χ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）也是波，即<span class="kindle-cn-italic">χ</span>
+ 也满足波动方程。这个结果很容易证明，因为我们有</p>
+<div class="kindle-cn-image"><img alt="" src="Image01434.jpg" style="width:40%" />
+ <span style="float:right;">（47.18）</span>
+</div>
+<p class="kindle-cn-noindent">以及</p>
+<div class="kindle-cn-image"><img alt="" src="Image01435.jpg" style="width:40%" />
+ <span style="float:right;">（47.19）</span>
+</div>
+<p class="kindle-cn-noindent">所以就有<img alt="" class="kindle-cn-inline-image2a" src="Image01436.jpg" />
+ 。这样我们就证实了叠加原理。叠加原理的证明正是建立在波动方程对<span class="kindle-cn-italic">χ</span>
+ 是<span class="kindle-cn-specialtext-qx">线性</span>
+ 的这个事实上的。</p>
+<p>现在我们可以预期，沿<span class="kindle-cn-italic">x</span>
+ 方向传播而其电场在<span class="kindle-cn-italic">y</span>
+ 方向上的偏振平面光波将满足波动方程</p>
+<div class="kindle-cn-image"><img alt="" src="Image01437.jpg" style="width:40%" />
+ <span style="float:right;">（47.20）</span>
+</div>
+<p class="kindle-cn-noindent">这里<span class="kindle-cn-italic">c</span>
+ 是光速。这个波动方程是麦克斯韦方程的结论之一。电动力学的定律将导致光的波动方程，正像力学定律导致声的波动方程一样。</p>
+<h2 class="kindle-cn-heading2" id="hh2-259">§47-5　声速</h2>
+<p>上面对声波的波动方程的推导使我们得到了一个<span class="kindle-cn-specialtext-qx">公式</span>
+ ，它把波速与正常大气压下压强对密度的变化率联系在一起</p>
+<div class="kindle-cn-image"><img alt="" src="Image01438.jpg" style="width:40%" />
+ <span style="float:right;">（47.21）</span>
+</div>
+<p class="kindle-cn-noindent">在计算这个变化率时，必须知道温度如何变化。在声波中，我们预期压缩区域的温度会升高，而稀薄区域的温度会降低。牛顿第一个计算了压强对密度的变化率，他假设温度保持不变。他论证热量十分迅速地由一个区域传导到另一个区域，以致温度不可能升高或降低。在这种论证下得到了声波的等温速率，但这是错误的。正确的推导是后来由拉普拉斯作出的。他提出了相反的概念——在声波中压强与温度进行着绝热变化。只要波长远大于平均自由程，热量从压缩区域往稀薄区域的流动是可以忽略的。在这种条件下，声波中的少量热流并不影响速度，虽然它吸收了一点声能。我们可以正确地预计到这种吸收将随着波长趋近于平均自由程而增加，但这种波长大约比可闻声波波长的百万分之一还要小。</p>
+<p>声波中压强随密度的实际变化是一种没有热流的变化。这相当于绝热变化。对这种情况，<span class="kindle-cn-italic">PV</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">γ</span>
+</span>
+ =常数，这里<span class="kindle-cn-italic">V</span>
+ 是体积。由于密度反比于<span class="kindle-cn-italic">V</span>
+ ，<span class="kindle-cn-italic">P</span>
+ 与<span class="kindle-cn-italic">ρ</span>
+ 之间的绝热关系是</p>
+<p class="kindle-cn-para-center">
+<span class="kindle-cn-italic">P</span>
+ =常数<span class="kindle-cn-italic">ρ</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">γ</span>
+</span>
+ .<span style="float:right;">（47.22）</span>
+</p>
+<p class="kindle-cn-noindent">由此可得d<span class="kindle-cn-italic">P</span>
+ /d<span class="kindle-cn-italic">ρ</span>
+ =<span class="kindle-cn-italic">γP</span>
+ /<span class="kindle-cn-italic">ρ</span>
+ 。于是对于声速就有关系式</p>
+<div class="kindle-cn-image"><img alt="" src="Image01439.jpg" style="width:40%" />
+ <span style="float:right;">（47.23）</span>
+</div>
+<p class="kindle-cn-noindent">我们也可写为<img alt="" class="kindle-cn-inline-image2" src="Image01440.jpg" />
+ ，再利用等式<span class="kindle-cn-italic">PV</span>
+ =<span class="kindle-cn-italic">NkT</span>
+ ，而且由于<span class="kindle-cn-italic">ρV</span>
+ 是气体质量，它也可表示为<span class="kindle-cn-italic">Nm</span>
+ 或<span class="kindle-cn-italic">
+<span class="kindle-cn-italic">μ</span>
+</span>
+ ，这里<span class="kindle-cn-italic">m</span>
+ 是一个分子的质量，<span class="kindle-cn-italic">
+<span class="kindle-cn-italic">μ</span>
+</span>
+ 是分子量，由此可得</p>
+<div class="kindle-cn-image"><img alt="" src="Image01441.jpg" style="width:40%" />
+ <span style="float:right;">（47.24）</span>
+</div>
+<p class="kindle-cn-noindent">从此式显然可知声速只与气体温度有关，而与压强或密度无关。我们还注意到</p>
+<div class="kindle-cn-image"><img alt="" src="Image01442.jpg" style="width:40%" />
+ <span style="float:right;">（47.25）</span>
+</div>
+<p class="kindle-cn-noindent">这里〈<span class="kindle-cn-italic">v</span>
+ <span class="math-super">2</span>
+ 〉是分子的方均速率。因此<img alt="" class="kindle-cn-inline-image2" src="Image01443.jpg" />
+ ，或</p>
+<div class="kindle-cn-image"><img alt="" src="Image01444.jpg" style="width:40%" />
+ <span style="float:right;">（47.26）</span>
+</div>
+<p class="kindle-cn-noindent">这个式子表明声速的大小大致等于<img alt="" class="kindle-cn-inline-image2" src="Image01445.jpg" />
+ 乘以分子的某种平均速率<span class="kindle-cn-italic">v</span>
+ <span class="math-sub">平均</span>
+ （方均速率的平方根）。换句话说，声速与分子速率具有同样的数量级，实际上多少小于分子平均速率。</p>
+<p>当然，我们可以预料到会有这样的结果，因为扰动像压强的变化一样，归根结蒂是由于分子运动而传播的。然而，这种论证并不能告诉我们精确的传播速率；因为既可以说声波主要是由最快的分子传播的，也可以说主要是由最慢的分子传播的。一种合乎情理的并令人满意的看法是认为声速大约为分子平均速率<span class="kindle-cn-italic">v</span>
+ <span class="math-sub">平均</span>
+ 的一半。</p>
+</div>
+<hr/>
+<div class="footnote">
+<p class="kindle-cn-footnote">
+<a id="fn_1" href="text00056.html#ft1">[1]</a>
+ 在这样选择<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">参</span>
+ 时，相应的<span class="kindle-cn-italic">P</span>
+ 不是声波的峰值压强，而是“方均根”压强，它等于<img alt="" class="kindle-cn-inline-image2" src="Image01446.jpg" />
+ 乘以峰值。</p>
+</div>
+</body>
+</html>

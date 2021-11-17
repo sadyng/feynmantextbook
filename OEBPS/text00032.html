@@ -1,0 +1,783 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" xmlns:epub="http://www.idpf.org/2007/ops" lang="zh-CN">
+<head>
+<title>第23章　共振</title>
+<link href="flow0002.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="chapter" id="chapter">
+<h1 class="kindle-cn-heading-1">第23章　共振</h1>
+<h2 class="kindle-cn-heading2" id="hh2-121">§23-1　复数和简谐运动</h2>
+<div class="kindle-cn-sidebar-right-30"><img alt="" src="Image00564.jpg" style="width:100%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图23-1</span>
+ 　一个复数可以用“复平面”上的一个点来表示</p>
+</div>
+<p>本章我们将继续讨论谐振子，特别是受迫谐振子，但在分析时将采用一种新的技巧和方法。在前一章中我们引进了复数的概念，它具有实部和虚部，可以在一个图上表示，图的纵坐标表示虚部，横坐标表示实部。如果<span class="kindle-cn-italic">a</span>
+ 是一个复数，就可写成<span class="kindle-cn-italic">a</span>
+ =<span class="kindle-cn-italic">a</span>
+ <span class="math-sub">r</span>
+ +i<span class="kindle-cn-italic">a</span>
+ <span class="math-sub">i</span>
+ ，其中下标r表示<span class="kindle-cn-italic">a</span>
+ 的实部，i表示<span class="kindle-cn-italic">a</span>
+ 的虚部。参看图23-1，我们看到一个复数<span class="kindle-cn-italic">a</span>
+ =<span class="kindle-cn-italic">x</span>
+ +i<span class="kindle-cn-italic">y</span>
+ ，还可以写成<span class="kindle-cn-italic">x</span>
+ +i<span class="kindle-cn-italic">y</span>
+ =<span class="kindle-cn-italic">r</span>
+ e<span class="math-super">i</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">θ</span>
+</span>
+ 的形式，这里</p>
+<p class="kindle-cn-para-center">
+<span class="kindle-cn-italic">r</span>
+ <span class="math-super">2</span>
+ =<span class="kindle-cn-italic">x</span>
+ <span class="math-super">2</span>
+ +<span class="kindle-cn-italic">y</span>
+ <span class="math-super">2</span>
+ =（<span class="kindle-cn-italic">x</span>
+ +i<span class="kindle-cn-italic">y</span>
+ ）（<span class="kindle-cn-italic">x</span>
+ -i<span class="kindle-cn-italic">y</span>
+ ）=<span class="kindle-cn-italic">a</span>
+ ·<span class="kindle-cn-italic">a</span>
+ <span class="math-super">*</span>
+ .</p>
+<p class="kindle-cn-noindent">（<span class="kindle-cn-italic">a</span>
+ 的共轭复数写成<span class="kindle-cn-italic">a</span>
+ <span class="math-super">*</span>
+ ，它由改变<span class="kindle-cn-italic">a</span>
+ 中i的符号而得到）。因此，我们可以把一个复数表示成两种形式：一个实部加一个虚部，或一个模<span class="kindle-cn-italic">r</span>
+ 和一个叫做辐角的<span class="kindle-cn-italic">θ</span>
+ 。给定<span class="kindle-cn-italic">r</span>
+ 和<span class="kindle-cn-italic">θ</span>
+ ，<span class="kindle-cn-italic">x</span>
+ 和<span class="kindle-cn-italic">y</span>
+ 显然是<span class="kindle-cn-italic">r</span>
+ cos <span class="kindle-cn-italic">θ</span>
+ 和<span class="kindle-cn-italic">r</span>
+ sin <span class="kindle-cn-italic">θ</span>
+ ，反过来，给定一个复数<span class="kindle-cn-italic">x</span>
+ +i<span class="kindle-cn-italic">y</span>
+ ，则<img alt="" class="kindle-cn-inline-image1a" src="Image00565.jpg" />
+ 和tan<span class="kindle-cn-italic">θ</span>
+ =<span class="kindle-cn-italic">y</span>
+ /<span class="kindle-cn-italic">x</span>
+ ，即虚部和实部之比。</p>
+<p>我们通过下述技巧用复数来分析物理现象。我们以物体的振动为例子，振动可以具有一个其大小等于某一个常数乘cos <span class="kindle-cn-italic">ωt</span>
+ 的策动力。现在可以把这种力<span class="kindle-cn-italic">F</span>
+ =<span class="kindle-cn-italic">F</span>
+ <span class="math-sub">0</span>
+ cos <span class="kindle-cn-italic">ωt</span>
+ 写成复数<span class="kindle-cn-italic">F</span>
+ =<span class="kindle-cn-italic">F</span>
+ <span class="math-sub">0</span>
+ e<span class="math-super">i</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">ωt</span>
+</span>
+ 的实部，因为e<span class="math-super">i</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">ωt</span>
+</span>
+ =cos <span class="kindle-cn-italic">ωt</span>
+ +isin <span class="kindle-cn-italic">ωt</span>
+ 。我们这样做的原因是因为用指数函数运算要比用余弦函数容易。所以整个技巧就是把振动函数表示成某个复函数的实部。我们这样定义的复数<span class="kindle-cn-italic">F</span>
+ 不是实际的物理力，因为在物理中没有一个力会是复数；实际的力没有虚部，只有实部。但是，我们将要以<span class="kindle-cn-italic">F</span>
+ <span class="math-sub">0</span>
+ e<span class="math-super">i</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">ωt</span>
+</span>
+ 表示“力”，当然实际力是这个表示式的实部。</p>
+<p>再来举一个例子。假设我们要表示一个力，它是余弦波，但相位滞后为<span class="kindle-cn-italic">Δ</span>
+ 。当然，这个力是<span class="kindle-cn-italic">F</span>
+ <span class="math-sub">0</span>
+ e<span class="math-super">i（<span class="kindle-cn-italic">ωt</span>
+ -<span class="kindle-cn-italic">Δ</span>
+ ）</span>
+ 的实部，但根据指数函数本身的性质，我们可以写成e<span class="math-super">i（</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">ωt-Δ</span>
+</span>
+ <span class="math-super">）</span>
+ =e<span class="math-super">i<span class="kindle-cn-italic">ωt</span>
+</span>
+ e<span class="math-super">-i</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">Δ</span>
+</span>
+ 。由此可见，指数的代数运算要比正弦和余弦的运算容易得多，这就是我们选用复数的原因。我们以后将经常用这样的写法</p>
+<div class="kindle-cn-image"><img alt="" src="Image00566.jpg" style="width:40%" />
+ <span style="float:right;">（23.1）</span>
+</div>
+<p class="kindle-cn-noindent">我们在<span class="kindle-cn-italic">F</span>
+ 上写上小符号（∧）是为了提醒我们，这个量是复数，即在上式中</p>
+<div class="kindle-cn-image"><img alt="" src="Image00567.jpg" style="width:40%" />
+</div>
+<p>现在我们用复数来解方程，看看是否能解决实际问题。例如，试解</p>
+<div class="kindle-cn-image"><img alt="" src="Image00568.jpg" style="width:40%" />
+ <span style="float:right;">（23.2）</span>
+</div>
+<p class="kindle-cn-noindent">这里<span class="kindle-cn-italic">F</span>
+ 是策动振动的外力，<span class="kindle-cn-italic">x</span>
+ 是位移。我们假定<span class="kindle-cn-italic">x</span>
+ 和<span class="kindle-cn-italic">F</span>
+ 是真正的复数，尽管这样做似乎有些荒谬，但这仅仅是为了数学上的目的。这就是说，<span class="kindle-cn-italic">x</span>
+ 有一个实部和一个虚部乘i，<span class="kindle-cn-italic">F</span>
+ 也有一个实部和一个虚部乘i。假如式（23.2）有一个复数解，把这个复数代入方程，就得</p>
+<div class="kindle-cn-image"><img alt="" src="Image00569.jpg" style="width:48%" />
+</div>
+<p class="kindle-cn-noindent">或</p>
+<div class="kindle-cn-image"><img alt="" src="Image00570.jpg" style="width:50%" />
+</div>
+<p class="kindle-cn-noindent">因为若两个复数相等，则它们的实部必须相等，<span class="kindle-cn-specialtext-qx">并且</span>
+ 虚部也必须相等，由此可以推知，<span class="kindle-cn-specialtext-qx">
+<span class="kindle-cn-italic">x</span>
+ 的实部满足只有实部的力的方程</span>
+ 。然而，我们必须强调指出，这种把实部和虚部分开的方法<span class="kindle-cn-specialtext-qx">不是</span>
+ 普遍正确的，只有对<span class="kindle-cn-specialtext-qx">线性</span>
+ 方程才适用，亦即只对那些每一项中只出现<span class="kindle-cn-italic">x</span>
+ 的一次幂或零次幂的方程才适用。例如，假如在方程中有一项<span class="kindle-cn-italic">λx</span>
+ <span class="math-super">2</span>
+ ，当把<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">r</span>
+</span>
+ +i<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">i</span>
+ 代入之后，将得到<span class="kindle-cn-italic">λ</span>
+ （<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">r</span>
+ +i<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">i</span>
+ ）<span class="math-super">2</span>
+ ，但在分离实部和虚部时，得到实部为<img alt="" class="kindle-cn-inline-image1a" src="Image00571.jpg" />
+ ，虚部为2i<span class="kindle-cn-italic">λx</span>
+ <span class="math-sub">r</span>
+ <span class="kindle-cn-italic">x</span>
+ <span class="math-sub">i</span>
+ 。因此，可以看到方程的实部不仅包含<img alt="" class="kindle-cn-inline-image1a" src="Image00572.jpg" />
+ ，还有-<img alt="" class="kindle-cn-inline-image1a" src="Image00573.jpg" />
+ 。在这种情况下，我们得到了一个与我们要解的方程不一样的方程，在这个方程中混有<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">i</span>
+ ，而<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">i</span>
+ 是我们在分析问题时完全人为引进的一个量。</p>
+<p>现在试用我们的新方法来解受迫振子的问题，这个问题怎么解我们已经知道了。像先前那样，我们可以解式（23.2），但在这里我们打算解下面的方程</p>
+<div class="kindle-cn-image"><img alt="" src="Image00574.jpg" style="width:40%" />
+ <span style="float:right;">（23.3）</span>
+</div>
+<p class="kindle-cn-noindent">这里<img alt="" class="kindle-cn-inline-image1a" src="Image00575.jpg" />
+ 是一个复数。当然，<span class="kindle-cn-italic">x</span>
+ 也是复数，但要记住一个规则：取实部作为真正发生的解。我们先来求受迫振动式（23.3）的解，以后再讨论其他解。受迫振动的解和所加的策动力具有相同的频率，而且也具有某个振幅和相位，因此，它也可以用一个复数<img alt="" class="kindle-cn-inline-image1a" src="Image00576.jpg" />
+ 来表示，它的大小表示<span class="kindle-cn-italic">x</span>
+ 的摆幅，它的相位表示时间上的延迟，与力的相位含义相同。指数函数有一个很奇妙的特征，即<img alt="" class="kindle-cn-inline-image1a" src="Image00577.jpg" />
+ 。当对一个指数函数求微商时，只要取指数作为一个简单的乘数。二级微商的情况也一样，再取另一个i<span class="kindle-cn-italic">ω</span>
+ ，因此，观察一下就很容易立即写出<img alt="" class="kindle-cn-inline-image1a" src="Image00578.jpg" />
+ 的方程：每微分一次，就简单地乘上i<span class="kindle-cn-italic">ω</span>
+ （微分现在就像乘法一样容易！在线性微分方程中应用指数的想法几乎与发明对数同样伟大，在对数中乘法被加法所代替，这里微分被乘法代替）。这样，我们的方程变成</p>
+<div class="kindle-cn-image"><img alt="" src="Image00579.jpg" style="width:40%" />
+ <span style="float:right;">（23.4）</span>
+</div>
+<p class="kindle-cn-noindent">（我们已经消去了公因子e<span class="math-super">i</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">ωt</span>
+</span>
+ ）。看，多么简单！通过观察就立即把微分方程变成了纯粹的代数方程；实际上就能得出解，即</p>
+<div class="kindle-cn-image"><img alt="" src="Image00580.jpg" style="width:40%" />
+</div>
+<p class="kindle-cn-noindent">因为（i<span class="kindle-cn-italic">ω</span>
+ ）<span class="math-super">2</span>
+ =-<span class="kindle-cn-italic">ω</span>
+ <span class="math-super">2</span>
+ 。把<img alt="" class="kindle-cn-inline-image1a" src="Image00581.jpg" />
+ 代入，将此式略加简化，即得</p>
+<div class="kindle-cn-image"><img alt="" src="Image00582.jpg" style="width:40%" />
+ <span style="float:right;">（23.5）</span>
+</div>
+<p class="kindle-cn-noindent">当然，这就是我们前面得出的解；由于<img alt="" class="kindle-cn-inline-image1a" src="Image00583.jpg" />
+ 是实数，故<img alt="" class="kindle-cn-inline-image1a" src="Image00584.jpg" />
+ 和<img alt="" class="kindle-cn-inline-image1a" src="Image00585.jpg" />
+ 的辐角相同（或者，当<img alt="" class="kindle-cn-inline-image1a" src="Image00586.jpg" />
+ 时，可能相差180°），所以就像前面说的一样，<img alt="" class="kindle-cn-inline-image1a" src="Image00587.jpg" />
+ 的模——它量度振动有多远——与<img alt="" class="kindle-cn-inline-image1a" src="Image00588.jpg" />
+ 的大小差一个因子<img alt="" class="kindle-cn-inline-image1a" src="Image00589.jpg" />
+ ，当<span class="kindle-cn-italic">ω</span>
+ 接近<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ 时，这个因子变得非常大。因此，当适当选择外加频率<span class="kindle-cn-italic">ω</span>
+ 时，我们会得到一个非常强的响应。（假如在弦的一端悬挂一个摆，用一个适当的频率使它摆动，可以摆得很高。）</p>
+<h2 class="kindle-cn-heading2" id="hh2-122">§23-2　有阻尼的受迫振子</h2>
+<p>上面，我们用比较优美的数学技巧分析了振动。但是对于那种易于用其他方法解决的问题，这个技巧的优越性是丝毫也显示不出来的。要显示它的优越性，只有把它应用到较复杂的问题上。因此，我们来解另一个更困难的、但也比前一个更具有现实意义的问题。式（23.5）告诉我们，如果频率<span class="kindle-cn-italic">ω</span>
+ 严格等于<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ ，我们应得到一个无限大的响应。当然，实际上，不会有这种无限大的响应出现，因为到目前为止，我们略去了像摩擦等一类使响应受到限制的其他东西。所以让我们在方程式（23.2）上加一个摩擦项。</p>
+<p>由于摩擦这一项的特征和复杂性，这个问题通常是非常困难的。但是，在很多情况下，摩擦力<span class="kindle-cn-specialtext-qx">与</span>
+ 物体的<span class="kindle-cn-specialtext-qx">运动速度成正比</span>
+ 。一个物体在油或很浓的液体中作低速运动时的摩擦就是这种摩擦的一个例子。在物体静止时，没有作用力，但物体运动得越快，油必须让物体尽快通过，产生的阻力也就越大。因此，除了式（23.2）中几项外，我们认为还应加上一个与速度成正比的阻力项：<span class="kindle-cn-italic">F</span>
+ <span class="math-sub">f</span>
+ =-cd<span class="kindle-cn-italic">x</span>
+ /d<span class="kindle-cn-italic">t</span>
+ 。把常数<span class="kindle-cn-italic">c</span>
+ 改写为<span class="kindle-cn-italic">m</span>
+ 乘<span class="kindle-cn-italic">γ</span>
+ 可使方程略为简化。这样，在我们的数学分析中就会方便一些。这和我们用<img alt="" class="kindle-cn-inline-image1a" src="Image00590.jpg" />
+ 代替<span class="kindle-cn-italic">k</span>
+ 使代数运算简化的技巧完全相同。这样，方程变成</p>
+<div class="kindle-cn-image"><img alt="" src="Image00591.jpg" style="width:40%" />
+ <span style="float:right;">（23.6）</span>
+</div>
+<p class="kindle-cn-noindent">或取<span class="kindle-cn-italic">c</span>
+ =<span class="kindle-cn-italic">mγ</span>
+ 和<img alt="" class="kindle-cn-inline-image1a" src="Image00592.jpg" />
+ ，再用质量<span class="kindle-cn-italic">m</span>
+ 去除式（23.6）就得</p>
+<div class="kindle-cn-image"><img alt="" src="Image00593.jpg" style="width:40%" />
+ <span style="float:right;">（23.6a）</span>
+</div>
+<p>现在我们已经把方程写成了最便于求解的形式。如果<span class="kindle-cn-italic">γ</span>
+ 非常小，就表示摩擦很小；如果<span class="kindle-cn-italic">γ</span>
+ 很大，则表示有很大的摩擦力。我们怎么来解这个新的线性微分方程呢？假设，策动力等于<span class="kindle-cn-italic">F</span>
+ <span class="math-sub">0</span>
+ cos（<span class="kindle-cn-italic">ωt</span>
+ +<span class="kindle-cn-italic">Δ</span>
+ ）；我们可以把它代入式（23.6a）去试着求解，但是我们不这样做而改用新的方法来解此方程。为此我们把<span class="kindle-cn-italic">F</span>
+ 写成<img alt="" class="kindle-cn-inline-image1a" src="Image00594.jpg" />
+ 的实部，<span class="kindle-cn-italic">x</span>
+ 写成<img alt="" class="kindle-cn-inline-image1a" src="Image00595.jpg" />
+ 的实部，并把它们代入方程（23.6a）中。其实，连这种代换也不必要，因为通过观察我们就能看出方程将变成</p>
+<div class="kindle-cn-image"><img alt="" src="Image00596.jpg" style="width:57%" />
+ <span style="float:right;">（23.7）</span>
+</div>
+<p class="kindle-cn-noindent">［事实上，如果试用我们老的直接求解的方法去解方程式（23.6a），我们就会真正体会到“复数法”的妙处］。两边除以e<span class="math-super">i</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">ωt</span>
+</span>
+ ，就能得出对给定的力<img alt="" class="kindle-cn-inline-image1a" src="Image00597.jpg" />
+ 的响应<img alt="" class="kindle-cn-inline-image1a" src="Image00598.jpg" />
+ ，即</p>
+<div class="kindle-cn-image"><img alt="" src="Image00599.jpg" style="width:40%" />
+ <span style="float:right;">（23.8）</span>
+</div>
+<p>于是又得出了<img alt="" class="kindle-cn-inline-image1a" src="Image00600.jpg" />
+ 等于<img alt="" class="kindle-cn-inline-image1a" src="Image00601.jpg" />
+ 乘上一个确定的因子。这个因子没有专门术语，也没有专门符号，但是为了讨论方便起见，我们令它为<span class="kindle-cn-italic">R</span>
+</p>
+<div class="kindle-cn-image"><img alt="" src="Image00602.jpg" style="width:40%" />
+</div>
+<p class="kindle-cn-noindent">于是</p>
+<div class="kindle-cn-image"><img alt="" src="Image00603.jpg" style="width:40%" />
+ <span style="float:right;">（23.9）</span>
+</div>
+<p class="kindle-cn-noindent">（虽然字母<span class="kindle-cn-italic">γ</span>
+ 和<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ 被广泛采用，但<span class="kindle-cn-italic">R</span>
+ 没有特别名称）。这个因子<span class="kindle-cn-italic">R</span>
+ 可以写成<span class="kindle-cn-italic">p</span>
+ +i<span class="kindle-cn-italic">q</span>
+ ，或某个模<span class="kindle-cn-italic">ρ</span>
+ 乘e<span class="math-super">i</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">θ</span>
+</span>
+ 。如果写成某个模乘e<span class="math-super">
+<span class="kindle-cn-italic">θ</span>
+</span>
+ <span class="math-super">i</span>
+ 的形式，让我们来看看它表示什么意思。这里<img alt="" class="kindle-cn-inline-image1a" src="Image00604.jpg" />
+ ，而实际的力是F<span class="math-sub">0</span>
+ e<span class="math-super">i</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">Δ</span>
+</span>
+ e<span class="math-super">i</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">ωt</span>
+</span>
+ 的实部，即<span class="kindle-cn-italic">F</span>
+ <span class="math-sub">0</span>
+ cos（<span class="kindle-cn-italic">ωt</span>
+ +<span class="kindle-cn-italic">Δ</span>
+ ）。其次，式（23.9）告诉我们<img alt="" class="kindle-cn-inline-image1a" src="Image00605.jpg" />
+ 等于<img alt="" class="kindle-cn-inline-image1a" src="Image00606.jpg" />
+ 。因此，作为<span class="kindle-cn-italic">R</span>
+ 的另一个表示法，写出<span class="kindle-cn-italic">R</span>
+ =<span class="kindle-cn-italic">ρ</span>
+ e<span class="math-super">i</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">θ</span>
+</span>
+ ，我们就有</p>
+<div class="kindle-cn-image"><img alt="" src="Image00607.jpg" style="width:42%" />
+</div>
+<p class="kindle-cn-noindent">最后，追溯得更远一些，我们看到作为复数<img alt="" class="kindle-cn-inline-image1a" src="Image00605.jpg" />
+ 的实数部分的物理量<span class="kindle-cn-italic">x</span>
+ ，等于<span class="kindle-cn-italic">ρF</span>
+ <span class="math-sub">0</span>
+ e<span class="math-super">i（</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">θ</span>
+</span>
+ <span class="math-super">+</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">Δ</span>
+</span>
+ <span class="math-super">）</span>
+ e<span class="math-super">i</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">ωt</span>
+</span>
+ 的实部。但<span class="kindle-cn-italic">ρ</span>
+ 和<span class="kindle-cn-italic">F</span>
+ <span class="math-sub">0</span>
+ 是实数，而e<span class="math-super">i</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">（</span>
+</span>
+ <span class="math-super">θ+</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">Δ</span>
+</span>
+ <span class="math-super">+</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">ωt</span>
+</span>
+ <span class="math-super">）</span>
+ 的实部就是cos（<span class="kindle-cn-italic">ωt</span>
+ +<span class="kindle-cn-italic">Δ</span>
+ +<span class="kindle-cn-italic">θ</span>
+ ）。因此</p>
+<p class="kindle-cn-para-center">
+<span class="kindle-cn-italic">x</span>
+ =<span class="kindle-cn-italic">ρF</span>
+ <span class="math-sub">0</span>
+ cos（<span class="kindle-cn-italic">ωt</span>
+ +<span class="kindle-cn-italic">Δ</span>
+ +<span class="kindle-cn-italic">θ</span>
+ ）.<span style="float:right;">（23.10）</span>
+</p>
+<p class="kindle-cn-noindent">由此可知，响应的振幅是力<span class="kindle-cn-italic">F</span>
+ 的幅值与某一放大因子<span class="kindle-cn-italic">ρ</span>
+ 的乘积；它给出了振动的幅度。但是，它还告诉我们，<span class="kindle-cn-italic">x</span>
+ 的振动与力不是处于同一相位的，力的初始相位是<span class="kindle-cn-italic">Δ</span>
+ ，而<span class="kindle-cn-italic">x</span>
+ 则还要再移过一个额外的量<span class="kindle-cn-italic">θ</span>
+ 。因此，<span class="kindle-cn-italic">ρ</span>
+ 和<span class="kindle-cn-italic">θ</span>
+ 表示响应的大小和响应的相移。</p>
+<p>现在，我们来计算<span class="kindle-cn-italic">ρ</span>
+ 。我们知道一个复数模的平方等于这个复数乘它的共轭复数，即</p>
+<div class="kindle-cn-image"><img alt="" src="Image00608.jpg" style="width:85%" />
+ <span style="float:right;">（23.11）</span>
+</div>
+<p>此外，相角<span class="kindle-cn-italic">θ</span>
+ 也容易求出。因为如果写出</p>
+<div class="kindle-cn-image"><img alt="" src="Image00609.jpg" style="width:55%" />
+</div>
+<p class="kindle-cn-noindent">我们看到</p>
+<div class="kindle-cn-image"><img alt="" src="Image00610.jpg" style="width:40%" />
+ <span style="float:right;">（23.12）</span>
+</div>
+<p class="kindle-cn-noindent">故<span class="kindle-cn-italic">θ</span>
+ 是负值，因为tan（-<span class="kindle-cn-italic">θ</span>
+ ）=-tan<span class="kindle-cn-italic">θ</span>
+ 。对所有的<span class="kindle-cn-italic">ω</span>
+ ，所得的<span class="kindle-cn-italic">θ</span>
+ 均为负值，这相应于位移<span class="kindle-cn-italic">x</span>
+ 落后于力<span class="kindle-cn-italic">F</span>
+ 。</p>
+<p>图23-2表示<span class="kindle-cn-italic">ρ</span>
+ <span class="math-super">2</span>
+ 作为一个频率的函数变化的情况（<span class="kindle-cn-italic">ρ</span>
+ <span class="math-super">2</span>
+ 在物理上比<span class="kindle-cn-italic">ρ</span>
+ 更有用，因为<span class="kindle-cn-italic">ρ</span>
+ <span class="math-super">2</span>
+ 与振幅的平方成正比，或多或少与力加到振子上产生的<span class="kindle-cn-specialtext-qx">能量</span>
+ 成正比）。我们看到，若<span class="kindle-cn-italic">γ</span>
+ 很小，则<img alt="" class="kindle-cn-inline-image1a" src="Image00611.jpg" />
+ 是最重要的项，当<span class="kindle-cn-italic">ω</span>
+ 等于<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ 时，响应趋于无限大。这里的“无限大”不是真正的无限大，因为如果<span class="kindle-cn-italic">ω</span>
+ =<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ ，那么1<span class="kindle-cn-italic">/</span>
+ γ<span class="math-super">2</span>
+ <span class="kindle-cn-italic">ω</span>
+ <span class="math-super">2</span>
+ 依然存在。相移的变化如图23-3所示。</p>
+<div class="kindle-cn-image"><img alt="" src="Image00612.jpg" style="width:48%" />
+<p class="kindle-cn-caption">
+<span class="kindle-cn-bold">图23-2</span>
+ 　ρ2对ω的关系图</p>
+</div>
+<div class="kindle-cn-image"><img alt="" src="Image00613.jpg" style="width:50%" />
+<p class="kindle-cn-caption">
+<span class="kindle-cn-bold">图23-3</span>
+ 　θ对ω的关系图</p>
+</div>
+<p>在某些情况下，我们得到一个与式（23.8）略有不同的公式，它也称为“共振”公式，人们可能会认为它代表另一种现象，但实际上并非如此。原因是，如果<span class="kindle-cn-italic">γ</span>
+ 很小，曲线的最有意义的部分是<span class="kindle-cn-italic">ω</span>
+ =<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ 附近的部分，因此我们可以用一个近似公式来代替式（23.8），当<span class="kindle-cn-italic">γ</span>
+ 很小且<span class="kindle-cn-italic">ω</span>
+ 接近<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ 时，这个近似公式是非常正确的。因为<img alt="" class="kindle-cn-inline-image1a" src="Image00614.jpg" />
+ ，如果<span class="kindle-cn-italic">ω</span>
+ 接近<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ ，上式接近于2<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ （<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ -<span class="kindle-cn-italic">ω</span>
+ ），而<span class="kindle-cn-italic">γω</span>
+ 又接近于<span class="kindle-cn-italic">γω</span>
+ <span class="math-sub">0</span>
+ 。把这些关系用到式（23.8），我们看到<img alt="" class="kindle-cn-inline-image1a" src="Image00615.jpg" />
+ ，因此</p>
+<div class="kindle-cn-image"><img alt="" src="Image00616.jpg" style="width:73%" />
+ <span style="float:right;">（23.13）</span>
+</div>
+<p class="kindle-cn-noindent">很容易求出<span class="kindle-cn-italic">ρ</span>
+ <span class="math-super">2</span>
+ 的相应公式。它是</p>
+<div class="kindle-cn-image"><img alt="" src="Image00617.jpg" style="width:41%" />
+</div>
+<p>我们将留给读者去证明如下事实：如果将<span class="kindle-cn-italic">ρ</span>
+ <span class="math-super">2</span>
+ -<span class="kindle-cn-italic">ω</span>
+ 曲线的最大高度称为1个单位，我们要求出在最大高度一半处曲线的宽度Δ<span class="kindle-cn-italic">ω</span>
+ ；假定<span class="kindle-cn-italic">γ</span>
+ 很小时，曲线最大高度一半处的全宽度是Δ<span class="kindle-cn-italic">ω</span>
+ =<span class="kindle-cn-italic">γ</span>
+ 。当摩擦的影响越来越小时，共振越来越尖锐。</p>
+<p>有人用一个定义为<span class="kindle-cn-italic">Q</span>
+ =<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ /<span class="kindle-cn-italic">γ</span>
+ 的量<span class="kindle-cn-italic">Q</span>
+ 作为宽度的另一种量度。共振越窄，<span class="kindle-cn-italic">Q</span>
+ 就越高；<span class="kindle-cn-italic">Q</span>
+ =1 000的意思是说，这个共振的宽度只有频率的千分之一。在图23-2所示的共振曲线中<span class="kindle-cn-italic">Q</span>
+ 是5。</p>
+<p>共振现象的重要性在于它在很多其他情况中也会出现，因此，本章的其余部分将描述其他一些共振情况。</p>
+<h2 class="kindle-cn-heading2" id="hh2-123">§23-3　电共振</h2>
+<p>共振的最简单和最广泛的技术应用是在电学方面。在电学世界中，有很多能够连接成电路的装置。通常所说的<span class="kindle-cn-specialtext-qx">无源电路元件</span>
+ 有三种主要类型，虽然其中的每一种都混有少量的另外两种元件。在详细叙述它们之前，我们必须注意由悬挂在弹簧一端的物体构成的机械振子的整个概念只是一种近似。所有的质量并不真正集中在“物体”上，有些质量表现为弹簧的惯性。同样，全部弹性也并不集中在“弹簧”上，物体本身也有一点点弹性，虽然它看来很像一个刚体，但不是<span class="kindle-cn-specialtext-qx">绝对</span>
+ 刚性的，当它上下运动时，在弹簧拉力的作用下会有一点弯曲。在电学中情况也一样。作为一种近似，我们可以将一些东西归结为“电路元件”，并假定它们具有纯粹的理想特性。现在讨论这种近似还不是时候，我们先简单地承认在目前的情况下它是正确的。</p>
+<p>三种主要的电路元件如下：第一种是<span class="kindle-cn-specialtext-qx">电容器</span>
+ （图23-4），将两块金属平板用绝缘物质分开一个很小的距离就是一个例子。当金属板充电后，在两块板之间就有一定的电压降，亦即有一定的电位差。在端点A和B之间出现相同的电位差，因为如果沿着相连的导线有任何电位差的话，电荷会立即流动。因此，如果两块板分别具有电荷+<span class="kindle-cn-italic">q</span>
+ 和-<span class="kindle-cn-italic">q</span>
+ ，它们之间就有一定的电位差<span class="kindle-cn-italic">V</span>
+ 。于是两块板之间将存在某一电场，对此我们已经得出过一个公式（见第13章和第14章）</p>
+<p class="kindle-cn-para-center">
+<span class="kindle-cn-italic">V</span>
+ =<span class="kindle-cn-italic">σd/</span>
+ ε<span class="math-sub">0</span>
+ =<span class="kindle-cn-italic">qd/</span>
+ ε<span class="math-sub">0</span>
+ <span class="kindle-cn-italic">A</span>
+ ，<span style="float:right;">（23.14）</span>
+</p>
+<div class="kindle-cn-image"><img alt="" src="Image00618.jpg" style="width:41%" />
+<p class="kindle-cn-caption">
+<span class="kindle-cn-bold">图23-4</span>
+ 　三个无源电路元件</p>
+</div>
+<p class="kindle-cn-noindent">这里<span class="kindle-cn-italic">d</span>
+ 是两块板的间距，<span class="kindle-cn-italic">A</span>
+ 是板的面积。注意，电位差是电荷的线性函数。如果不是平行板，而是任意形状的绝缘电极，其电位差仍然严格地和电荷成正比，不过比例常数可能不大容易计算。但是，我们需要知道的只是电容器两端的电位差<span class="kindle-cn-specialtext-qx">与电荷成正比</span>
+ :<span class="kindle-cn-italic">V</span>
+ =<span class="kindle-cn-italic">q</span>
+ /<span class="kindle-cn-italic">C</span>
+ ；比例常数是1/<span class="kindle-cn-italic">C</span>
+ ，这里的<span class="kindle-cn-italic">C</span>
+ 就是物体的<span class="kindle-cn-specialtext-qx">电容</span>
+ 。</p>
+<p>第二种电路元件叫做<span class="kindle-cn-specialtext-qx">电阻器</span>
+ ，它起着阻碍电流流动的作用。已经证明金属导线和许多其他物质都以如下方式阻碍电荷流动：如果某段物质的两端有一电压差，就有电流<span class="kindle-cn-italic">I</span>
+ =d<span class="kindle-cn-italic">q</span>
+ /d<span class="kindle-cn-italic">t</span>
+ ，它与电压差成正比</p>
+<p class="kindle-cn-para-center">
+<span class="kindle-cn-italic">V</span>
+ =<span class="kindle-cn-italic">RI</span>
+ =<span class="kindle-cn-italic">R</span>
+ d<span class="kindle-cn-italic">q</span>
+ /d<span class="kindle-cn-italic">t</span>
+ .<span style="float:right;">（23.15）</span>
+</p>
+<p class="kindle-cn-noindent">比例系数叫做<span class="kindle-cn-specialtext-qx">电阻<span class="kindle-cn-italic">R</span>
+</span>
+ 。可能你对这个关系式已经很熟悉，它就是欧姆定律。</p>
+<p>假如我们把电容器上的电荷<span class="kindle-cn-italic">q</span>
+ 类比为力学系统的位移<span class="kindle-cn-italic">x</span>
+ ，可以看到，电流<span class="kindle-cn-italic">I</span>
+ =d<span class="kindle-cn-italic">q</span>
+ /d<span class="kindle-cn-italic">t</span>
+ ，它相应于速度，1/<span class="kindle-cn-italic">C</span>
+ 相应于弹性系数<span class="kindle-cn-italic">k</span>
+ ，<span class="kindle-cn-italic">R</span>
+ 相应于电阻系数<span class="kindle-cn-italic">γ</span>
+ 。十分有趣的是还存在另一个与质量相对应的电路元件！这是一个线圈，当线圈内有电流时，在它内部就建立了磁场。<span class="kindle-cn-specialtext-qx">变化的</span>
+ 磁场在线圈内产生电压，电压的大小与d<span class="kindle-cn-italic">I</span>
+ /d<span class="kindle-cn-italic">t</span>
+ 成正比（实际上，这就是变压器的工作原理）。磁场与电流成正比，在这种线圈内的（所谓）感生电压与电流的变化率成正比</p>
+<p class="kindle-cn-para-center">
+<span class="kindle-cn-italic">V</span>
+ =<span class="kindle-cn-italic">L</span>
+ d<span class="kindle-cn-italic">I</span>
+ /d<span class="kindle-cn-italic">t</span>
+ =<span class="kindle-cn-italic">L</span>
+ d<span class="math-super">2</span>
+ <span class="kindle-cn-italic">q</span>
+ /d<span class="kindle-cn-italic">t</span>
+ <span class="math-super">2</span>
+ .<span style="float:right;">（23.16）</span>
+</p>
+<p class="kindle-cn-noindent">系数<span class="kindle-cn-italic">L</span>
+ 是<span class="kindle-cn-specialtext-qx">自感</span>
+ ，它与机械振动回路系统中的质量相对应。</p>
+<div class="kindle-cn-sidebar-left-30"><img alt="" src="Image00619.jpg" style="width:100%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图23-5</span>
+ 　由电阻、电容和电感组成的振荡电路</p>
+</div>
+<p>假设我们把这三个电路元件串联成一个电路（图23-5），则加在从1到2整个回路两端的电压就是在回路中移动单位电荷所做的功，它等于几部分电压之和：在电感器两端的<span class="kindle-cn-italic">V</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">L</span>
+</span>
+ =<span class="kindle-cn-italic">L</span>
+ d<span class="math-super">2</span>
+ <span class="kindle-cn-italic">q</span>
+ /d<span class="kindle-cn-italic">t</span>
+ <span class="math-super">2</span>
+ ；在电阻两端的<span class="kindle-cn-italic">V</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">R</span>
+</span>
+ =<span class="kindle-cn-italic">R</span>
+ d<span class="kindle-cn-italic">q</span>
+ /d<span class="kindle-cn-italic">t</span>
+ ；在电容器两端的<span class="kindle-cn-italic">V</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">C</span>
+</span>
+ =<span class="kindle-cn-italic">q</span>
+ /<span class="kindle-cn-italic">C</span>
+ 。它们的和等于外加电压<span class="kindle-cn-italic">V</span>
+</p>
+<p class="kindle-cn-para-center">
+<span class="kindle-cn-italic">L</span>
+ d<span class="math-super">2</span>
+ <span class="kindle-cn-italic">q</span>
+ /d<span class="kindle-cn-italic">t</span>
+ <span class="math-super">2</span>
+ +<span class="kindle-cn-italic">R</span>
+ d<span class="kindle-cn-italic">q</span>
+ /d<span class="kindle-cn-italic">t</span>
+ +<span class="kindle-cn-italic">q</span>
+ /<span class="kindle-cn-italic">C</span>
+ =<span class="kindle-cn-italic">V</span>
+ （<span class="kindle-cn-italic">t</span>
+ ）.<span style="float:right;">（23.17）</span>
+</p>
+<p class="kindle-cn-noindent">这个方程式与力学方程式（23.6）完全一样，当然可以用完全相同的方式来解。假设<span class="kindle-cn-italic">V</span>
+ （<span class="kindle-cn-italic">t</span>
+ ）是振荡的：我们用一个纯正弦波振荡发生器来驱动电路。于是就能把<span class="kindle-cn-italic">V</span>
+ （<span class="kindle-cn-italic">t</span>
+ ）写成一个复数<img alt="" class="kindle-cn-inline-image1a" src="Image00620.jpg" />
+ ，只须理解为若要求真正的<span class="kindle-cn-italic">V</span>
+ ，则最后必须乘上e<span class="math-super">i</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">ωt</span>
+</span>
+ ，再取它的实部即可。同样，电荷<span class="kindle-cn-italic">q</span>
+ 也能这样分析，于是完全和处理式（23.8）的方法一样，我们写出相应的方程式：<img alt="" class="kindle-cn-inline-image1a" src="Image00621.jpg" />
+ 的两次微商是<img alt="" class="kindle-cn-inline-image1a" src="Image00622.jpg" />
+ ，一次微商是<img alt="" class="kindle-cn-inline-image1a" src="Image00623.jpg" />
+ 。这样，方程式（23.17）就变成</p>
+<div class="kindle-cn-image"><img alt="" src="Image00624.jpg" style="width:40%" />
+</div>
+<p class="kindle-cn-noindent">或</p>
+<div class="kindle-cn-image"><img alt="" src="Image00625.jpg" style="width:40%" />
+</div>
+<p class="kindle-cn-noindent">还可以把它写成如下形式</p>
+<div class="kindle-cn-image"><img alt="" src="Image00626.jpg" style="width:40%" />
+ <span style="float:right;">（23.18）</span>
+</div>
+<p class="kindle-cn-noindent">这里<img alt="" class="kindle-cn-inline-image1a" src="Image00627.jpg" />
+ ，<span class="kindle-cn-italic">γ</span>
+ =<span class="kindle-cn-italic">R/L</span>
+ 。式（23.18）中的分母与力学的情况完全相同，因而具有完全相同的共振性质！电学和力学情况的对应关系列于表23-1中。</p>
+<div class="kindle-cn-image">
+<p class="kindle-cn-caption">表23-1</p>
+<img alt="" src="Image00628.jpg" style="width:100%" />
+</div>
+<p>我们必须指出一个小的技术性问题。在电学文献中，常采用不同的符号（从一个领域到另一个领域，课题实际上没有任何不同，但是书写符号的方式常常不同）。首先在电工中常用j代替i来表示<img alt="" class="kindle-cn-inline-image1a" src="Image00629.jpg" />
+ （这是因为<span class="kindle-cn-italic">i</span>
+ 必须用以表示电流）。此外，工程师喜欢利用<img alt="" class="kindle-cn-inline-image1a" src="Image00630.jpg" />
+ 和<img alt="" class="kindle-cn-inline-image1a" src="Image00631.jpg" />
+ 的关系式，而不大采用<img alt="" class="kindle-cn-inline-image1a" src="Image00632.jpg" />
+ 和<img alt="" class="kindle-cn-inline-image1a" src="Image00633.jpg" />
+ 的关系式，这是因为他们对前一种方式更习惯一些。因为<img alt="" class="kindle-cn-inline-image1a" src="Image00634.jpg" />
+ ，所以我们能用<img alt="" class="kindle-cn-inline-image1a" src="Image00635.jpg" />
+ 代替<img alt="" class="kindle-cn-inline-image1a" src="Image00636.jpg" />
+ ，并得出</p>
+<div class="kindle-cn-image"><img alt="" src="Image00637.jpg" style="width:42%" />
+ <span style="float:right;">（23.19）</span>
+</div>
+<p class="kindle-cn-noindent">另一个做法是改写式（23.17），使它变成更熟悉的形式。即可写为</p>
+<div class="kindle-cn-image"><img alt="" src="Image00638.jpg" style="width:40%" />
+ <span style="float:right;">（23.20）</span>
+</div>
+<p class="kindle-cn-noindent">无论如何，我们找到的电压<img alt="" class="kindle-cn-inline-image1a" src="Image00639.jpg" />
+ 和电流<img alt="" class="kindle-cn-inline-image1a" src="Image00640.jpg" />
+ 之间的关系式（23.19），除了被i<span class="kindle-cn-italic">ω</span>
+ 去除之外，和式（23.18）完全一样，这样就得出了式（23.19）。量<span class="kindle-cn-italic">R</span>
+ +i<span class="kindle-cn-italic">ωL</span>
+ +1/（i<span class="kindle-cn-italic">ωC</span>
+ ）是一个复数，在电工上应用得很多，以致有一个名称，叫做<span class="kindle-cn-specialtext-qx">复阻抗</span>
+ <img alt="" class="kindle-cn-inline-image1a" src="Image00641.jpg" />
+ 。于是我们就可以写成<img alt="" class="kindle-cn-inline-image1a" src="Image00642.jpg" />
+ 。工程师喜欢这样做的原因是因为在他们年轻时，只知道电阻和直流电，对于电阻他们学过<span class="kindle-cn-italic">V</span>
+ =<span class="kindle-cn-italic">RI</span>
+ 。现在，他们受到更多的教育，知道了交流电路，然而还想看到同样的等式。因此，他们写出<img alt="" class="kindle-cn-inline-image1a" src="Image00643.jpg" />
+ ，唯一的区别是电阻被一个更复杂的复数的量所代替。因此，他们坚持不能采用世界上其他人都采用的表示虚数的形式，而要用一个j来表示，但奇怪的是他们并没有坚持把字母<span class="kindle-cn-italic">Z</span>
+ 也写成<span class="kindle-cn-italic">R</span>
+ （于是在讨论电流密度时，他们就遇到了麻烦，因为电流密度也用<span class="kindle-cn-italic">j</span>
+ 表示。科学的困难在很大的程度上不是来自于自然界，而是来自于符号、单位和所有其他人们所发明的人为事物造成的困难）！</p>
+<h2 class="kindle-cn-heading2" id="hh2-124">§23-4　自然界中的共振现象</h2>
+<p>虽然我们详细讨论的是电学的情况，但也能够在很多领域里举出一个又一个例子，用来说明其共振方程的确是何等的一致。在自然界中存在着很多发生“振动”和共振的情况。在前面某一章中我们曾讲起过这类情况，现在我们来加以证明。如果我们在书房里踱步，从书架上取出一些书，去找找看有没有一个来自相同的方程，且能画出像图23-2那样曲线的例子，我们会发现什么呢？只要查阅五六本书，就能找到一系列显示共振的现象，这些少量的现象足够说明共振所涉及的范围之广。</p>
+<div class="kindle-cn-sidebar-left"><img alt="" src="Image00644.jpg" style="width:100%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图23-6</span>
+ 　大气层对外来激发的响应，如果大气层<img alt="" class="kindle-cn-inline-image" src="Image00645.jpg" />
+ 潮汐是由万有引力引起的，a就是这种条件下所需的响应；峰值的放大率是100∶1。b是从<img alt="" class="kindle-cn-inline-image" src="Image00646.jpg" />
+ 潮汐观察的倍数和相位导出的</p>
+<p class="kindle-cn-caption1">（转载自Munk W H, MacDonald G J F. <span class="kindle-cn-italic">Rotation of the Earth</span>
+ . London: Cambridge University Press, 1960）</p>
+</div>
+<p>最初两个例子来自于力学，第一个现象是大规模的，即整个地球的大气层。我们认为整个地球由大气层均匀地包围着，如果大气被月亮吸引到一边，或更确切地说，被拉扁成双潮汐，那么让它这样下去，它就会继续上下涨落，这就是一个振子。这个振子是由月亮<span class="kindle-cn-specialtext-qx">驱动</span>
+ 的，实际上月亮绕着地球转动，策动力的任何一个分量，比如说，在<span class="kindle-cn-italic">x</span>
+ 方向上的分量，是一个余弦分量，因此地球的大气层对月亮的潮汐拉力的响应是一个振子的响应。预期的大气响应如图23-6中曲线b所示（曲线a是所引的那本书中讨论过的另一条理论曲线）。现在，人们可能会认为，在这条共振曲线上只有一点，因为与在月亮作用下的地球的转动相应的频率只有一个，它转动的周期为12.42 h——12 h是由于地球的转动（潮汐是两个隆起部分）。由于月亮也在转动，还要加上一点。但是从大气潮汐的<span class="kindle-cn-specialtext-qx">大小</span>
+ 和<span class="kindle-cn-specialtext-qx">相位</span>
+ （即推迟的数量）来看，我们能同时得出<span class="kindle-cn-italic">ρ</span>
+ 和<span class="kindle-cn-italic">θ</span>
+ 。由此又可得出<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ 和<span class="kindle-cn-italic">γ</span>
+ ，从而画出整条曲线！这是一个非常蹩脚的科学例子。我们从两个数得出两个数，再从那两个数画出一条漂亮的曲线，它当然正好通过决定曲线的那个点。<span class="kindle-cn-specialtext-qx">除非我们能够测量某些其他量</span>
+ ，否则这条曲线是毫无用处的，而对地球物理学来说，这通常又是非常困难的。但在这个特殊情况中，可以从理论上证明，一定还有与固有频率<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ 同样计时的东西：那就是，如果能扰动大气层，它就会以频率<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ 振动。1883年曾发生过一次激烈的扰动，喀拉喀托<a id="ft1" href="text00032.html#fn_1">
+<span class="math-super">[1]</span>
+</a>
+ 火山爆发时，将半个岛屿掀掉了，在大气中造成了一次如此可怕的爆炸，使得能够测量出大气的振动周期。得出的结果是10.5 h，从图23-6得出的<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ 是10.20 h，于是我们至少找到了一个验证对大气潮汐理解的真实性的数据。</p>
+<p>下面我们将研究小尺度的机械振动。这次我们取氯化钠晶体，在前面的一章中我们曾描述过，氯化钠晶体中，钠离子和氯离子是一个接一个地排列着的。钠离子带正电，氯离子带负电。现在有可能存在一种有趣的振动。假定我们把所有的正电荷赶到右边，把所有的负电荷赶到左边，然后任其运动，这样钠晶格相对氯晶格就会来回振动。怎样才能造成这种情况呢？这很容易，如果在晶体上外加一个电场，电场会把正电荷推向一边，而把负电荷推向另一边。因此，通过引进外加电场，我们或许能够使晶体振动。但是所要求的电场频率很高，它相应于<span class="kindle-cn-specialtext-qx">红外辐射</span>
+ ！因此，我们可以通过测量氯化钠对红外光的吸收来找出一条共振曲线。图23-7所示就是这样的一条曲线。横坐标不是频率，而是波长，但这仅仅是一个技术问题，因为对于波来说，频率和波长之间有确定的关系，因而它实际上也是一种频率的标度，而某一个确定频率与共振频率相对应。</p>
+<div class="kindle-cn-image"><img alt="" src="Image00647.jpg" style="width:44%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图23-7</span>
+ 　通过一个薄氯化钠膜（0.17<span class="kindle-cn-italic">
+<span class="kindle-cn-italic">μ</span>
+</span>
+ m）的红外辐射透射</p>
+<p class="kindle-cn-caption1">（转载自Barnes R B. <span class="kindle-cn-italic">Z Physik</span>
+ , 1932, <span class="kindle-cn-bold">75</span>
+ : 723; Kittel C. <span class="kindle-cn-italic">Introduction to Solid State</span>
+ , <span class="kindle-cn-italic">Physics</span>
+ . New York: Wiley, 1956）</p>
+</div>
+<p>但是，宽度有多大？由什么来确定宽度呢？在很多情况下，曲线上所看到的宽度实际上并不是理论上应有的固有宽度<span class="kindle-cn-italic">γ</span>
+ 。为什么会有较理论曲线更宽的曲线呢？这有两个原因。第一，如果晶体的某个区域发生应变，则晶体的不同部分可能不都具有相同的频率，因此，在这些区域中振动频率与其他区域相比略有不同，这时我们就具有许多彼此靠得很近的共振曲线，于是，看上去曲线就比较宽。第二个原因是这样的：或许我们不能足够精确地测量出频率——假如我们把分光计的狭缝开得相当宽，尽管我们认为只有一种频率，实际上则有一个范围Δ<span class="kindle-cn-italic">ω</span>
+ ，于是我们并没有足够的分辨率去观察一条窄的曲线。因此，我们不能随便讲图23-7的宽度是否是自然的，还是由晶体中的不均匀性或分光计狭缝的一定宽度所引起的。</p>
+<p>现在转而研究一个比较深奥的例子，这就是磁铁的振动。如果把一个带有南、北极性的磁铁放在一个恒定的磁场内，磁铁的N端将被推向一方，而S端则被推向另一方，一般说来有转矩作用在磁铁上，因此，它将在平衡位置附近振动，就像罗盘的指针那样。但是，我们所说的磁铁指的是<span class="kindle-cn-specialtext-qx">原子</span>
+ 。这些原子具有一个角动量，转矩并不产生沿着场的方向的简单运动，而显然会产生<span class="kindle-cn-specialtext-qx">进动</span>
+ 。现在，从旁边来观察时，可以看到任何一个分量都在“摆动”，我们可以扰动或驱动这种摆动，并测量吸收。图23-8中的曲线表示一个典型的这类共振曲线。这里所做的在技术上稍有差别。现在，用以驱动这种摆动的横向场的频率总是保持不变，虽然我们曾预料研究者们会改变它而画出曲线来。他们可以这样做，但是在技术上更容易做的是让频率<span class="kindle-cn-italic">ω</span>
+ 固定，改变恒定磁场的强度，这相当于在我们的公式中改变<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ 。他们画出相对于<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ 的共振曲线。不管怎样，这是具有某一确定的<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ 和<span class="kindle-cn-italic">γ</span>
+ 的典型共振。</p>
+<div class="kindle-cn-image"><img alt="" src="Image00648.jpg" style="width:43%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图23-8</span>
+ 　在顺磁有机化合物中，磁能损失与外加磁场强度的关系</p>
+<p class="kindle-cn-caption1">（转载自Holden A N, <span class="kindle-cn-italic">et al</span>
+ . <span class="kindle-cn-italic">Phys Rev</span>
+ , 1949, <span class="kindle-cn-bold">75</span>
+ : 1614）</p>
+</div>
+<p>现在我们再进一步讨论下去。下一个例子与原子核有关。原子核中的质子和中子以某种方式作振动，这可以用下面的实验来证实。我们用质子轰击一个Li原子，发现产生<span class="kindle-cn-italic">γ</span>
+ 射线的某种反应，实际上是具有一个非常尖锐的极大的典型共振。但是，在图23-9中，我们看到和其他情况有一个不同：水平标度不是频率，而是<span class="kindle-cn-specialtext-qx">能量</span>
+ ！原因是在量子力学中，经典能量的含义实际上与波振动的频率有关。如果我们分析某个在一般宏观物理学中与频率有关的事物时，我们发现在用原子物质做量子力学实验时，得到的是相应的作为能量函数的曲线。实际上，从某种意义上来说，这条曲线就是这种联系的一个证明。它表明频率和能量之间有某种深刻的内在联系，当然，事实上也是如此。</p>
+<div class="kindle-cn-image"><img alt="" src="Image00649.jpg" style="width:69%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图23-9</span>
+ 　从Li原子中射出的<span class="kindle-cn-italic">γ</span>
+ 射线强度与轰击质子能量的关系。虚线是对角动量<span class="kindle-cn-italic">l</span>
+ =0的质子进行计算时得出的理论曲线</p>
+<p class="kindle-cn-caption1">（转载自Bonner T W, Evans J E. <span class="kindle-cn-italic">Phys Rev</span>
+ , 1948, <span class="kindle-cn-bold">73</span>
+ : 666）</p>
+</div>
+<p>现在我们再来研究另一个与原子核能级有关的例子，不过它是很窄很窄的。在图23-10中，<span class="kindle-cn-italic">ω</span>
+ <span class="math-sub">0</span>
+ 相当于100 000 eV的能量，而宽度<span class="kindle-cn-italic">γ</span>
+ 大致为10<span class="math-super">-5</span>
+ eV；换句话说，<span class="kindle-cn-italic">Q</span>
+ 为10<span class="math-super">10</span>
+ ！当这条曲线被测定时，它是所有已经测定的振子中<span class="kindle-cn-italic">Q</span>
+ 值最大的。这是由穆斯堡尔博士测出的，这奠定了他获得诺贝尔奖的基础。在这里水平标度是速度，因为要获得相差很小的频率的技术是采用源相对于吸收体运动的多普勒效应。当我们知道所包含的速度只有每秒几厘米时，人们就会感到这个实验是多么精巧！在图中的实际标度下，零频率相应于左边约10<span class="math-super">10</span>
+ cm处的一个点——有些超出纸面了！</p>
+<div class="kindle-cn-image"><img alt="" src="Image00650.jpg" style="width:51%" />
+<p class="kindle-cn-caption">
+<span class="kindle-cn-bold">图23-10</span>
+ 　（承穆斯堡尔博士同意提供）</p>
+</div>
+<p>最后，我们来看一下某一期《物理评论》（<span class="kindle-cn-italic">Physics Review</span>
+ ）杂志，比方说是1962年1月1日出版的那一期，我们能看到共振曲线吗？每期中都有这条曲线，图23-11就是这一期里的共振曲线。这条曲线是很有趣的。这种共振是在一些奇异粒子间的某种反应中发现的，在这个反应中一个K-介子和一个质子相互作用。这种共振是通过观察放出来的某种粒子数目的多少来探测的，它依赖于放出粒子的数目和放出的是什么粒子，我们得到不同的曲线，但是这些曲线有相同的形状，并且峰值出现在相同的能量处。因此，我们确认对K<span class="math-super">-</span>
+ 介子，在某确定能量时存在着共振。这可能意味着，有某种状态或条件相应于这种共振，把一个K-和一个质子放在一起就能得到这种状态或条件。这是一种新的粒子或共振。今天，我们还不知道是否能称这样的突起部分为“粒子”，还是干脆就叫共振。当有一个非常<span class="kindle-cn-specialtext-qx">尖锐</span>
+ 的共振时，就相应于一个非常<span class="kindle-cn-specialtext-qx">确定的能量</span>
+ ，就好像有一个粒子以这种能量存在于自然界中一样。当共振变宽的时候，我们就不知道是否应该说存在一个寿命不长的粒子，或者仅仅说在反应概率中存在着一个共振。在第2章中讲到粒子时，这一点已经提起过，但在写第2章时，还不知道这个共振，因此在我们的基本粒子表中还应该加上另一个粒子！</p>
+<div class="kindle-cn-image"><img alt="" src="Image00651.jpg" style="width:40%" />
+<p class="kindle-cn-caption1">
+<span class="kindle-cn-bold">图23-11</span>
+ 　动量与反应截面的依赖关系（a）K<span class="math-super">-</span>
+ +p→Λ+<span class="kindle-cn-italic">π</span>
+ <span class="math-super">+</span>
+ +<span class="kindle-cn-italic">π</span>
+ <span class="math-super">-</span>
+ 和<img alt="" class="kindle-cn-inline-image" src="Image00652.jpg" />
+ 。在（a）和（b）中下面的曲线代表假定的非共振背景，而上面的曲线是在背景上再叠加共振</p>
+<p class="kindle-cn-caption1">（转载自Ferro-Luzzi M, <span class="kindle-cn-italic">et al</span>
+ . <span class="kindle-cn-italic">Phys Rev Lett</span>
+ , 1962, <span class="kindle-cn-bold">8</span>
+ : 28）</p>
+</div>
+</div>
+<hr/>
+<div class="footnote">
+<p class="kindle-cn-footnote">
+<a id="fn_1" href="text00032.html#ft1">[1]</a>
+ 靠近印度尼西亚爪哇岛西端的海中火山。——译者注</p>
+</div>
+</body>
+</html>

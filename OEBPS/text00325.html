@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head><title></title>
+<link href="flow0004.css" rel="stylesheet" type="text/css" />
+</head>
+<body><div></div>
+<h1 class="kindle-cn-heading-1">第39章　弹性材料</h1>
+<h2 class="kindle-cn-heading2" id="sigil_toc_id_36">§39-1　应变张量</h2>
+<p>上一章我们曾谈到一些特殊弹性体的形变，本章我们将要考察弹性材料内部<span class="kindle-cn-specialtext-qx">通常</span>
+ 可能发生的情况。我们希望当用某种复杂方式把一大团果子冻扭转和压缩时，有可能描述其内部的应力和应变的情况。要完成此事，就需要能描写弹性体中每一点上的<span class="kindle-cn-specialtext-qx">局域应变</span>
+ 。对此，我们可以通过对每一点给出一组六个数——一个对称张量的分量——来做到。以前我们就曾谈及应力张量（第31章），现在却需要应变张量。</p>
+<p>考虑从一块起初未发生任何应变的材料出发，并注意当其发生应变时埋在材料里的一个小“灰尘”斑点的运动。原来被放在P点、即r=（x，y，z）处的斑点，移到如图39-1所示的P′点、即r′=（x′，y′，z′）处。我们把从P至P′的矢量位移记作u。于是</p>
+<p class="kindle-cn-para-center">u=r′-r.　（39.1）</p>
+<p class="kindle-cn-para-no-indent">当然，这位移u依赖于我们出发的一点P，因而u就是r的一个矢量函数——或者，如果你喜欢的话，也即是（x，y，z）的函数。</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="555-2" class="kindle-cn-bodycontent-image-alone80-withnote" src="Image03367.jpg" />
+</div>
+<p class="kindle-cn-picture-txt-withmanycharactors">图39-1　在未发生应变的一块材料中位于P点处的斑点，当材料发生应变后移到P′点处</p>
+<p>让我们首先来考察应变在整块材料中是常数的那种简单情况——因而我们就有所谓<span class="kindle-cn-specialtext-qx">均匀应变</span>
+ 。例如，假设有一块材料，将其均匀拉伸，仅仅在一个方向——比如在x方向——上均匀地改变它的长度，如图39-2所示。位于x处斑点的位移u<span class="math-sub">x</span>
+ 与x成正比。实际上，我们将ux写成这样：</p>
+<p class="kindle-cn-para-center"><img alt="555-1" class="kindle-cn-inline-image1" src="Image03368.jpg" />
+</p>
+<p class="kindle-cn-para-center">u<span class="math-sub">x</span>
+ =e<span class="math-sub">xx</span>
+ x.</p>
+<p class="kindle-cn-para-no-indent">当然，比例常数e<span class="math-sub">xx</span>
+ 与Δl/l是同一件事（你不久就会看到为什么我们要用一个双重脚标）。</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="556-1" class="kindle-cn-bodycontent-image-alone60-withnote" src="Image03369.jpg" />
+<p class="kindle-cn-picture-txt-withfewcharactors">图39-2　均匀拉伸型应变</p>
+</div>
+<p>如果应变不均匀，则u<span class="math-sub">x</span>
+ 与x的关系将在材料里逐点改变。对于一般的情况来说，就要用一种局域的Δl/l，即用下式来定义e<span class="math-sub">xx</span>
+ ：</p>
+<p class="kindle-cn-para-center">e<span class="math-sub">xx</span>
+ =∂u<span class="math-sub">x</span>
+ /∂x.　（39.2）</p>
+<p class="kindle-cn-para-no-indent">这个数——它现在是x，y和z的函数——描述整块果子冻中x方向的伸长量。当然，此外还可以有沿y向和z向的伸长，我们用下列两个数值来描述：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="556-2" class="kindle-cn-bodycontent-image-alone60" src="Image03370.jpg" />
+</div>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="556-5" class="kindle-cn-bodycontent-image-alone80-withnote" src="Image03371.jpg" />
+<p class="kindle-cn-picture-txt-withfewcharactors">图39-3　均匀剪切应变</p>
+</div>
+<p>我们也需要能描述剪切型的应变。假设我们想象在起初未发生形变的果子冻中标示出一个小立方体。当这团果子冻被推压而变形时，立方体的一个面可能变成一个平行四边形，如图39-3所示意的那样<span class="math-super">
+<a id="noteBack_1" href="text00329.html#note_1">[1]</a>
+</span>
+ 。在这种应变中，每个质点在x方向的移动与y坐标成正比，</p>
+<p class="kindle-cn-para-center"><img alt="556-3" class="kindle-cn-inline-image" src="Image03372.jpg" />
+ 　（39.4）</p>
+<p class="kindle-cn-para-no-indent">还有一个正比于x的y方向的位移，</p>
+<p class="kindle-cn-para-center"><img alt="556-4" class="kindle-cn-inline-image1" src="Image03373.jpg" />
+ 　（39.5）</p>
+<p class="kindle-cn-para-no-indent">因此，我们就能够通过写出</p>
+<p class="kindle-cn-para-center">u<span class="math-sub">x</span>
+ =e<span class="math-sub">xy</span>
+ y，　u<span class="math-sub">y</span>
+ =e<span class="math-sub">yx</span>
+ x，</p>
+<p class="kindle-cn-para-no-indent">其中</p>
+<p class="kindle-cn-para-center"><img alt="557-1" class="kindle-cn-inline-image1" src="Image03374.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">来描述这种剪切型应变。</p>
+<p>现在你也许会想到，当应变不均匀时，我们可以用下面对e<span class="math-sub">xy</span>
+ 和e<span class="math-sub">yx</span>
+ 这两个量所下的定义来描述普遍的剪切应变：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="557-2" class="kindle-cn-bodycontent-image-alone80" src="Image03375.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">不过这里有一点困难。假定位移u<span class="math-sub">x</span>
+ 和u<span class="math-sub">y</span>
+ 分别由下式给出：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="557-3" class="kindle-cn-bodycontent-image-alone30" src="Image03376.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">除了u<span class="math-sub">y</span>
+ 的符号相反之外它们就很像式（39.4）和（39.5）。对于这些位移来说，果子冻中一个小立方体将仅仅转过一个角度θ/2，如图39-4所示。完全没有什么应变——只不过在空间中的转动，材料没有变形，所有原子的<span class="kindle-cn-specialtext-qx">相对</span>
+ 位置都根本没有改变。所以应当想办法使纯转动不包括在我们对剪切应变的定义之中。关键点在于：若∂u<span class="math-sub">y</span>
+ /∂x和∂u<span class="math-sub">x</span>
+ /∂y相等而相反，则没有应变，因此，我们可用下列<span class="kindle-cn-specialtext-qx">定义</span>
+ 解决问题：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="557-4" class="kindle-cn-bodycontent-image-alone50" src="Image03377.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">对于纯转动来说，两者均等于零，但对于纯剪切则会得到e<span class="math-sub">xy</span>
+ 等于e<span class="math-sub">yx</span>
+ ，这正是我们想要的那种关系。</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="557-5" class="kindle-cn-bodycontent-image-alone80-withnote" src="Image03378.jpg" />
+<p class="kindle-cn-picture-txt-withfewcharactors">图39-4　均匀转动——没有应变</p>
+</div>
+<p>在最普遍的形变中——可以包括伸长或收缩以及切变在内——我们可通过给出九个数值来<span class="kindle-cn-specialtext-qx">定义</span>
+ 应变态：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="558-1" class="kindle-cn-bodycontent-image-alone80" src="Image03379.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这些就是<span class="kindle-cn-specialtext-qx">应变张量</span>
+ 的各项。由于它是一个<span class="kindle-cn-specialtext-qx">对称张量</span>
+ ——我们的定义总是使得e<span class="math-sub">xy</span>
+ =e<span class="math-sub">yx</span>
+ ——实际上，它只有六个不同的数。你会记得（见第31章），张量的普遍特征是：那些项都会像两个矢量的分量之积那样变换（若A和B都是矢量，则C<span class="math-sub">ij</span>
+ =A<span class="math-sub">i</span>
+ B<span class="math-sub">j</span>
+ 便是一个张量）。e<span class="math-sub">ij</span>
+ 的每一项都是矢量u=（u<span class="math-sub">x</span>
+ ，u<span class="math-sub">y</span>
+ ，u<span class="math-sub">z</span>
+ ）和算符▽=（∂/∂x，∂/∂y，∂/∂z）的各分量之积（或这种积之和），我们知道后者如同一个矢量那样变换。让我们令x<span class="math-sub">1</span>
+ ，x<span class="math-sub">2</span>
+ ，x<span class="math-sub">3</span>
+ 各代表x，y，z，而u<span class="math-sub">1</span>
+ ，u<span class="math-sub">2</span>
+ ，u<span class="math-sub">3</span>
+ 各代表u<span class="math-sub">x</span>
+ ，u<span class="math-sub">y</span>
+ ，u<span class="math-sub">z</span>
+ ，则可以将这个应变张量的普遍项e<span class="math-sub">ij</span>
+ 写成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="558-2" class="kindle-cn-bodycontent-image-alone80" src="Image03380.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">式中，i和j各可以是1，2或3。</p>
+<p>当有一均匀应变——可以包括拉伸和剪切——时，则所有的e<span class="math-sub">ij</span>
+ 都是常数，因而可以写出</p>
+<p class="kindle-cn-para-center">u<span class="math-sub">x</span>
+ =e<span class="math-sub">xx</span>
+ x+e<span class="math-sub">xy</span>
+ y+e<span class="math-sub">xz</span>
+ z　（39.9）</p>
+<p class="kindle-cn-para-no-indent">（我们选取u为零的那一点作为x，y，z坐标系的原点）。在这种情况下，应变张量e<span class="math-sub">ij</span>
+ 会给出坐标矢量r=（x，y，z）和位移矢量u=（u<span class="math-sub">x</span>
+ ，u<span class="math-sub">y</span>
+ ，u<span class="math-sub">z</span>
+ ）之间的关系。</p>
+<p>当应变不均匀时，果子冻的任一部分也可能受到一些扭转——会存在局域转动。若形变都很小，则应该有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="558-3" class="kindle-cn-bodycontent-image-alone80" src="Image03381.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">式中ω<span class="math-sub">ij</span>
+ 是一个<span class="kindle-cn-specialtext-qx">反对称</span>
+ 张量，</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="558-4" class="kindle-cn-bodycontent-image-alone80" src="Image03382.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">上式能够描述转动。可是，我们将不再为转动操心，而仅关心由对称张量e<span class="math-sub">ij</span>
+ 描述的应变。</p>
+</body>
+</html>

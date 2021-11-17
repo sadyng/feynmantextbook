@@ -1,0 +1,1232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head><link href="flow0006.css" rel="stylesheet" type="text/css" />
+<title>第20章　算符</title>
+</head>
+<body><div></div>
+<h1 class="kindle-cn-heading-2">第20章　算符</h1>
+<h2 class="kindle-cn-heading2"><a id="sec001"></a>
+ §20-1　操作与算符</h2>
+<p>到目前为止，虽然我们不时地告诉你们量子力学量和方程的一些特殊写法，但是我们在量子力学中所做的全部工作都可以用普通代数来处理。现在我们想再讲一些描述量子力学事件的有趣而有用的数学方法。处理量子力学问题有许多不同的方法，而大多数书本所采用的方法都与我们所用的不同。当你们继续阅读其他书籍时，你们可能不会立即看出这些书中所讲的方法与我们所用的方法之间的联系。虽然我们也能得出一些有用的结果，但本章的主要目的在于告诉你们一些描写相同物理事件的不同方法。知道了这些方法，你们就能更好地理解别人所讲的了。当人们最初提出经典力学时，他们总是用<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">y</span>
+ 和<span class="kindle-cn-italic">z</span>
+ 分量来写出所有的方程式。以后有人指出，发明矢量记号可以使所有的写法大为简化。的确，当你要计算什么时，常常需要将矢量变换成它的分量。但是当你使用矢量时，一般很容易看出发生些什么，而且许多计算也容易得多。在量子力学中，使用“态矢量”的概念可以用比较简单的方法写出许多事情。当然，“态矢量”｜<span class="kindle-cn-italic">ψ</span>
+ 〉并非三维空间中的几何矢量，而是<span class="kindle-cn-specialtext-qx">代表物理状态</span>
+ 的一种抽象符号，此状态用“标记”或“名字”<span class="kindle-cn-italic">ψ</span>
+ 来识别。这种概念之所以有用，是因为量子力学的规律可以用这些符号写成代数方程。例如，任何状态都可由基础态的线性组合来构成，这个基本定律就可以写成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05347.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">式中<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 是一组普通的（复）数——振幅<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ ＝〈<span class="kindle-cn-italic">i</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉——而｜1〉、｜2〉、｜3〉…等等代表在某个基或<span class="kindle-cn-specialtext-qx">表象</span>
+ 中的基础态。</p>
+<p>如果取某个物理状态并对它作些变动——如转动或等候一段时间Δ<span class="kindle-cn-italic">t</span>
+ ——则得到不同的态。我们说，“对一个状态进行一次操作产生了一个新的态。”我们可以用一个方程式来表示同一概念：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05348.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">对态的一次操作产生另一个态。<span class="kindle-cn-specialtext-qx">算符</span>
+ <img alt="" class="kindle-cn-inline-image" src="Image05349.jpg" />
+ 代表某个特定的操作。当这一操作作用于任一态，譬如态｜<span class="kindle-cn-italic">ψ</span>
+ 〉上，它产生某个其他的态｜<span class="kindle-cn-italic">φ</span>
+ 〉。</p>
+<p>式（20.2）表示什么意思呢？我们这样来<span class="kindle-cn-specialtext-qx">定义</span>
+ 它，如果用〈<span class="kindle-cn-italic">i</span>
+ ｜乘以式（20.2），并将｜<span class="kindle-cn-italic">ψ</span>
+ 〉按式（20.1）展开，则得到</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05350.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">（态｜<span class="kindle-cn-italic">j</span>
+ 〉取自和｜<span class="kindle-cn-italic">i</span>
+ 〉相同的一组。）这正是一个代数式。数〈<span class="kindle-cn-italic">i</span>
+ ｜<span class="kindle-cn-italic">φ</span>
+ 〉给出了在态｜<span class="kindle-cn-italic">φ</span>
+ 〉中找到的每个基础态的量，它是以｜<span class="kindle-cn-italic">ψ</span>
+ 〉在各个基础态中的振幅〈<span class="kindle-cn-italic">j</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉的线性叠加表示的。数<img alt="" class="kindle-cn-inline-image" src="Image05351.jpg" />
+ 正是表明有多少〈<span class="kindle-cn-italic">j</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉进入每个求和中的系数。算符<img alt="" class="kindle-cn-inline-image" src="Image05352.jpg" />
+ 可用一组数或“矩阵”以数字来描述</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05353.jpg" />
+</div>
+<p>所以式（20.2）是式（20.3）的高级写法。实际上还不止这样，它含有更多的东西。在式（20.2）中我们完全没有提到一组基础态。式（20.3）是式（20.2）在某一组基础态中的映像，但是，如你们所知，你们可以选用你们想要的任意一组态，而式（20.2）就含有这种概念。算符的写法避免了作任意特定的选择。当然，当你想要得到明确的表示时，你必须选择<span class="kindle-cn-specialtext-qx">一组基础态</span>
+ ，当你选定后，你就用式（20.3）。因此<span class="kindle-cn-specialtext-qx">算符</span>
+ 方程式（20.2）是<span class="kindle-cn-specialtext-qx">代数方程式</span>
+ （20.3）的更为抽象的写法。这两种写法之间的区别，类似于下面两种写法的差别</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image05354.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">及</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image4" src="Image05355.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">第一种写法要方便得多。然而，当你想要计算<span class="kindle-cn-specialtext-qx">结果</span>
+ 时，你终究必须相对某组坐标轴给出各分量。同样地，如果你想要说出<img alt="" class="kindle-cn-inline-image" src="Image05356.jpg" />
+ 真正表示什么意思，你必须准备根据<span class="kindle-cn-specialtext-qx">某组</span>
+ 基础态给出矩阵<span class="kindle-cn-italic">A</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">ij</span>
+</span>
+ 。只要你心中有一组｜<span class="kindle-cn-italic">i</span>
+ 〉，式（20.2）就与式（20.3）相同。（你们还应记住，一旦你知道了对一组特定的基础态的矩阵，你总可以算出相对于任何别的基础态的相应矩阵。你可以将矩阵从一个“表象”变换到另一个“表象”。）</p>
+<p>式（20.2）的算符方程也可以用一种新的观点来考虑。如果我们设想某个算符<img alt="" class="kindle-cn-inline-image" src="Image05357.jpg" />
+ ，我们就可用它跟任意态｜<span class="kindle-cn-italic">ψ</span>
+ 〉来产生一个新的态<img alt="" class="kindle-cn-inline-image" src="Image05358.jpg" />
+ 。有时用这种方法得到的“态”可能是很特殊的——它也许不代表我们在自然界中可能遇到的任何<span class="kindle-cn-specialtext-qx">物理</span>
+ 情况（例如，我们可能得到一个态，它描述单个电子而不归一化）。换言之，我们有时可能得到数学上人为的“态”，这种人为的“态”可能仍然有用，或许作为某些计算过程的中间阶段可能是有用的。</p>
+<p>我们已经告诉你们许多有关量子力学算符的例子。我们已有了转动算符<img alt="" class="kindle-cn-inline-image" src="Image05359.jpg" />
+ ，它作用于状态｜<span class="kindle-cn-italic">ψ</span>
+ 〉就产生一个新态，从转动后的坐标系来看，新的态就是原来的态。我们已有了宇称（或反演）算符<img alt="" class="kindle-cn-inline-image" src="Image05360.jpg" />
+ ，它通过将所有的坐标反向来得到新的态。我们对自旋1/2粒子已有算符<img alt="" class="kindle-cn-inline-image" src="Image05361.jpg" />
+ 和<img alt="" class="kindle-cn-inline-image" src="Image05362.jpg" />
+ 。</p>
+<p>算符<img alt="" class="kindle-cn-inline-image" src="Image05363.jpg" />
+ 在第17章中是根据小角度<img alt="" class="kindle-cn-inline-image" src="Image05364.jpg" />
+ 的转动算符来定义的</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05365.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">当然这意味着</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05366.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">在这个例子中，<img alt="" class="kindle-cn-inline-image" src="Image05367.jpg" />
+ 是把态｜<span class="kindle-cn-italic">ψ</span>
+ 〉转动一个小角<img alt="" class="kindle-cn-inline-image" src="Image05368.jpg" />
+ 后所得的态<span class="kindle-cn-specialtext-qx">减去</span>
+ 原来的态后再乘以<img alt="" class="kindle-cn-inline-image" src="Image05369.jpg" />
+ 。它代表的态是两个态<span class="kindle-cn-specialtext-qx">之差</span>
+ 。</p>
+<p>再举一个例子。我们有一个算符<img alt="" class="kindle-cn-inline-image" src="Image05370.jpg" />
+ ——称为动量算符（<span class="kindle-cn-italic">x</span>
+ 分量），由类似（20.6）的式子定义。如果<img alt="" class="kindle-cn-inline-image" src="Image05371.jpg" />
+ 是使一个态沿<span class="kindle-cn-italic">x</span>
+ 方向移动距离<span class="kindle-cn-italic">L</span>
+ 的算符，则<img alt="" class="kindle-cn-inline-image" src="Image05372.jpg" />
+ 定义为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05373.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">式中<span class="kindle-cn-italic">δ</span>
+ 是一个小位移。将状态｜<span class="kindle-cn-italic">ψ</span>
+ 〉沿<span class="kindle-cn-italic">x</span>
+ 移动一小距离<span class="kindle-cn-italic">δ</span>
+ 得出一个新的态｜<span class="kindle-cn-italic">ψ</span>
+ ′〉，我们说这一新态比原来的态增加了一点新的东西</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05374.jpg" />
+</p>
+<p>我们所讨论的算符作用于像｜<span class="kindle-cn-italic">ψ</span>
+ 〉这样的态矢量上，而｜<span class="kindle-cn-italic">ψ</span>
+ 〉是物理状况的抽象描述。它们与作用在数学函数上的<span class="kindle-cn-specialtext-qx">代数</span>
+ 算符大不相同。例如，d/d<span class="kindle-cn-italic">x</span>
+ 是一个算符，它作用于<span class="kindle-cn-italic">f</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）使<span class="kindle-cn-italic">f</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）变成一个新函数<span class="kindle-cn-italic">f</span>
+ ′（<span class="kindle-cn-italic">x</span>
+ ）＝d<span class="kindle-cn-italic">f</span>
+ /d<span class="kindle-cn-italic">x</span>
+ 。另一个例子是代数算符<img alt="" class="kindle-cn-inline-image" src="Image05375.jpg" />
+ 。你们可以看出为什么在两种情况下使用相同的名词。然而你应当记住这两类算符是不同的。量子力学算符<img alt="" class="kindle-cn-inline-image" src="Image05376.jpg" />
+ 不作用于代数函数上，而作用于｜<span class="kindle-cn-italic">ψ</span>
+ 〉那样的态矢量上。不久你们就会看到两类算符都用于量子力学中，而且常用于相似类型的方程中。当你们初次学习这一课题时，最好一直记住这些差别，以后对这课题比较熟悉时，你们就会发现保留这两种算符之间的明显区别并不是很重要的。的确如此，你们会发现大多数教科书对这两类算符通常使用相同的记号。</p>
+<p>我们现在接下去看看用算符能做些什么有用的事情。但是，首先有一点要特别注意，假设我们有一个算符<img alt="" class="kindle-cn-inline-image" src="Image05377.jpg" />
+ ，对于某基础态的矩阵为<img alt="" class="kindle-cn-inline-image" src="Image05378.jpg" />
+ 。态<img alt="" class="kindle-cn-inline-image" src="Image05379.jpg" />
+ 又在另一态｜<span class="kindle-cn-italic">φ</span>
+ 〉中的振幅为<img alt="" class="kindle-cn-inline-image" src="Image05380.jpg" />
+ 。这个振幅的共轭复数是否有意义呢？你们应该能够证明</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05381.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">式中<img alt="" class="kindle-cn-inline-image" src="Image05382.jpg" />
+ （读作“<span class="kindle-cn-italic">A</span>
+ 剑号”）是一个算符，其矩阵元为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05383.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">为了得到<img alt="" class="kindle-cn-inline-image" src="Image05384.jpg" />
+ 的<span class="kindle-cn-italic">i</span>
+ ，<span class="kindle-cn-italic">j</span>
+ 元素，你们可以先求<img alt="" class="kindle-cn-inline-image" src="Image05385.jpg" />
+ 的<span class="kindle-cn-italic">j</span>
+ ，<span class="kindle-cn-italic">i</span>
+ 元素（要颠倒一下指数），再取它的复数共轭。态<img alt="" class="kindle-cn-inline-image" src="Image05386.jpg" />
+ 处于｜<span class="kindle-cn-italic">ψ</span>
+ 〉中的振幅为态<img alt="" class="kindle-cn-inline-image" src="Image05387.jpg" />
+ 处于｜<span class="kindle-cn-italic">φ</span>
+ 〉中的振幅的复数共轭。算符<img alt="" class="kindle-cn-inline-image" src="Image05388.jpg" />
+ 称为<img alt="" class="kindle-cn-inline-image" src="Image05389.jpg" />
+ 的“厄米伴随”。量子力学中的许多重要算符都具有一种特殊的性质，即当取它们的厄米伴随时仍回到原来的算符。若<img alt="" class="kindle-cn-inline-image" src="Image05390.jpg" />
+ 是这种算符，则</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image05391.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">我们称这种算符为“自伴”算符或“厄米”算符。</p>
+<h2 class="kindle-cn-heading2"><a id="sec002"></a>
+ §20-2　平均能量</h2>
+<p>到目前为止，我们主要是使你回忆一下已经知道的东西。现在我们想要讨论一个新问题，如何求一个系统——譬如一个原子——的<span class="kindle-cn-specialtext-qx">平均能量</span>
+ ？如果一个原子处于某个确定能量的特殊状态，并且你去测量这个能量，则你将得到一个确定的能量<span class="kindle-cn-italic">E</span>
+ 。如果你继续重复测量所有选定、处在相同状态的每一个原子，则所有测量结果都将是<span class="kindle-cn-italic">E</span>
+ ，你多次测量的“平均”当然也就是<span class="kindle-cn-italic">E</span>
+ 。</p>
+<p>但是，现在如果你对某个非定态｜<span class="kindle-cn-italic">ψ</span>
+ 〉进行测量，那么会发生什么情况呢？既然系统没有确定的能量，因此一次测量将给出一个能量，对处于同样状态的其他原子所作的相同测量将给出不同的能量，等等。对整个一系列的能量测量求平均，你会得出什么呢？</p>
+<p>通过把态｜<span class="kindle-cn-italic">ψ</span>
+ 〉投影到一组具有确定能量的态上，我们就能回答这个问题。为了提醒你这是一组特殊的基础态，我们将这些态称为｜<span class="kindle-cn-italic">η</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 〉。态｜<span class="kindle-cn-italic">η</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 〉中的每一个都有确定的能量<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ ，在这个表象中，</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05392.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">当你进行一次能量测量并得到某数值<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 时，你会发现系统处于态｜<span class="kindle-cn-italic">η</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 〉。但是对每一次测量，你可能得到不同的数值。有时得到<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">1</span>
+ ，有时得到<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">2</span>
+ ，有时为<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">3</span>
+ ，等等。观察到能量<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">1</span>
+ 的<span class="kindle-cn-specialtext-qx">概率</span>
+ 就是该系统处于状态｜<span class="kindle-cn-italic">η</span>
+ <span class="math-sub">1</span>
+ 〉的概率，这当然就是振幅<span class="kindle-cn-italic">C</span>
+ <span class="math-sub">1</span>
+ ＝〈<span class="kindle-cn-italic">η</span>
+ <span class="math-sub">1</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉的绝对值的平方。找到各个可能的能量<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 的概率为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05393.jpg" />
+</div>
+<p>这些概率与整个一系列能量测量的平均值有何关系呢？设想我们得到这样一系列的测量结果：<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">1</span>
+ ，<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">7</span>
+ ，<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">11</span>
+ ，<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">9</span>
+ ，<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">1</span>
+ ，<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">10</span>
+ ，<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">7</span>
+ ，<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">2</span>
+ ，<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">3</span>
+ ，<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">9</span>
+ ，<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">6</span>
+ ，<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">4</span>
+ 等等；我们继续测量，譬如说测量了1000次。当我们测完后，把所有的能量相加并用1000去除，这就是我们所说的平均。把所有的数加起来也有一条捷径。你可以把得出<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">1</span>
+ 的次数加起来，譬如说为<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">1</span>
+ ，然后把得出<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">2</span>
+ 的次数加起来，称之为<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">2</span>
+ ，等等，所有能量的总和必定为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05394.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">平均能量为此总和除以测量的总次数，总次数就是所有<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 之和，记为<span class="kindle-cn-italic">N</span>
+ ，</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05395.jpg" />
+</div>
+<p>我们已相当接近答案了。我们所指的发生某事的概率，正是我们期望发生的次数除以总的测试次数。对于大的<span class="kindle-cn-italic">N</span>
+ ，比值<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ /<span class="kindle-cn-italic">N</span>
+ 会非常接近于<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ ，即非常接近于找到态｜<span class="kindle-cn-italic">η</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 〉的概率；由于统计涨落，<span class="kindle-cn-italic">N</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ /<span class="kindle-cn-italic">N</span>
+ 不会严格地等于<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 。让我们把这预测（或期望）的平均能量记为〈<span class="kindle-cn-italic">E</span>
+ 〉<span class="math-sub">平均</span>
+ ，则有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05396.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">同样的论证适用于任何测量。测量的量<span class="kindle-cn-italic">A</span>
+ 的平均值应等于</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05397.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">式中<span class="kindle-cn-italic">A</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 是被观察量的各种可能值，<span class="kindle-cn-italic">P</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 是得到该值的概率。</p>
+<p>让我们回到量子力学状态｜<span class="kindle-cn-italic">ψ</span>
+ 〉，它的平均能量为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05398.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">注意这里的奥妙！首先，我们将该和写为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05399.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">其次，把左边的〈<span class="kindle-cn-italic">ψ</span>
+ ｜当作公“因子”，我们可以把这个因子提到求和号外面，并把它写为</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05400.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">这个表示式具有下列形式：</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image05401.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">这里｜<span class="kindle-cn-italic">φ</span>
+ 〉是由下式定义的某个“虚构”的态：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05402.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">换言之，如果你按数量<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 〈<span class="kindle-cn-italic">η</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉选取各个基础态｜<span class="kindle-cn-italic">η</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 〉，你就得到这个态。</p>
+<p>现在回想一下态｜<span class="kindle-cn-italic">η</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 〉是什么意思。它们假定是定态——所谓定态我们的意思是对每一个态</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image05403.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">因<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 只是一个数，所以上式右边与｜<span class="kindle-cn-italic">η</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 〉<span class="kindle-cn-italic">E</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">i</span>
+</span>
+ 相同，因而式（20.16）中的求和与下式一样，</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05404.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">现在<span class="kindle-cn-italic">i</span>
+ 只出现在缩并为1的熟知的组合中，所以</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05405.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">真是奇迹！式（20.16）与下式相同：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05406.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">态｜<span class="kindle-cn-italic">ψ</span>
+ 〉的平均能量可以非常优美地写为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05407.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">为了得到平均能量，就用<img alt="" class="kindle-cn-inline-image" src="Image05408.jpg" />
+ 作用于｜<span class="kindle-cn-italic">ψ</span>
+ 〉上，然后再乘以〈<span class="kindle-cn-italic">ψ</span>
+ ｜，结果很简单。</p>
+<p>我们所得到的求平均能量的新公式不仅漂亮，而且也很有用。因为现在我们一点也不必提及任何特定的一组基础态了。我们甚至没有必要知道所有可能的能级。当进行计算时，我们需要用<span class="kindle-cn-specialtext-qx">某组</span>
+ 基础态来描述我们的态，但是如果我们知道了对于<span class="kindle-cn-specialtext-qx">这组</span>
+ 基础态的哈密顿矩阵<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">ij</span>
+</span>
+ ，我们就能得到平均能量。式（20.18）表明，对<span class="kindle-cn-specialtext-qx">任何</span>
+ 一组基础态｜<span class="kindle-cn-italic">i</span>
+ 〉，平均能量可以由下式求得</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05409.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">式中振幅<img alt="" class="kindle-cn-inline-image" src="Image05410.jpg" />
+ 就是矩阵元<span class="kindle-cn-italic">H</span>
+ <span class="math-sub">
+<span class="kindle-cn-italic">ij</span>
+</span>
+ 。</p>
+<p>让我们对具有确定能量的态｜<span class="kindle-cn-italic">i</span>
+ 〉这种特殊情况来检验一下这个结果。对这种态，<img alt="" class="kindle-cn-inline-image" src="Image05411.jpg" />
+ <img alt="" class="kindle-cn-inline-image" src="Image05412.jpg" />
+ ，所以<img alt="" class="kindle-cn-inline-image" src="Image05413.jpg" />
+ ，而</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05414.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这一表示式是正确的。</p>
+<p>顺便指出，式（20.19）可以推广到其他物理量测量上，只要这些量可以用一个算符来表示。例如，<img alt="" class="kindle-cn-inline-image" src="Image05415.jpg" />
+ 是角动量<span class="kindle-cn-bold">
+<span class="kindle-cn-italic">L</span>
+</span>
+ 的<span class="kindle-cn-italic">z</span>
+ 分量算符。态｜<span class="kindle-cn-italic">ψ</span>
+ 〉的<span class="kindle-cn-italic">z</span>
+ 分量平均值为</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image05416.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">证明上式的一种方法是，想象某种情况，其能量正比于角动量。于是所有的论证用上述相同的步骤进行。</p>
+<p>概括地讲，如果一个物理可观察量<span class="kindle-cn-italic">A</span>
+ 与一个适当的量子力学算符<img alt="" class="kindle-cn-inline-image" src="Image05417.jpg" />
+ 相联系，对态｜<span class="kindle-cn-italic">ψ</span>
+ 〉来说<span class="kindle-cn-italic">A</span>
+ 的平均值为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05418.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">我们说这个式子表示</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05419.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">而</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05420.jpg" />
+</div>
+<h2 class="kindle-cn-heading2"><a id="sec003"></a>
+ §20-3　原子的平均能量</h2>
+<p>假定我们想要知道一原子处在由波函数<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-bold">
+<span class="kindle-cn-italic">r</span>
+</span>
+ ）所描述的状态的平均能量，我们怎样去求呢？首先让我们来考虑一维的情况，此时态｜<span class="kindle-cn-italic">ψ</span>
+ 〉由振幅〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉＝<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）来定义。我们要求用坐标表象的式（20.19）的特殊情况。依我们常用的步骤，我们用｜<span class="kindle-cn-italic">x</span>
+ 〉和｜<span class="kindle-cn-italic">x</span>
+ ′〉来代替态｜<span class="kindle-cn-italic">i</span>
+ 〉和｜<span class="kindle-cn-italic">j</span>
+ 〉，并且把求和改成积分，得</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05421.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">如果愿意，我们可将这积分写为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05422.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">而</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05423.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">式（20.25）中对<span class="kindle-cn-italic">x</span>
+ ′的积分与第16章中式（16.50）及（16.52）的积分相同，并且等于</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05424.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">因此有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05425.jpg" />
+</div>
+<p>记住〈<span class="kindle-cn-italic">ψ</span>
+ ｜<span class="kindle-cn-italic">x</span>
+ 〉＝〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉<span class="math-super">*</span>
+ ＝<span class="kindle-cn-italic">ψ</span>
+ <span class="math-super">*</span>
+ （<span class="kindle-cn-italic">x</span>
+ ），利用这一等式，式（20.23）中的平均能量可写成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05426.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">给定波函数<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ），你就可通过完成这个积分而得到平均能量。现在你可以开始看出从态矢量的概念发展到波函数概念是怎样来回变换的。</p>
+<p>式（20.27）括号中的量是一个<span class="kindle-cn-specialtext-qx">代数</span>
+ 算符<a id="ch1-back" href="text00380.html#ch1">
+<sup>(1)</sup>
+</a>
+ ，我们将其写成<img alt="" class="kindle-cn-inline-image" src="Image05427.jpg" />
+</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05428.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">用这种记号，式（20.23）变为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05429.jpg" />
+</div>
+<p>这里所定义的代数算符<img alt="" class="kindle-cn-inline-image" src="Image05430.jpg" />
+ 当然与量子力学算符<img alt="" class="kindle-cn-inline-image" src="Image05431.jpg" />
+ 不同。新算符作用于位置函数<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）＝〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉以给出一个<span class="kindle-cn-italic">x</span>
+ 的新函数<span class="kindle-cn-italic">φ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）＝〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">φ</span>
+ 〉，而<img alt="" class="kindle-cn-inline-image" src="Image05432.jpg" />
+ 作用于态矢量｜<span class="kindle-cn-italic">ψ</span>
+ 〉给出另一态矢量｜<span class="kindle-cn-italic">φ</span>
+ 〉，根本不涉及坐标表象或任何特殊表象。即使在坐标表象中，<img alt="" class="kindle-cn-inline-image" src="Image05433.jpg" />
+ 和<img alt="" class="kindle-cn-inline-image" src="Image05434.jpg" />
+ 也不严格相同。如果我们选定在坐标表象中进行计算，我们将以矩阵<img alt="" class="kindle-cn-inline-image" src="Image05435.jpg" />
+ 来解释<img alt="" class="kindle-cn-inline-image" src="Image05436.jpg" />
+ 以某种方式取决于两个“指标”<span class="kindle-cn-italic">x</span>
+ 和<span class="kindle-cn-italic">x</span>
+ ′，即按照式（20.25），我们期望〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">φ</span>
+ 〉通过积分而与所有的振幅〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉联系起来。另一方面，我们发现<img alt="" class="kindle-cn-inline-image" src="Image05437.jpg" />
+ 是一个微分算符。在§16-5中我们就已得出<img alt="" class="kindle-cn-inline-image" src="Image05438.jpg" />
+ 和代数算符<img alt="" class="kindle-cn-inline-image" src="Image05439.jpg" />
+ 之间的联系。</p>
+<p>我们应对我们所得的结果作一限制。我们业已假定振幅<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）＝〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉是归一化的。这个假定的意思是指标度的选取应使</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05440.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">所以，发现电子在<span class="kindle-cn-specialtext-qx">整个<span class="kindle-cn-italic">x</span>
+ 区域内</span>
+ 的概率是1。如果你用了未归一化的<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）来计算，则应当写成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05441.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">结果相同。</p>
+<p>注意，式（20.28）与式（20.18）在形式的相似性，当你使用<span class="kindle-cn-italic">x</span>
+ 表象时，这两种描写相同结果的方式是经常出现的。使用任何一个<span class="kindle-cn-specialtext-qx">局域</span>
+ 算符<img alt="" class="kindle-cn-inline-image" src="Image05442.jpg" />
+ ，你就可以从第一种形式转变到第二种形式。所谓局域算符，是一个在积分</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05443.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">中可以写成<img alt="" class="kindle-cn-inline-image" src="Image05444.jpg" />
+ 的算符，这里<img alt="" class="kindle-cn-inline-image" src="Image05445.jpg" />
+ 是一个微分代数算符。但是，有的算符就不是这样的；对于这种算符，你必须用式（20.21）和（20.22）的基本方程。</p>
+<p>你们可以很容易地把这种推导推广到三维的情况，结果为<a id="ch2-back" href="text00380.html#ch2">
+<sup>(2)</sup>
+</a>
+</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05446.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">而</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05447.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">并且要知道</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05448.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">同样的这些式子可以直接了当地推广到具有几个电子的系统上去，而这里我们不再费心去写出这些结果。</p>
+<p>应用式（20.30），即使我们不知道原子的能级也能计算原子态的平均能量，我们所需要的只是波函数。这是一个重要的规律。我们将告诉你们一个有趣的应用。假定你们想知道某个系统的基态能量——譬如说氦原子，但因变量太多，所以由解薛定谔方程来求波函数太困难了。然而，假如你猜一下波函数——随便挑选一个函数——而计算其平均能量。这就是说，如果原子真的处在用这个波函数所描述的状态，则你们就可用式（20.29）——推广到三维情况——求出平均能量。这个能量肯定比基态能量高，因为基态能量是原子所可能具有的最低能量<a id="ch3-back" href="text00380.html#ch3">
+<sup>(3)</sup>
+</a>
+ 。现在选取另一个函数并计算它的平均能量。要是它低于你第一次选取的波函数所得到的能量，它就比较接近真正的基态能量了。如果你继续试用各种人为的状态，你就可能获得越来越低的能量，它越来越接近基态的能量。如果你很聪明，你会试用某种具有几个可调参量的函数，所算得的能量将以这些参量来表示，通过改变这些参量来得出最低的可能的能量，你试了整个一类函数。你终于发现，要得到更低的能量将越来越困难，并且开始相信已经相当接近最低的可能能量了。氦原子就是用这种方法解出的——不是解一个微分方程，而是造出一个具有许多可调参量的特殊函数，通过选择这些参量最终得出平均能量的最低可能值。</p>
+<h2 class="kindle-cn-heading2"><a id="sec004"></a>
+ §20-4　位置算符</h2>
+<p>原子中电子位置的平均值是什么呢？对任何特定的态｜<span class="kindle-cn-italic">ψ</span>
+ 〉坐标<span class="kindle-cn-italic">x</span>
+ 的平均值是什么呢？我们将计算一维情况，而由你们自己把这种概念推广到三维情况以及多于一个粒子的系统。设有一以<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）描述的状态，我们一次又一次地不断地测量<span class="kindle-cn-italic">x</span>
+ ，平均值是什么呢？它是</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image05449.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">式中<span class="kindle-cn-italic">P</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）d<span class="kindle-cn-italic">x</span>
+ 为在<span class="kindle-cn-italic">x</span>
+ 处的小范围d<span class="kindle-cn-italic">x</span>
+ 内找到电子的概率。假定概率密度<span class="kindle-cn-italic">P</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）随<span class="kindle-cn-italic">x</span>
+ 的变化如图20-1所示，则此电子最可能在曲线的峰值附近被发现。<span class="kindle-cn-italic">x</span>
+ 的平均值也在靠近峰值附近的地方，实际上，它就是曲线所围面积的重心（位置）。</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80-withnote" src="Image05450.jpg" />
+<p class="kindle-cn-picture-txt-withfewcharactors">图20-1　表示一个定域粒子的概率密度曲线</p>
+</div>
+<p>早先我们已看到<span class="kindle-cn-italic">P</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）就是｜<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）｜<span class="math-super">2</span>
+ ＝<span class="kindle-cn-italic">ψ</span>
+ <span class="math-super">*</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ），所以我们可以把对<span class="kindle-cn-italic">x</span>
+ 的平均写成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image05451.jpg" />
+</div>
+<p>我们所得的〈<span class="kindle-cn-italic">x</span>
+ 〉<span class="math-sub">平均</span>
+ 的式子与式（20.28）有相同的形式。对于平均能量，能量算符<img alt="" class="kindle-cn-inline-image" src="Image05452.jpg" />
+ 出现在两个<span class="kindle-cn-italic">ψ</span>
+ 之间，而对于平均位置，正好是<span class="kindle-cn-italic">x</span>
+ 。（如果愿意，你可以把<span class="kindle-cn-italic">x</span>
+ 当作一个“用<span class="kindle-cn-italic">x</span>
+ 相乘”的代数算符。）我们可以把这种对比再加引申，用与式（20.18）相应的形式来表示平均位置。假设我们写出</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05453.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">而</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05454.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">然后看看是否能找到这个产生状态｜<span class="kindle-cn-italic">α</span>
+ 〉的算符<img alt="" class="kindle-cn-inline-image" src="Image05455.jpg" />
+ ，以使式（20.34）与式（20.33）相一致。这就是说，我们必须找到一个｜<span class="kindle-cn-italic">α</span>
+ 〉，使得</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05456.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">首先，把〈<span class="kindle-cn-italic">ψ</span>
+ ｜<span class="kindle-cn-italic">α</span>
+ 〉在<span class="kindle-cn-italic">x</span>
+ 表象中展开，它为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05457.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">现在比较上面最后两式的积分，你们看到在<span class="kindle-cn-italic">x</span>
+ 表象中</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05458.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">将<img alt="" class="kindle-cn-inline-image" src="Image05459.jpg" />
+ 作用于｜<span class="kindle-cn-italic">ψ</span>
+ 〉上以得到｜<span class="kindle-cn-italic">α</span>
+ 〉，相当于用<span class="kindle-cn-italic">x</span>
+ 乘<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）＝〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉以得到<span class="kindle-cn-italic">α</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）＝〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">α</span>
+ 〉。这样，我们就有了<img alt="" class="kindle-cn-inline-image" src="Image05460.jpg" />
+ 在坐标表象中的定义<a id="ch4-back" href="text00380.html#ch4">
+<sup>(4)</sup>
+</a>
+ 。</p>
+<p>［我们并没有费心去设法得出算符<img alt="" class="kindle-cn-inline-image" src="Image05461.jpg" />
+ 在<span class="kindle-cn-italic">x</span>
+ 表象中的矩阵。如果你有兴趣，你可设法证明</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05462.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">那么你能得到令人高兴的结果</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05463.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">算符<img alt="" class="kindle-cn-inline-image" src="Image05464.jpg" />
+ 具有有趣的性质，当它作用于基础态｜<span class="kindle-cn-italic">x</span>
+ 〉时，它相当于用<span class="kindle-cn-italic">x</span>
+ 相乘。］</p>
+<p>你想要知道<span class="kindle-cn-italic">x</span>
+ <span class="math-super">2</span>
+ 的平均值吗？它为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05465.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">或者，如果你喜欢，可以写为</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image05466.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">并且</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05467.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这里<img alt="" class="kindle-cn-inline-image" src="Image05468.jpg" />
+ 的意思是<img alt="" class="kindle-cn-inline-image" src="Image05469.jpg" />
+ ——两个算符一个接一个地使用。有了第二种形式，你就可以用你想用的任何表象（基础态）来计算〈<span class="kindle-cn-italic">x</span>
+ <span class="math-super">2</span>
+ 〉<span class="math-sub">平均</span>
+ 。如果你想计算<span class="kindle-cn-italic">x</span>
+ <span class="math-super">
+<span class="kindle-cn-italic">n</span>
+</span>
+ 或任何<span class="kindle-cn-italic">x</span>
+ 的多项式的平均值，你会知道如何去求。</p>
+<h2 class="kindle-cn-heading2"><a id="sec005"></a>
+ §20-5　动量算符</h2>
+<p>现在我们要计算电子的平均<span class="kindle-cn-specialtext-qx">动量</span>
+ ——仍限于一维的情形。设<span class="kindle-cn-italic">P</span>
+ （<span class="kindle-cn-italic">p</span>
+ ）d<span class="kindle-cn-italic">p</span>
+ 为测得动量在<span class="kindle-cn-italic">p</span>
+ 到<span class="kindle-cn-italic">p</span>
+ ＋d<span class="kindle-cn-italic">p</span>
+ 之间的概率。于是</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05470.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">现在设〈<span class="kindle-cn-italic">p</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉为态｜<span class="kindle-cn-italic">ψ</span>
+ 〉在确定动量的态｜<span class="kindle-cn-italic">p</span>
+ 〉中的振幅，这就是我们在§16-3中称为〈动量<span class="kindle-cn-italic">p</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉的振幅，它是<span class="kindle-cn-italic">p</span>
+ 的函数，就像〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉是<span class="kindle-cn-italic">x</span>
+ 的函数一样。在该处，我们选取归一化的振幅，使得</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05471.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">于是我们有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05472.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这个形式和〈<span class="kindle-cn-italic">x</span>
+ 〉<span class="math-sub">平均</span>
+ 非常相似。</p>
+<p>要是我们愿意，我们完全可用求〈<span class="kindle-cn-italic">x</span>
+ 〉<span class="math-sub">平均</span>
+ 同样的方法来处理。首先，我们可以把上面的积分写成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05473.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">你们现在应该看出，此式就是振幅〈<span class="kindle-cn-italic">ψ</span>
+ ｜<span class="kindle-cn-italic">β</span>
+ 〉的展开式——用确定动量的基础态来展开。由式（20.45），态｜<span class="kindle-cn-italic">β</span>
+ 〉<span class="kindle-cn-specialtext-qx">在动量表象中</span>
+ 由下式定义</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05474.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这样，我们可写出</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05475.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">并且</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05476.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">上式中算符<img alt="" class="kindle-cn-inline-image" src="Image05477.jpg" />
+ 是根据<span class="kindle-cn-italic">p</span>
+ 表象而由式（20.47）定义的。</p>
+<p>［再者，如果你愿意，可以证明<img alt="" class="kindle-cn-inline-image" src="Image05478.jpg" />
+ 的矩阵形式为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05479.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">而</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05480.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">结果与<span class="kindle-cn-italic">x</span>
+ 的情况相同。］</p>
+<p>现在出现了一个有趣的问题。虽然我们能像我们对式（20.45）和式（20.48）所做的那样来写出〈<span class="kindle-cn-italic">p</span>
+ 〉<span class="math-sub">平均</span>
+ ，并且知道算符<img alt="" class="kindle-cn-inline-image" src="Image05481.jpg" />
+ <span class="kindle-cn-specialtext-qx">在动量表象中</span>
+ 的意义，但我们应如何在<span class="kindle-cn-specialtext-qx">坐标表象</span>
+ 中解释<img alt="" class="kindle-cn-inline-image" src="Image05482.jpg" />
+ 呢？就是说，当我们有了某个波函数<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）而想要求其平均动量必须知道什么。明白地讲，如果〈<span class="kindle-cn-italic">p</span>
+ 〉<span class="math-sub">平均</span>
+ 由式（20.48）给出，我们可以根据动量表象将该式展开而回到式（20.46）。如果我们给出了态的<span class="kindle-cn-italic">p</span>
+ 描述——振幅〈<span class="kindle-cn-italic">p</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉，它是动量<span class="kindle-cn-italic">p</span>
+ 的代数函数——则我们可以从式（20.47）得到〈<span class="kindle-cn-italic">p</span>
+ ｜<span class="kindle-cn-italic">β</span>
+ 〉，再进一步算出积分。现在问题是：倘若我们给出了态在<span class="kindle-cn-italic">x</span>
+ 表象中的描述，即给出了波函数<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）＝〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉，那我们怎样处理呢？</p>
+<p>我们首先将式（20.48）在<span class="kindle-cn-italic">x</span>
+ 表象中展开，它为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05483.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">然而，我们需要知道在<span class="kindle-cn-italic">x</span>
+ 表象中态｜<span class="kindle-cn-italic">β</span>
+ 〉是什么，如果我们能求出它，就可算出此积分。所以我们的问题在于求出函数<span class="kindle-cn-italic">β</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）＝〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">β</span>
+ 〉。</p>
+<p>我们可用下面的办法求得它。在§16-3中我们已知〈<span class="kindle-cn-italic">p</span>
+ ｜<span class="kindle-cn-italic">β</span>
+ 〉与〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">β</span>
+ 〉的关系，根据式（16.24）</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05484.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">如果我们知道了〈<span class="kindle-cn-italic">p</span>
+ ｜<span class="kindle-cn-italic">β</span>
+ 〉，那就可由此式解出〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">β</span>
+ 〉。当然，我们所希望的是以某种方式将结果用<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）＝〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉表示出来，<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）是假定已知的。假设我们由式（20.47）开始，再次利用式（16.24）后写出</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05485.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">既然上式是对<span class="kindle-cn-italic">x</span>
+ 积分，就可以把<span class="kindle-cn-italic">p</span>
+ 放到积分号里去，并写为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05486.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">把此式与式（20.53）相比较，你们会说〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">β</span>
+ 〉等于<span class="kindle-cn-italic">p</span>
+ <span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）。不，不对！波函数〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">β</span>
+ 〉＝<span class="kindle-cn-italic">β</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）仅与<span class="kindle-cn-italic">x</span>
+ 有关，而与<span class="kindle-cn-italic">p</span>
+ 无关，这就是整个问题之所在。</p>
+<p>但是，某个机灵的人发现式（20.55）中的积分可用分部积分法来进行。<img alt="" class="kindle-cn-inline-image" src="Image05487.jpg" />
+ 对<span class="kindle-cn-italic">x</span>
+ 的微商是<img alt="" class="kindle-cn-inline-image" src="Image05488.jpg" />
+ ，所以式（20.55）中的积分等于</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05489.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">如果进行分部积分，它成为</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05490.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">只要我们讨论的是束缚态，所以当<span class="kindle-cn-italic">x</span>
+ ＝±∞时<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）趋向0，则括号内就为0，因而有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05491.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">现在把这结果与式（20.53）比较，你们看到</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05492.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">至此，我们已有了能完成式（20.52）积分所必需的关系式。答案为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05493.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">我们求得了式（20.48）在坐标表象中的形式。</p>
+<p>现在你应开始看出一个有趣的图式展开。当我们问及态｜<span class="kindle-cn-italic">ψ</span>
+ 〉的平均能量时，我们说它是</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image05494.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">在坐标表象中同样的事件被写为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image05495.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">式中<img alt="" class="kindle-cn-inline-image" src="Image05496.jpg" />
+ 为作用于<span class="kindle-cn-italic">x</span>
+ 的函数的<span class="kindle-cn-specialtext-qx">代数</span>
+ 算符。当我们问及<span class="kindle-cn-italic">x</span>
+ 的平均值时，我们发现它也能够写成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image05497.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">在坐标表象中相应的方程式为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image05498.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">当我们问及<span class="kindle-cn-italic">p</span>
+ 的平均值时，我们写成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image05499.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">在坐标表象中其等价的表示式为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image05500.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">在上面3个例子中，我们都从态｜<span class="kindle-cn-italic">ψ</span>
+ 〉开始，由<span class="kindle-cn-specialtext-qx">量子力学</span>
+ 算符产生另一个（假设的）态。在坐标表象中，我们将<span class="kindle-cn-specialtext-qx">代数</span>
+ 算符作用在波函数<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）上来生成相应的波函数。有如下一一对应关系（对一维问题）：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05501.jpg" />
+</div>
+<div class="kindle-cn-bodycontent-div-alone100">
+<p class="kindle-cn-picture-txt-withfewcharactors">表　20-1</p>
+<img alt="" class="kindle-cn-bodycontent-image-alone80-1" src="Image05502.jpg" />
+</div>
+<p>在这个表中，我们对代数算符<img alt="" class="kindle-cn-inline-image" src="Image05503.jpg" />
+ 引入符号<img alt="" class="kindle-cn-inline-image" src="Image05504.jpg" />
+ ：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05505.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">我们对<img alt="" class="kindle-cn-inline-image" src="Image05506.jpg" />
+ 加上下标<span class="kindle-cn-italic">x</span>
+ 是为了提醒你们，我们只是与动量的<span class="kindle-cn-italic">x</span>
+ 分量打交道。</p>
+<p>你们很容易地把这结果推广到三维的情况，其余两个动量分量为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image05507.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">如果愿意，你们甚至可以想到<span class="kindle-cn-specialtext-qx">矢量</span>
+ 动量的算符，并写为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image05508.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">式中<img alt="" class="kindle-cn-inline-image" src="Image05509.jpg" />
+ 及<img alt="" class="kindle-cn-inline-image" src="Image05510.jpg" />
+ 为3个坐标方向的单位矢量。如果我们写成如下形式，则看起来更为漂亮，</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05511.jpg" />
+</div>
+<p>总的结果是：至少对某些量子力学算符，在坐标表象中有相应的代数算符。我们把到目前为止所得的结果——推广到三维情况——总结列入表20-1中。对每一个算符，我们有两个等价的形式<a id="ch5-back" href="text00380.html#ch5">
+<sup>(5)</sup>
+</a>
+ ：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05512.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">或</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05513.jpg" />
+</div>
+<p>现在我们举一些例子来说明这些概念的应用。第一个例子就是指出<img alt="" class="kindle-cn-inline-image" src="Image05514.jpg" />
+ 和<img alt="" class="kindle-cn-inline-image" src="Image05515.jpg" />
+ 之间的关系。如果使用<img alt="" class="kindle-cn-inline-image" src="Image05516.jpg" />
+ 两次，则得</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05517.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">这就意味着我们能够写出等式</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05518.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">或者用矢量符号，上式为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05519.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">（在代数算符中，任何没有算符符号<img alt="" class="kindle-cn-inline-image" src="Image05520.jpg" />
+ 的项就表示直接相乘。）此式很妙，因为要是你还没有忘记经典物理，就很容易记住它。每个人都知道（粒子的）能量（非相对论性）就是动能<span class="kindle-cn-italic">p</span>
+ <span class="math-super">2</span>
+ /2<span class="kindle-cn-italic">m</span>
+ 加势能，而<img alt="" class="kindle-cn-inline-image" src="Image05521.jpg" />
+ 是总能量算符。</p>
+<p>这结果给人们留下了很深的印象，所以他们在教学生量子力学之前，试图教给学生的都是经典物理学。（我们的想法不同！）但是这种类比常常引起误解。举个例说，当使用算符时，各种因子的<span class="kindle-cn-specialtext-qx">顺序</span>
+ 很重要，但在经典方程式中却不是这样的。</p>
+<p>在第17章中，我们根据位移算符<img alt="" class="kindle-cn-inline-image" src="Image05522.jpg" />
+ 用下式［参见式（17.27）］定义了算符<img alt="" class="kindle-cn-inline-image" src="Image05523.jpg" />
+ ：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05524.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">式中<span class="kindle-cn-italic">δ</span>
+ 是一<span class="kindle-cn-specialtext-qx">小</span>
+ 位移。我们应证明这个式子中的定义与我们新的定义是等价的。按照我们刚才所得出的，上式应与下式</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05525.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">有相同的意义。但此式右边正好是<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ＋<span class="kindle-cn-italic">δ</span>
+ ）的泰勒展开式，如果使态向左移动<span class="kindle-cn-italic">δ</span>
+ （或将坐标向右移动相同的数量），你所得到的无疑就是<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ＋<span class="kindle-cn-italic">δ</span>
+ ）。所以<img alt="" class="kindle-cn-inline-image" src="Image05526.jpg" />
+ 的两个定义相一致！</p>
+<p>让我们用这个事实来说明另一些事情。假设有一群粒子处于某个复杂系统中，我们把它们记为1，2，3，…。（为了简便起见仍限于一维。）描述此状态的波函数是所有坐标<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">1</span>
+ ，<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">2</span>
+ ，<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">3</span>
+ ，…的函数。我们可把它写成<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">1</span>
+ ，<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">2</span>
+ ，<span class="kindle-cn-italic">x</span>
+ <span class="math-sub">3</span>
+ ，…）。现再将此系统（向左）移动<span class="kindle-cn-italic">δ</span>
+ ，新的波函数</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05527.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">可以写成</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05528.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">根据式（20.65），态｜<span class="kindle-cn-italic">ψ</span>
+ 〉的动量算符（我们称其为<span class="kindle-cn-specialtext-qx">总</span>
+ 动量）等于</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05529.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">但此式就是</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05530.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">动量算符也遵从总动量为各部分动量之和的规律。一切都很好地联系起来了，并且我们所讲过的许多事情都是相互一致的。</p>
+<h2 class="kindle-cn-heading2"><a id="sec006"></a>
+ §20-6　角动量</h2>
+<p>让我们随便看一下另一种运算——轨道角动量的运算。在第17章中，我们根据<img alt="" class="kindle-cn-inline-image" src="Image05531.jpg" />
+ 定义了算符<img alt="" class="kindle-cn-inline-image" src="Image05532.jpg" />
+ 是绕<span class="kindle-cn-italic">z</span>
+ 轴旋转角度<span class="kindle-cn-italic">φ</span>
+ 的算符。这里我们考虑只用一个波函数<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-bold">
+<span class="kindle-cn-italic">r</span>
+</span>
+ ）所描述的系统，<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-bold">
+<span class="kindle-cn-italic">r</span>
+</span>
+ ）只是坐标的函数，并不考虑电子是否有朝上或朝下的自旋。这就是说，我们想暂时不去考虑电子的<span class="kindle-cn-specialtext-qx">内禀</span>
+ 角动量，而只考虑其<span class="kindle-cn-specialtext-qx">轨道</span>
+ 部分。为了区分清楚，我们称轨道算符为<img alt="" class="kindle-cn-inline-image" src="Image05533.jpg" />
+ ，并且根据转动无限小角<img alt="" class="kindle-cn-inline-image" src="Image05534.jpg" />
+ 的算符由下式将它定义：</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05535.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">（记住，这个定义仅适用于不包含内在的自旋变量的态｜<span class="kindle-cn-italic">ψ</span>
+ 〉，它只与坐标<span class="kindle-cn-bold">
+<span class="kindle-cn-italic">r</span>
+</span>
+ ＝<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">y</span>
+ ，<span class="kindle-cn-italic">z</span>
+ 有关。）如果我们在一绕<span class="kindle-cn-italic">z</span>
+ 轴转过小角<img alt="" class="kindle-cn-inline-image" src="Image05536.jpg" />
+ 后的新坐标系中来看态｜<span class="kindle-cn-italic">ψ</span>
+ 〉，我们所看到新的态为</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image05537.jpg" />
+</p>
+<p>如果我们愿意在坐标表象中描写此态｜<span class="kindle-cn-italic">ψ</span>
+ 〉——也就是用它的波函数<span class="kindle-cn-italic">ψ</span>
+ ′（<span class="kindle-cn-bold">
+<span class="kindle-cn-italic">r</span>
+</span>
+ ）来描写，我们可以把它写为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image05538.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent"><img alt="" class="kindle-cn-inline-image" src="Image05539.jpg" />
+ 是什么呢？从图20-2可以看出，在新坐标系中<span class="kindle-cn-italic">x</span>
+ 和<span class="kindle-cn-italic">y</span>
+ （实际上应是<span class="kindle-cn-italic">x</span>
+ ′和<span class="kindle-cn-italic">y</span>
+ ′，但我们把撇号省略了）处的一点<span class="kindle-cn-italic">P</span>
+ 以前是在<img alt="" class="kindle-cn-inline-image" src="Image05540.jpg" />
+ 和<img alt="" class="kindle-cn-inline-image" src="Image05541.jpg" />
+ 处。因为电子位于<span class="kindle-cn-italic">P</span>
+ 点的振幅不因坐标转动而改变，我们可以写出</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image05542.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">（记住<img alt="" class="kindle-cn-inline-image" src="Image05543.jpg" />
+ 为小角度。）这意味着</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image05544.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这就是我们的答案。但是注意，它等价于</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05545.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">回到量子力学算符，我们可写为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05546.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这公式很容易记忆，因为它很像经典力学中熟知的公式，即它很像</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05547.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">的<span class="kindle-cn-italic">z</span>
+ 分量。</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80-withnote" src="Image05548.jpg" />
+<p class="kindle-cn-picture-txt-withfewcharactors">图20-2　坐标绕<span class="kindle-cn-italic">z</span>
+ 轴转动一小角度<img alt="" class="kindle-cn-inline-image" src="Image05549.jpg" />
+</p>
+</div>
+<p>算符问题的一个有趣的方面是把许多经典方程转变为量子力学的形式。哪些方程并非如此呢？最好有一些不成立，因为如果每个式子都这样，则量子力学就没有什么区别了，也就没有新的物理学了。这里有一个式子就不一样，在经典物理中，</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image05550.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">在量子力学中它是什么呢？即</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image05551.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">让我们在<span class="kindle-cn-italic">x</span>
+ 表象中把它算出来。为了明确起见，我们代入某个波函数<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ），于是有</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image05552.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">或</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05553.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">注意微商作用于它右边的每个部分。我们得出</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05554.jpg" />
+</div>
+<p>结果<span class="kindle-cn-specialtext-qx">不为</span>
+ 零。整个运算就等于乘以<img alt="" class="kindle-cn-inline-image" src="Image05555.jpg" />
+ ：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05556.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">假如普朗克常数为零，则经典结果和量子结果就会相同，那就不必要学量子力学了。</p>
+<p>顺便提一下，如果任意两个算符<img alt="" class="kindle-cn-inline-image" src="Image05557.jpg" />
+ 和<img alt="" class="kindle-cn-inline-image" src="Image05558.jpg" />
+ ，如下组合起来</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image05559.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">而不为零时，则我们说“这两个算符不对易”，而像式（20.74）那样的等式称为它们的“交换定则”。你可以看出<img alt="" class="kindle-cn-inline-image" src="Image05560.jpg" />
+ 和<img alt="" class="kindle-cn-inline-image" src="Image05561.jpg" />
+ 的交换定则为</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image" src="Image05562.jpg" />
+</p>
+<p>还有另一个与角动量有关的非常重要的交换定则，它为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05563.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">作为练习，你可以用算符<img alt="" class="kindle-cn-inline-image" src="Image05564.jpg" />
+ 和<img alt="" class="kindle-cn-inline-image" src="Image05565.jpg" />
+ 自己来证明它。</p>
+<p>有趣的是在经典物理中也有不对易的算符。当我们讨论在空间中的转动时就已见到过这种情况。如果你把某物体，例如一本书，先绕<span class="kindle-cn-italic">x</span>
+ 轴旋转90°，然后绕<span class="kindle-cn-italic">y</span>
+ 轴转90°，所得的结果与先绕<span class="kindle-cn-italic">y</span>
+ 轴旋转90°、然后绕<span class="kindle-cn-italic">x</span>
+ 轴转90°的结果不同。事实上式（20.75）的根源正是空间的这种性质。</p>
+<h2 class="kindle-cn-heading2"><a id="sec007"></a>
+ §20-7　平均值随时间的变化</h2>
+<p>现在我们要向你们说明一些别的事情。平均值如何随时间变化呢？现在假定有一个算符<img alt="" class="kindle-cn-inline-image" src="Image05566.jpg" />
+ ，它本身并不以明显的方式包含时间，我们的意思是指像<img alt="" class="kindle-cn-inline-image" src="Image05567.jpg" />
+ 或<img alt="" class="kindle-cn-inline-image" src="Image05568.jpg" />
+ 那样的算符。（我们不考虑像随时间而变化的某种外来势的算符，诸如<span class="kindle-cn-italic">V</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）。）现在我们计算在某态｜<span class="kindle-cn-italic">ψ</span>
+ 〉的〈<span class="kindle-cn-italic">A</span>
+ 〉<span class="math-sub">平均</span>
+ ，它为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05569.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">〈<span class="kindle-cn-italic">A</span>
+ 〉<span class="math-sub">平均</span>
+ 与时间的关系怎样呢？它为何与时间有关呢？一个原因可能是算符本身明显地与时间有关——例如，如果它涉及像<span class="kindle-cn-italic">V</span>
+ （<span class="kindle-cn-italic">x</span>
+ ，<span class="kindle-cn-italic">t</span>
+ ）这样的随时间变化的势。但是，即使算符与时间<span class="kindle-cn-italic">t</span>
+ 无关，譬如说算符<img alt="" class="kindle-cn-inline-image" src="Image05570.jpg" />
+ ，其相应的平均值也可能与时间有关。粒子的平均位置当然可以移动。如果<img alt="" class="kindle-cn-inline-image" src="Image05571.jpg" />
+ 与时间无关，这种运动如何由式（20.76）得出呢？态｜<span class="kindle-cn-italic">ψ</span>
+ 〉可能随时间而变化。对于非定态，我们往往把该态写成｜<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">t</span>
+ ）〉，以明确地表示它对时间的依赖关系。我们要证明〈<span class="kindle-cn-italic">A</span>
+ 〉<span class="math-sub">平均</span>
+ 的变化率是由一个称为<img alt="" class="kindle-cn-inline-image" src="Image05572.jpg" />
+ 的新算符给出的。记住<img alt="" class="kindle-cn-inline-image" src="Image05573.jpg" />
+ 是一个算符，所以在<img alt="" class="kindle-cn-inline-image" src="Image05574.jpg" />
+ 上加一点并不表示它对时间取微商，而仅为<span class="kindle-cn-specialtext-qx">新</span>
+ 算符<img alt="" class="kindle-cn-inline-image" src="Image05575.jpg" />
+ 的一种写法，其定义为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05576.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">我们的问题是找出算符<img alt="" class="kindle-cn-inline-image" src="Image05577.jpg" />
+ 。</p>
+<p>首先，我们知道状态的变化率由哈密顿给出，明确地讲为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05578.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这正是对我们哈密顿原来的定义的抽象写法：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05579.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">如果取式（20.78）的复数共轭，它等价于：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05580.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">其次，看看如果我们将式（20.76）对<span class="kindle-cn-italic">t</span>
+ 求微商，其结果将如何。既然<span class="kindle-cn-italic">ψ</span>
+ 与<span class="kindle-cn-italic">t</span>
+ 有关，则有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05581.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">最后，用（20.78）及（20.79）两式来代替上式中的微商，我们得到</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05582.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">此式与下式相同：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05583.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">将此式与式（20.77）相比较，可看到</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05584.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这就是我们感兴趣的表述，它对任何算符<img alt="" class="kindle-cn-inline-image" src="Image05585.jpg" />
+ 都成立。</p>
+<p>顺便提一下，如果算符<img alt="" class="kindle-cn-inline-image" src="Image05586.jpg" />
+ <span class="kindle-cn-specialtext-qx">本身</span>
+ 就与时间有关，则必定有</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05587.jpg" />
+</div>
+<p>现在让我们用几个例子来试一下式（20.82），看它是否真的有意义。例如，什么算符与<img alt="" class="kindle-cn-inline-image" src="Image05588.jpg" />
+ 相对应？我们说，它应该是</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05589.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这是什么呢？找出其意义的一种办法是，用<img alt="" class="kindle-cn-inline-image" src="Image05590.jpg" />
+ 的代数算符在坐标表象中把它算出来。在坐标表象中，对易式为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05591.jpg" />
+</div>
+<p>如果把它作用在任意波函数<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）上，并算出所有的微分，经过简单运算，最后可得</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05592.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">然而这正好与</p>
+<p class="kindle-cn-para-center"><img alt="" class="kindle-cn-inline-image2" src="Image05593.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">相同。所以我们得到</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05594.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">或</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05595.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">这是一个奇妙的结果，它意味着，如果<span class="kindle-cn-italic">x</span>
+ 的平均值随时间而改变，则重心的移动等同于平均动量除以<span class="kindle-cn-italic">m</span>
+ 。与经典力学完全相似。</p>
+<p>再举一个例子。一个态的平均动量的变化率是什么？同样处理。它的算符是</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05596.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">你仍然可以在<span class="kindle-cn-italic">x</span>
+ 表象中运算。记住这时<img alt="" class="kindle-cn-inline-image" src="Image05597.jpg" />
+ 变为d/d<span class="kindle-cn-italic">x</span>
+ ，而且这意味着你将取势能<span class="kindle-cn-italic">V</span>
+ （在<img alt="" class="kindle-cn-inline-image" src="Image05598.jpg" />
+ 中）的微商——但仅在<img alt="" class="kindle-cn-inline-image" src="Image05599.jpg" />
+ 的第二项中。结果这一项是唯一不被消去的一项，你得到</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone50" src="Image05600.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">或</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="" class="kindle-cn-bodycontent-image-alone80" src="Image05601.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">又是经典的结果。式子的右边是力，所以我们已导出了牛顿定律！但是要记住——这些是关于<span class="kindle-cn-specialtext-qx">算符</span>
+ 的定律，只给出<span class="kindle-cn-specialtext-qx">平均</span>
+ 的量，它们并不描述原子内部运动的细节。</p>
+<p>量子力学具有<img alt="" class="kindle-cn-inline-image" src="Image05602.jpg" />
+ 不等于<img alt="" class="kindle-cn-inline-image" src="Image05603.jpg" />
+ 这一本质上的差别，它们只差一点点——差一个很小的数值<img alt="" class="kindle-cn-inline-image" src="Image05604.jpg" />
+ 。但是所有如干涉、波动等等奇异复杂的现象都来自于<img alt="" class="kindle-cn-inline-image" src="Image05605.jpg" />
+ 不完全为零这一点点事实。</p>
+<p>有关这个概念的历史也是很有趣的。在1926年的几个月时间里，海森伯及薛定谔各自独立地发现描述原子力学的正确定律。薛定谔发明了他的波函数<span class="kindle-cn-italic">ψ</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）并找到了他的方程。另一方面，海森伯发现自然界可以用经典方程来描述，只是<span class="kindle-cn-italic">xp</span>
+ －<span class="kindle-cn-italic">px</span>
+ 应等于<img alt="" class="kindle-cn-inline-image" src="Image05606.jpg" />
+ ，这结果可以通过用特殊的矩阵对它们定义而得到。用我们的话来讲，他使用了能量表象及其矩阵。海森伯的矩阵代数和薛定谔的微分方程都能解释氢原子。几个月以后，薛定谔就能证明这两种理论是等价的——如同我们在这里所看到的。但是量子力学的这两个不同的数学形式是各自独立地发明的。</p>
+<div class="empty"></div>
+<p class="kindle-cn-noindent">————————————————————</p>
+<p class="fnote">
+<a id="ch1" href="text00380.html#ch1-back">(1)</a>
+ &nbsp;“算符”<span class="kindle-cn-italic">V</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）表示“用<span class="kindle-cn-italic">V</span>
+ （<span class="kindle-cn-italic">x</span>
+ ）相乘”。</p>
+<p class="fnote">
+<a id="ch2" href="text00380.html#ch2-back">(2)</a>
+ &nbsp;我们把体积元写成dVol。当然，它就是d<span class="kindle-cn-italic">x</span>
+ d<span class="kindle-cn-italic">y</span>
+ d<span class="kindle-cn-italic">z</span>
+ ，而对所有3个坐标积分都从－∞到＋∞。</p>
+<p class="fnote">
+<a id="ch3" href="text00380.html#ch3-back">(3)</a>
+ &nbsp;你也可以这样来考虑，你选用的任何函数（即态）都可写成具有确定能量的基础态的线性组合。既然在此组合中存在最低能量的态与许多较高能量的态的混合，则平均能量就要比基态能量高。</p>
+<p class="fnote">
+<a id="ch4" href="text00380.html#ch4-back">(4)</a>
+ &nbsp;式（20.38）并<span class="kindle-cn-specialtext-qx">不</span>
+ 意味着｜<span class="kindle-cn-italic">α</span>
+ 〉＝<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉。你们不可以把〈<span class="kindle-cn-italic">x</span>
+ ｜当作“因子”提出来，因为在〈<span class="kindle-cn-italic">x</span>
+ ｜<span class="kindle-cn-italic">ψ</span>
+ 〉前面的乘子<span class="kindle-cn-italic">x</span>
+ 是一个数，它对各个态〈<span class="kindle-cn-italic">x</span>
+ ｜都是不同的，它是电子在态｜<span class="kindle-cn-italic">x</span>
+ 〉中的坐标值。参看式（20.40）。</p>
+<p class="fnote">
+<a id="ch5" href="text00380.html#ch5-back">(5)</a>
+ &nbsp;在很多书中，对<img alt="" class="kindle-cn-inline-image" src="Image05607.jpg" />
+ 及<img alt="" class="kindle-cn-inline-image" src="Image05608.jpg" />
+ 使用相同的符号，这是因为它们都代表相同的物理量，而且也因为写成不同的字母不方便。你们通常可以从上下文知道该用哪一个。</p>
+</body>
+</html>

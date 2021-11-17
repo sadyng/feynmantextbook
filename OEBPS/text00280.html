@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head><title></title>
+<link href="flow0004.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h2 class="kindle-cn-heading2">§31-7　高阶张量</h2>
+<p>应力张量S<span class="math-sub">ij</span>
+ 描述了物质中的内<span class="kindle-cn-specialtext-qx">力</span>
+ 。如果材料是弹性的，用另一个张量T<span class="math-sub">ij</span>
+ ——称为<span class="kindle-cn-specialtext-qx">应变</span>
+ 张量——来描述其内部<span class="kindle-cn-specialtext-qx">畸变</span>
+ 就较方便。对于像金属棒那样的简单物体，你知道长度的改变ΔL与作用力近似成正比，因而我们说它服从胡克定律：</p>
+<p class="kindle-cn-para-center">ΔL=γF.</p>
+<p class="kindle-cn-para-no-indent">对于受了任意畸变的固态弹性体来说，应变T<span class="math-sub">ij</span>
+ 与应力S<span class="math-sub">ij</span>
+ 是由一组线性方程相联系的：</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="448-2" class="kindle-cn-bodycontent-image-alone60" src="Image02982.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">并且，一根弹簧（或一根棒）的势能为</p>
+<p class="kindle-cn-para-center"><img alt="448-3" class="kindle-cn-inline-image" src="Image02983.jpg" />
+</p>
+<p class="kindle-cn-para-no-indent">对于固体中的弹性能量<span class="kindle-cn-specialtext-qx">密度</span>
+ ，可推广为</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="448-4" class="kindle-cn-bodycontent-image-alone80" src="Image02984.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">因此晶体弹性的完整描述就必须用这些系数γ<span class="math-sub">ijkl</span>
+ ，这带来了一个新的、难以控制的量，它是一个<span class="kindle-cn-specialtext-qx">四</span>
+ 阶张量，由于每一个下脚标可取x，y或z中任何一个，共有3<span class="math-super">4</span>
+ =81个系数，但实际上却只有21个<span class="kindle-cn-specialtext-qx">不同</span>
+ 数值。首先，S<span class="math-sub">ij</span>
+ 是对称的，它只有6个不同的数值，因而在式（31.27）中就只需要36个<span class="kindle-cn-specialtext-qx">不同</span>
+ 系数。可是，S<span class="math-sub">ij</span>
+ 和S<span class="math-sub">kl</span>
+ 可以互相交换而不改变能量，所以交换ij和kl时γ<span class="math-sub">ijkl</span>
+ 必定是对称的，这样就把不同系数的数目又减少至21个。所以对于可允许的对称性最低的晶体来说，要描述它的弹性就需要21个弹性常数！当然，对于较高对称的晶体，这一数目还可以减少。例如，立方晶体只有三个弹性常数，而各向同性物质则只有两个弹性常数。</p>
+<p>这后者的真实性可以这样理解。如同一块各向同性物质必然会对称那样，γ<span class="math-sub">ijkl</span>
+ 的各分量怎么可能与坐标轴的方向无关呢？<span class="kindle-cn-specialtext-qx">答案</span>
+ 是：<span class="kindle-cn-specialtext-qx">只有</span>
+ 当它们可用张量δ<span class="math-sub">ij</span>
+ 表达时，它们才能是与坐标无关的。有两个可能的表示式：δ<span class="math-sub">ij</span>
+ δ<span class="math-sub">kl</span>
+ 和δ<span class="math-sub">ik</span>
+ δ<span class="math-sub">jl</span>
+ +δ<span class="math-sub">il</span>
+ δ<span class="math-sub">jk</span>
+ ，它们都具备所需的对称性，因而δ<span class="math-sub">ijkl</span>
+ 就必须是它们的线性组合。因此，对于各向同性材料来说，</p>
+<p class="kindle-cn-para-center">γ<span class="math-sub">ijkl</span>
+ =a（δ<span class="math-sub">ij</span>
+ δ<span class="math-sub">kl</span>
+ ）+b（δ<span class="math-sub">ik</span>
+ δ<span class="math-sub">jl</span>
+ +δ<span class="math-sub">il</span>
+ δ<span class="math-sub">jk</span>
+ ），</p>
+<p class="kindle-cn-para-no-indent">所以这种材料就需要两个常数a和b来描述它的弹性。而立方晶体仅需要三个常数，我们将把它留给你们去证明。</p>
+<p>作为最后一个例子，我们举出压电效应，这次是属于一个三阶张量。在应力作用下，晶体会产生一个正比于这个应力的电场，因此，一般说来，其规律是</p>
+<div class="kindle-cn-bodycontent-div-alone100"><img alt="449-1" class="kindle-cn-bodycontent-image-alone30" src="Image02985.jpg" />
+</div>
+<p class="kindle-cn-para-no-indent">式中E<span class="math-sub">i</span>
+ 为电场，而P<span class="math-sub">ijk</span>
+ 为压电系数——或压电张量。你能否证明，若晶体有一个反演中心（在x，y，z→-x，-y，-z的变换下保持不变），则所有压电系数都等于零？</p>
+</body>
+</html>
